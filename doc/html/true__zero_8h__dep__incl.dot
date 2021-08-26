@@ -1,0 +1,29 @@
+digraph "true_zero.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="true_zero.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file for the Osl::Maths::Comparison::true_zero functions."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Comparison.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Comparison_8h.html",tooltip="Header file of Osl::Maths::Comparison namespace."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Maths.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Maths_8h.html",tooltip="Header file of Osl::Maths namespace."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Osl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Osl_8h.html",tooltip="Header file for the Osl library."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="linear_root.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linear__root_8h.html",tooltip="Header file for Osl::Maths::Roots::linear_root functions."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Roots.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Roots_8h.html",tooltip="Header file for Osl::Maths::Roots::Roots namespace."];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="quadratic_roots.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$quadratic__roots_8h.html",tooltip="Header file for Osl::Maths::Roots::quadratic_roots functions."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="quartic_roots.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$quartic__roots_8h.html",tooltip="Header file for Osl::Maths::Roots::quartic_roots functions."];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="cubic_roots.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cubic__roots_8h.html",tooltip="Header file for Osl::Maths::Roots::cubic_roots functions."];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

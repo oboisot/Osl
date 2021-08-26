@@ -1,0 +1,22 @@
+digraph "Maths" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5b8b01df1f6e37df89015ab721df26d0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Osl" fontname="Helvetica", fontsize="10", URL="dir_5b8b01df1f6e37df89015ab721df26d0.html"]
+  subgraph clusterdir_134381abc7ea5127381f5d379b47f885 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_134381abc7ea5127381f5d379b47f885.html"];
+    dir_134381abc7ea5127381f5d379b47f885 [shape=plaintext label="Maths"];
+    dir_204984916f57bc1a6e4144bed7fb3355 [shape=box label="Comparison" color="black" fillcolor="white" style="filled" URL="dir_204984916f57bc1a6e4144bed7fb3355.html"];
+    dir_4ee0e3e78d1080f35c6ad876adb58c74 [shape=box label="Containers" color="black" fillcolor="white" style="filled" URL="dir_4ee0e3e78d1080f35c6ad876adb58c74.html"];
+    dir_6e66bb46395047836fb4733dc576fc79 [shape=box label="Functions" color="black" fillcolor="white" style="filled" URL="dir_6e66bb46395047836fb4733dc576fc79.html"];
+    dir_1a780048b8fccef4957102cc0f8a7a2c [shape=box label="Interpolator" color="black" fillcolor="white" style="filled" URL="dir_1a780048b8fccef4957102cc0f8a7a2c.html"];
+    dir_2d5fa0c25036e5a013f599f68770b718 [shape=box label="Roots" color="black" fillcolor="white" style="filled" URL="dir_2d5fa0c25036e5a013f599f68770b718.html"];
+  }
+  }
+  dir_2d5fa0c25036e5a013f599f68770b718->dir_204984916f57bc1a6e4144bed7fb3355 [headlabel="5", labeldistance=1.5 headhref="dir_000008_000003.html"];
+  dir_134381abc7ea5127381f5d379b47f885->dir_2d5fa0c25036e5a013f599f68770b718 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000008.html"];
+  dir_134381abc7ea5127381f5d379b47f885->dir_1a780048b8fccef4957102cc0f8a7a2c [headlabel="1", labeldistance=1.5 headhref="dir_000002_000004.html"];
+  dir_1a780048b8fccef4957102cc0f8a7a2c->dir_6e66bb46395047836fb4733dc576fc79 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000012.html"];
+  dir_1a780048b8fccef4957102cc0f8a7a2c->dir_204984916f57bc1a6e4144bed7fb3355 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000003.html"];
+}

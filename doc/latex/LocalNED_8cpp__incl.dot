@@ -1,0 +1,28 @@
+digraph "LocalNED.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LocalNED.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Source file of Osl::Geography::LocalNED class."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="LocalNED.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LocalNED_8h.html",tooltip="Header file of Osl::Geography::LocalNED class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ellipsoid_8h.html",tooltip="Header file of Osl::Geography::Ellipsoid class."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Osl/Constants.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Constants_8h.html",tooltip="Header file for the Osl::Constants namespace."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="limits",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Osl/Maths/Comparison\l/almost_equal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$almost__equal_8h.html",tooltip="Header file for the Osl::Maths::Comparison::almost_equal functions."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Osl/Globals.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Globals_8h.html",tooltip="Header file for global typedefs definition."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="cmath",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="complex",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="stdexcept",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+}

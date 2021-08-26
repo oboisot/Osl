@@ -1,0 +1,9 @@
+digraph "Shape3D" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0bb7399e2f3c62ef7915ce6647cfe9f4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Geometry" fontname="Helvetica", fontsize="10", URL="dir_0bb7399e2f3c62ef7915ce6647cfe9f4.html"]
+  dir_a40f6956c5bd149f1a04d7e8ec3869a6 [shape=box, label="Shape3D", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a40f6956c5bd149f1a04d7e8ec3869a6.html"];
+  }
+}

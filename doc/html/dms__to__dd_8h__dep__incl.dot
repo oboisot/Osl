@@ -1,0 +1,11 @@
+digraph "dms_to_dd.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="dms_to_dd.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file of Osl::Geography::dms_to_dd function."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Geography.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Geography_8h.html",tooltip="Header file of Osl::Geography namespace."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Osl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Osl_8h.html",tooltip="Header file for the Osl library."];
+}

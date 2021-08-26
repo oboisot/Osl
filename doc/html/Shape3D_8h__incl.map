@@ -1,0 +1,21 @@
+<map id="Shape3D.h" name="Shape3D.h">
+<area shape="rect" id="node1" title="Header file of Osl::Geometry::Shape3D namespace." alt="" coords="216,5,303,32"/>
+<area shape="rect" id="node2" href="$Line3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Line3D class." alt="" coords="416,229,489,256"/>
+<area shape="rect" id="node14" href="$Plane3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Plane3D class." alt="" coords="333,80,415,107"/>
+<area shape="rect" id="node15" href="$Cone3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Cone3D class." alt="" coords="45,155,124,181"/>
+<area shape="rect" id="node18" href="$Sphere3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Sphere3D class." alt="" coords="199,155,290,181"/>
+<area shape="rect" id="node19" href="$Ellipsoid3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Ellipsoid3D class." alt="" coords="210,80,309,107"/>
+<area shape="rect" id="node3" href="$Vector3D_8h.html" title="Header file of Osl::Geometry::Vector3D class." alt="" coords="235,304,407,331"/>
+<area shape="rect" id="node4" href="$Globals_8h.html" title="Header file for global typedefs definition." alt="" coords="413,468,514,495"/>
+<area shape="rect" id="node9" href="$almost__equal_8h.html" title="Header file for the Osl::Maths::Comparison::almost_equal functions." alt="" coords="51,379,206,420"/>
+<area shape="rect" id="node12" href="$almost__one_8h.html" title="Header file for the Osl::Maths::Comparison::almost_one functions." alt="" coords="230,379,385,420"/>
+<area shape="rect" id="node13" href="$almost__zero_8h.html" title="Header file for the Osl::Maths::Comparison::almost_zero functions." alt="" coords="409,379,563,420"/>
+<area shape="rect" id="node5" title=" " alt="" coords="413,543,471,569"/>
+<area shape="rect" id="node6" title=" " alt="" coords="496,543,567,569"/>
+<area shape="rect" id="node7" title=" " alt="" coords="591,543,647,569"/>
+<area shape="rect" id="node8" title=" " alt="" coords="309,543,388,569"/>
+<area shape="rect" id="node10" href="$Constants_8h.html" title="Header file for the Osl::Constants namespace." alt="" coords="157,468,273,495"/>
+<area shape="rect" id="node11" title=" " alt="" coords="189,543,242,569"/>
+<area shape="rect" id="node16" href="$Rotation3D_8h.html" title="Header file of Osl::Geometry::Rotation3D class." alt="" coords="5,229,188,256"/>
+<area shape="rect" id="node17" title=" " alt="" coords="51,304,155,331"/>
+</map>

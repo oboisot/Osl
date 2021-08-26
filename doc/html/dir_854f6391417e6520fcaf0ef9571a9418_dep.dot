@@ -1,0 +1,14 @@
+digraph "Geography" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5b8b01df1f6e37df89015ab721df26d0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Osl" fontname="Helvetica", fontsize="10", URL="dir_5b8b01df1f6e37df89015ab721df26d0.html"]
+  dir_854f6391417e6520fcaf0ef9571a9418 [shape=box, label="Geography", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_854f6391417e6520fcaf0ef9571a9418.html"];
+  }
+  dir_134381abc7ea5127381f5d379b47f885 [shape=box label="Maths" fillcolor="white" style="filled" color="red" URL="dir_134381abc7ea5127381f5d379b47f885.html"];
+  dir_0bb7399e2f3c62ef7915ce6647cfe9f4 [shape=box label="Geometry" fillcolor="white" style="filled" color="red" URL="dir_0bb7399e2f3c62ef7915ce6647cfe9f4.html"];
+  dir_854f6391417e6520fcaf0ef9571a9418->dir_134381abc7ea5127381f5d379b47f885 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000002.html"];
+  dir_854f6391417e6520fcaf0ef9571a9418->dir_0bb7399e2f3c62ef7915ce6647cfe9f4 [headlabel="4", labeldistance=1.5 headhref="dir_000010_000005.html"];
+  dir_0bb7399e2f3c62ef7915ce6647cfe9f4->dir_134381abc7ea5127381f5d379b47f885 [headlabel="6", labeldistance=1.5 headhref="dir_000005_000002.html"];
+}

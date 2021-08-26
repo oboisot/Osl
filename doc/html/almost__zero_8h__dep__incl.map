@@ -1,0 +1,33 @@
+<map id="almost_zero.h" name="almost_zero.h">
+<area shape="rect" id="node1" title="Header file for the Osl::Maths::Comparison::almost_zero functions." alt="" coords="1246,5,1350,32"/>
+<area shape="rect" id="node2" href="$Vector3D_8h.html" title="Header file of Osl::Geometry::Vector3D class." alt="" coords="775,80,862,107"/>
+<area shape="rect" id="node25" href="$Comparison_8h.html" title="Header file of Osl::Maths::Comparison namespace." alt="" coords="1195,80,1298,107"/>
+<area shape="rect" id="node27" href="$Sinc_8h.html" title="Header file of Osl::Maths::Interpolator::Sinc class." alt="" coords="1322,80,1381,107"/>
+<area shape="rect" id="node30" href="$quartic__roots_8h.html" title="Header file for Osl::Maths::Roots::quartic_roots functions." alt="" coords="1444,80,1552,107"/>
+<area shape="rect" id="node3" href="$GeoPoint_8h.html" title="Header file of Osl::Geography::GeoPoint class." alt="" coords="34,229,120,256"/>
+<area shape="rect" id="node7" href="$Geometry_8h.html" title="Header file for Osl::Geometry namespace." alt="" coords="592,379,682,405"/>
+<area shape="rect" id="node8" href="$CubicSpline3D_8h.html" title="Header file of Osl::Geometry::Interpolator::CubicSpline3D class." alt="" coords="351,155,470,181"/>
+<area shape="rect" id="node11" href="$LinearSpline3D_8h.html" title="Header file of Osl::Geometry::Interpolator3D::LinearSpline3D class." alt="" coords="498,155,618,181"/>
+<area shape="rect" id="node13" href="$Rotation3D_8h.html" title="Header file of Osl::Geometry::Rotation3D class." alt="" coords="683,155,780,181"/>
+<area shape="rect" id="node14" href="$Cone3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Cone3D class." alt="" coords="702,229,780,256"/>
+<area shape="rect" id="node17" href="$Ellipsoid3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Ellipsoid3D class." alt="" coords="778,304,877,331"/>
+<area shape="rect" id="node19" href="$Sphere3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Sphere3D class." alt="" coords="906,229,997,256"/>
+<area shape="rect" id="node21" href="$Line3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Line3D class." alt="" coords="1131,304,1204,331"/>
+<area shape="rect" id="node23" href="$Plane3D_8h.html" title="Header file of Osl::Geometry::Shape3D::Plane3D class." alt="" coords="1229,304,1312,331"/>
+<area shape="rect" id="node4" href="$Geography_8h.html" title="Header file of Osl::Geography namespace." alt="" coords="237,379,333,405"/>
+<area shape="rect" id="node6" href="$GeoPoint_8cpp.html" title="Source file of Osl::Geography::GeoPoint class." alt="" coords="24,304,125,331"/>
+<area shape="rect" id="node5" href="$Osl_8h.html" title="Header file for the Osl library." alt="" coords="610,453,664,480"/>
+<area shape="rect" id="node9" href="$CubicSpline3D_8cpp.html" title="Source file of Osl::Geometry::Interpolator::CubicSpline3D class." alt="" coords="198,229,330,256"/>
+<area shape="rect" id="node10" href="$Interpolator3D_8h.html" title="Header file of Osl::Geometry::Interpolator3D namespace." alt="" coords="354,229,467,256"/>
+<area shape="rect" id="node12" href="$LinearSpline3D_8cpp.html" title="Source file of Osl::Geometry::Interpolator3D::LinearSpline3D class." alt="" coords="491,229,626,256"/>
+<area shape="rect" id="node15" href="$Cone3D_8cpp.html" title="Source file of Osl::Geometry::Shape3D::Cone3D class." alt="" coords="610,304,704,331"/>
+<area shape="rect" id="node16" href="$Shape3D_8h.html" title="Header file of Osl::Geometry::Shape3D namespace." alt="" coords="922,379,1008,405"/>
+<area shape="rect" id="node18" href="$Ellipsoid3D_8cpp.html" title="Header file of Osl::Geometry::Shape3D::Ellipsoid3D class." alt="" coords="772,379,884,405"/>
+<area shape="rect" id="node20" href="$Sphere3D_8cpp.html" title="Source file of Osl::Geometry::Shape3D::Sphere3D class." alt="" coords="1002,304,1106,331"/>
+<area shape="rect" id="node22" href="$Line3D_8cpp.html" title="Source file of Osl::Geometry::Shape3D::Line3D class." alt="" coords="1107,379,1194,405"/>
+<area shape="rect" id="node24" href="$Plane3D_8cpp.html" title="Source file of Osl::Geometry::Shape3D::Plane3D class." alt="" coords="1218,379,1314,405"/>
+<area shape="rect" id="node26" href="$Maths_8h.html" title="Header file of Osl::Maths namespace." alt="" coords="1308,229,1377,256"/>
+<area shape="rect" id="node28" href="$Interpolator_8h.html" title="Header file of Osl::Maths::Interpolator namespace." alt="" coords="1284,155,1382,181"/>
+<area shape="rect" id="node29" href="$Sinc_8cpp.html" title="Source file of Osl::Maths::Interpolator::Sinc class." alt="" coords="1406,155,1479,181"/>
+<area shape="rect" id="node31" href="$Roots_8h.html" title="Header file for Osl::Maths::Roots::Roots namespace. *." alt="" coords="1504,155,1570,181"/>
+</map>

@@ -1,0 +1,169 @@
+\hypertarget{classOsl_1_1Geography_1_1GeoPoint}{}\doxysection{Osl\+::Geography\+::Geo\+Point Class Reference}
+\label{classOsl_1_1Geography_1_1GeoPoint}\index{Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint_ae872fd58d8778d2c59041bdda8ff1bd5}{Geo\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a60a762dc9999a7e2a78c34a522bba66c}\label{classOsl_1_1Geography_1_1GeoPoint_a60a762dc9999a7e2a78c34a522bba66c}} 
+{\bfseries Geo\+Point} (\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&elps, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Geometry\+::\+Vector3D}} \&vec)
+\item 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint_a439b84f43d4c06eb085b4a05774ad0d2}{Geo\+Point}} (\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&elps, const double \&lon, const double \&lat, const double \&alt, enum \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}{Geo\+Point\+Init}} init=\mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}{Geo\+Point\+Init\+::from\+Geodetic}}, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a4c27906994e7d157c3632ffbbe96ee7c}\label{classOsl_1_1Geography_1_1GeoPoint_a4c27906994e7d157c3632ffbbe96ee7c}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint_a4c27906994e7d157c3632ffbbe96ee7c}{Geo\+Point}} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_abcc868500b6337d2a915bc7520a4c791}\label{classOsl_1_1Geography_1_1GeoPoint_abcc868500b6337d2a915bc7520a4c791}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint_abcc868500b6337d2a915bc7520a4c791}{$\sim$\+Geo\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_aea06f24fc5d09766d2cbcf583f10e70b}\label{classOsl_1_1Geography_1_1GeoPoint_aea06f24fc5d09766d2cbcf583f10e70b}} 
+void {\bfseries set\+Coords} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Geometry\+::\+Vector3D}} \&vec)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_adec6c4db1e20776b7b5c37f5a682c586}\label{classOsl_1_1Geography_1_1GeoPoint_adec6c4db1e20776b7b5c37f5a682c586}} 
+void {\bfseries set\+Coords} (const double \&lon, const double \&lat, const double \&alt, enum \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}{Geo\+Point\+Init}} init=\mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}{Geo\+Point\+Init\+::from\+Geodetic}}, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_afc45fd0677fbf5affc5bb59b9cc78e6b}\label{classOsl_1_1Geography_1_1GeoPoint_afc45fd0677fbf5affc5bb59b9cc78e6b}} 
+void {\bfseries get\+Geodetic\+Coords} (double \&lon, double \&lat, double \&alt, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_ae47144b769c304cc8ad6f66bbb1cbcd9}\label{classOsl_1_1Geography_1_1GeoPoint_ae47144b769c304cc8ad6f66bbb1cbcd9}} 
+double {\bfseries get\+Lon} (bool degrees=true) const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a2e4aa37e3ae1180d6065f6a3d890422a}\label{classOsl_1_1Geography_1_1GeoPoint_a2e4aa37e3ae1180d6065f6a3d890422a}} 
+double {\bfseries get\+Lat} (bool degrees=true) const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a72379b486ae2484a31621194313f44f6}\label{classOsl_1_1Geography_1_1GeoPoint_a72379b486ae2484a31621194313f44f6}} 
+double {\bfseries get\+Alt} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a0df7b634e384f13cf13938dc8b3e67ba}\label{classOsl_1_1Geography_1_1GeoPoint_a0df7b634e384f13cf13938dc8b3e67ba}} 
+void {\bfseries get\+Geocentric\+Coords} (double \&x, double \&y, double \&z)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_afb7407fa7a195bbc6ecc8a3b581e9068}\label{classOsl_1_1Geography_1_1GeoPoint_afb7407fa7a195bbc6ecc8a3b581e9068}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Geometry\+::\+Vector3D}} {\bfseries get\+Geocentric\+Coords} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a7892148d54d106731c07171511a7a35a}\label{classOsl_1_1Geography_1_1GeoPoint_a7892148d54d106731c07171511a7a35a}} 
+double {\bfseries getX} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a81f4dfefdf80bde6f34bf9992d108d0a}\label{classOsl_1_1Geography_1_1GeoPoint_a81f4dfefdf80bde6f34bf9992d108d0a}} 
+double {\bfseries getY} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a2f3abc04eb2271f616bc91dac823c0f2}\label{classOsl_1_1Geography_1_1GeoPoint_a2f3abc04eb2271f616bc91dac823c0f2}} 
+double {\bfseries getZ} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_ad6072dffc121a7d0de82abbc3eb81932}\label{classOsl_1_1Geography_1_1GeoPoint_ad6072dffc121a7d0de82abbc3eb81932}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} {\bfseries get\+Ellipsoid} () const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a2488db309bf21d6b1f44b36456e743fe}\label{classOsl_1_1Geography_1_1GeoPoint_a2488db309bf21d6b1f44b36456e743fe}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} {\bfseries operator=} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \&other)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a1a4a4baac3909e6e39998a8bee1ae7dc}\label{classOsl_1_1Geography_1_1GeoPoint_a1a4a4baac3909e6e39998a8bee1ae7dc}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \&other) const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_aebbe8446a31296e020c1ff583f4d51e8}\label{classOsl_1_1Geography_1_1GeoPoint_aebbe8446a31296e020c1ff583f4d51e8}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \&other) const
+\item 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint_aa8e275f809741417b05fa22b95e634b8}{to\+Ellipsoid}} (\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&elps2, const double \&T12x, const double \&T12y, const double \&T12z, const double \&R12x=0.\+0, const double \&R12y=0.\+0, const double \&R12z=0.\+0, const double \&S12=0.\+0, bool degrees=false, bool R12exact=false)
+\begin{DoxyCompactList}\small\item\em to\+Ellipsoid \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_ae872fd58d8778d2c59041bdda8ff1bd5}\label{classOsl_1_1Geography_1_1GeoPoint_ae872fd58d8778d2c59041bdda8ff1bd5}} 
+\index{Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}!GeoPoint@{GeoPoint}}
+\index{GeoPoint@{GeoPoint}!Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}}
+\doxysubsubsection{\texorpdfstring{GeoPoint()}{GeoPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Osl\+::\+Geography\+::\+Geo\+Point\+::\+Geo\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} \begin{DoxyNote}{Note}
+The default constructor uses W\+G\+S84 ellipsoid as default. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_a439b84f43d4c06eb085b4a05774ad0d2}\label{classOsl_1_1Geography_1_1GeoPoint_a439b84f43d4c06eb085b4a05774ad0d2}} 
+\index{Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}!GeoPoint@{GeoPoint}}
+\index{GeoPoint@{GeoPoint}!Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}}
+\doxysubsubsection{\texorpdfstring{GeoPoint()}{GeoPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Osl\+::\+Geography\+::\+Geo\+Point\+::\+Geo\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&}]{elps,  }\item[{const double \&}]{lon,  }\item[{const double \&}]{lat,  }\item[{const double \&}]{alt,  }\item[{enum \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}{Geo\+Point\+Init}}}]{init = {\ttfamily \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}{Geo\+Point\+Init\+::from\+Geodetic}}},  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elps} & \\
+\hline
+{\em lon,lat} & \\
+\hline
+{\em alt} & \\
+\hline
+{\em init} & \\
+\hline
+{\em degrees} & (It has no effect if init==\mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a75cfea2f7defaa5b582777988ed6d7ea}{Geo\+Point\+Init\+::from\+Geocentric}}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1GeoPoint_aa8e275f809741417b05fa22b95e634b8}\label{classOsl_1_1Geography_1_1GeoPoint_aa8e275f809741417b05fa22b95e634b8}} 
+\index{Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}!toEllipsoid@{toEllipsoid}}
+\index{toEllipsoid@{toEllipsoid}!Osl::Geography::GeoPoint@{Osl::Geography::GeoPoint}}
+\doxysubsubsection{\texorpdfstring{toEllipsoid()}{toEllipsoid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} Osl\+::\+Geography\+::\+Geo\+Point\+::to\+Ellipsoid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&}]{elps2,  }\item[{const double \&}]{T12x,  }\item[{const double \&}]{T12y,  }\item[{const double \&}]{T12z,  }\item[{const double \&}]{R12x = {\ttfamily 0.0},  }\item[{const double \&}]{R12y = {\ttfamily 0.0},  }\item[{const double \&}]{R12z = {\ttfamily 0.0},  }\item[{const double \&}]{S12 = {\ttfamily 0.0},  }\item[{bool}]{degrees = {\ttfamily false},  }\item[{bool}]{R12exact = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+to\+Ellipsoid 
+
+Transform a \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} from a reference ellipsoid to another.
+
+The transformation is made through Helmert\textquotesingle{}s formulation which is a 7-\/parameters similitude transform. The algorithm of the transform is as follows\+:
+
+
+\begin{DoxyEnumerate}
+\item Transform geodetic coordinates to cartesian coordinates\+:
+
+\[ (\lambda_1,\phi_1,h_1)\rightarrow(X_1,Y_1,Z_1) \]
+
+This is made by default in the initialization of a \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}}.
+\item Compute the similitude transform\+:
+
+\[ \begin{pmatrix}X_2 \\ Y_2 \\ Z_2\end{pmatrix} = \begin{pmatrix}T_x \\ T_y \\ T_z\end{pmatrix} + (1+s) \mathbf{R}\begin{pmatrix}X_1 \\ Y_1 \\ Z_1\end{pmatrix} \]
+
+with $\overrightarrow{T}=(T_x,T_y,T_z)$ is the translation from \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} 1 to \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} 2, $s$ is the scale factor of the transformation and $\mathbf{R}$ is the rotation matrix between referential 1 and referential 2. This rotation matrix can be taken exact\+:
+
+\[ \mathbf{R}(\theta_x,\theta_y,\theta_z)= R_x(\theta_x)R_y(\theta_y)R_z(\theta_z) \]
+
+where $R_x$, $R_y$ and $R_z$ are the elementary rotation matrix of angles $\theta_x$, $\theta_y$ and $\theta_z$ around axes $x$, $y$ and $z$, respectively. This rotation matrix is often approximated by its small angles version\+:
+
+\[ R=\begin{pmatrix} 1 & -\theta_z & \theta_y \\ \theta_z & 1 & -\theta_x \\ -\theta_y & \theta_x & 1 \\ \end{pmatrix} \]
+\item Once the new geocentric coordinates $(X_2,Y_2,Z_2)$ are computed the corresponding geodetic coordinates are estimated\+:
+
+\[ (X_2,Y_2,Z_2)\rightarrow(\lambda_2,\phi_2,h_2) \]
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em elps2} & \\
+\hline
+{\em T12x,T12y,T12z} & \\
+\hline
+{\em R12x,R12y,R12z} & \\
+\hline
+{\em degrees} & \\
+\hline
+{\em R12exact} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This method is numerically more acurate than the historical analytical Molodensky method \cite{Deakin_04}. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{GeoPoint_8h}{Geo\+Point.\+h}}\item 
+\mbox{\hyperlink{GeoPoint_8cpp}{Geo\+Point.\+cpp}}\end{DoxyCompactItemize}

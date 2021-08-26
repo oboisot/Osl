@@ -1,0 +1,119 @@
+\hypertarget{namespaceOsl_1_1Maths_1_1Containers}{}\doxysection{Osl\+::Maths\+::Containers Namespace Reference}
+\label{namespaceOsl_1_1Maths_1_1Containers}\index{Osl::Maths::Containers@{Osl::Maths::Containers}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Containers_a8998b6ca8812d5499d22aed382276ea3}{linspace}} (const double \&start, const double \&stop, const std\+::size\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Generate a linearly spaced vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Containers_a5015d81b0a024a45ba9735f40f66ee2b}{linspace}} (const double \&start, const double \&stop, const std\+::size\+\_\+t \&n, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x)
+\begin{DoxyCompactList}\small\item\em Generate a linearly spaced vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Containers_a69cc116814dbddc069022b932c1a831b}{logspace}} (const double \&start, const double \&stop, const std\+::size\+\_\+t \&n, const double \&base=10.\+0)
+\begin{DoxyCompactList}\small\item\em Generate a logarithmically spaced vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Containers_ac570a6acfdfcdf279a2298937fd61a40}{logspace}} (const double \&start, const double \&stop, const std\+::size\+\_\+t \&n, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const double \&base=10.\+0)
+\begin{DoxyCompactList}\small\item\em Generate a logarithmically spaced vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_aa20a7f82e31e71ff5c36e0adc96b77b6}\label{namespaceOsl_1_1Maths_1_1Containers_aa20a7f82e31e71ff5c36e0adc96b77b6}} 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} {\bfseries regspace} (const double \&start, const double \&stop, const double \&delta)
+\item 
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_ac7dfb13a3de59b402d177d0fc3069c46}\label{namespaceOsl_1_1Maths_1_1Containers_ac7dfb13a3de59b402d177d0fc3069c46}} 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} {\bfseries regspace} (const double \&start, const double \&delta, const std\+::size\+\_\+t \&n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Containers}{Osl\+::\+Maths\+::\+Containers}} namespace which provides a set of convenient functions for mathematic containers generation. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_a8998b6ca8812d5499d22aed382276ea3}\label{namespaceOsl_1_1Maths_1_1Containers_a8998b6ca8812d5499d22aed382276ea3}} 
+\index{Osl::Maths::Containers@{Osl::Maths::Containers}!linspace@{linspace}}
+\index{linspace@{linspace}!Osl::Maths::Containers@{Osl::Maths::Containers}}
+\doxysubsubsection{\texorpdfstring{linspace()}{linspace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} Osl\+::\+Maths\+::\+Containers\+::linspace (\begin{DoxyParamCaption}\item[{const double \&}]{start,  }\item[{const double \&}]{stop,  }\item[{const std\+::size\+\_\+t \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate a linearly spaced vector. 
+
+\DoxyHorRuler{0}
+ Generate a linearly spaced vector from {\itshape start} to {\itshape stop} containing {\itshape n} linearly spaced points.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em start,stop} & the start and stop values of the linspaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & the number of elements in the linspaced vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x the linearly spaced vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_a5015d81b0a024a45ba9735f40f66ee2b}\label{namespaceOsl_1_1Maths_1_1Containers_a5015d81b0a024a45ba9735f40f66ee2b}} 
+\index{Osl::Maths::Containers@{Osl::Maths::Containers}!linspace@{linspace}}
+\index{linspace@{linspace}!Osl::Maths::Containers@{Osl::Maths::Containers}}
+\doxysubsubsection{\texorpdfstring{linspace()}{linspace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Containers\+::linspace (\begin{DoxyParamCaption}\item[{const double \&}]{start,  }\item[{const double \&}]{stop,  }\item[{const std\+::size\+\_\+t \&}]{n,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate a linearly spaced vector. 
+
+\DoxyHorRuler{0}
+ Generate a linearly spaced vector from {\itshape start} to {\itshape stop} containing {\itshape n} linearly spaced points.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em start,stop} & the start and stop values of the linspaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & the number of elements in the linspaced vector. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & the linearly spaced vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_a69cc116814dbddc069022b932c1a831b}\label{namespaceOsl_1_1Maths_1_1Containers_a69cc116814dbddc069022b932c1a831b}} 
+\index{Osl::Maths::Containers@{Osl::Maths::Containers}!logspace@{logspace}}
+\index{logspace@{logspace}!Osl::Maths::Containers@{Osl::Maths::Containers}}
+\doxysubsubsection{\texorpdfstring{logspace()}{logspace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} Osl\+::\+Maths\+::\+Containers\+::logspace (\begin{DoxyParamCaption}\item[{const double \&}]{start,  }\item[{const double \&}]{stop,  }\item[{const std\+::size\+\_\+t \&}]{n,  }\item[{const double \&}]{base = {\ttfamily 10.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate a logarithmically spaced vector. 
+
+\DoxyHorRuler{0}
+ Generate a logarithmically spaced vector from {\itshape start} to {\itshape stop} containing {\itshape n} points in a given base.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em start,stop} & the start and stop values of the logspaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & the number of elements in the logspaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em base} & the logarithmic base to use, default to base 10. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x the logarithmically spaced vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Containers_ac570a6acfdfcdf279a2298937fd61a40}\label{namespaceOsl_1_1Maths_1_1Containers_ac570a6acfdfcdf279a2298937fd61a40}} 
+\index{Osl::Maths::Containers@{Osl::Maths::Containers}!logspace@{logspace}}
+\index{logspace@{logspace}!Osl::Maths::Containers@{Osl::Maths::Containers}}
+\doxysubsubsection{\texorpdfstring{logspace()}{logspace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Containers\+::logspace (\begin{DoxyParamCaption}\item[{const double \&}]{start,  }\item[{const double \&}]{stop,  }\item[{const std\+::size\+\_\+t \&}]{n,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const double \&}]{base = {\ttfamily 10.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate a logarithmically spaced vector. 
+
+\DoxyHorRuler{0}
+ Generate a logarithmically spaced vector from {\itshape start} to {\itshape stop} containing {\itshape n} points in a given base.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em start,stop} & the start and stop values of the logspaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & the number of elements in the logspaced vector. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & the logarithmically spaced vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em base} & the logarithmic base to use, default to base 10. \\
+\hline
+\end{DoxyParams}

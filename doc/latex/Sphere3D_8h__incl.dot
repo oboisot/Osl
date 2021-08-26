@@ -1,0 +1,40 @@
+digraph "Sphere3D.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Sphere3D.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file of Osl::Geometry::Shape3D::Sphere3D class."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Osl/Geometry/Vector3D.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Vector3D_8h.html",tooltip="Header file of Osl::Geometry::Vector3D class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Osl/Globals.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Globals_8h.html",tooltip="Header file for global typedefs definition."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="cmath",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="complex",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="stdexcept",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Osl/Maths/Comparison\l/almost_equal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$almost__equal_8h.html",tooltip="Header file for the Osl::Maths::Comparison::almost_equal functions."];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Osl/Constants.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Constants_8h.html",tooltip="Header file for the Osl::Constants namespace."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="limits",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Osl/Maths/Comparison\l/almost_one.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$almost__one_8h.html",tooltip="Header file for the Osl::Maths::Comparison::almost_one functions."];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Osl/Maths/Comparison\l/almost_zero.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$almost__zero_8h.html",tooltip="Header file for the Osl::Maths::Comparison::almost_zero functions."];
+  Node12 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Osl/Geometry/Rotation3D.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Rotation3D_8h.html",tooltip="Header file of Osl::Geometry::Rotation3D class."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="unordered_set",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+}

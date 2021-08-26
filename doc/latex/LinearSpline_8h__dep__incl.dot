@@ -1,0 +1,15 @@
+digraph "LinearSpline.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LinearSpline.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file of Osl::Maths::Interpolator::LinearSpline class."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Interpolator.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Interpolator_8h.html",tooltip="Header file of Osl::Maths::Interpolator namespace."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Maths.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Maths_8h.html",tooltip="Header file of Osl::Maths namespace."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Osl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Osl_8h.html",tooltip="Header file for the Osl library."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="LinearSpline.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LinearSpline_8cpp.html",tooltip="Source file of Osl::Maths::Interpolator::LinearSpline class."];
+}

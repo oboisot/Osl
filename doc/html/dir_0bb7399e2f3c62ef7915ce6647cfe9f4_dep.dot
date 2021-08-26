@@ -1,0 +1,18 @@
+digraph "Geometry" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5b8b01df1f6e37df89015ab721df26d0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Osl" fontname="Helvetica", fontsize="10", URL="dir_5b8b01df1f6e37df89015ab721df26d0.html"]
+  subgraph clusterdir_0bb7399e2f3c62ef7915ce6647cfe9f4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0bb7399e2f3c62ef7915ce6647cfe9f4.html"];
+    dir_0bb7399e2f3c62ef7915ce6647cfe9f4 [shape=plaintext label="Geometry"];
+    dir_75ab8dc5d5c1beda15354fdbab594ecf [shape=box label="Interpolator3D" color="black" fillcolor="white" style="filled" URL="dir_75ab8dc5d5c1beda15354fdbab594ecf.html"];
+    dir_a40f6956c5bd149f1a04d7e8ec3869a6 [shape=box label="Shape3D" color="black" fillcolor="white" style="filled" URL="dir_a40f6956c5bd149f1a04d7e8ec3869a6.html"];
+  }
+  }
+  dir_134381abc7ea5127381f5d379b47f885 [shape=box label="Maths" fillcolor="white" style="filled" color="red" URL="dir_134381abc7ea5127381f5d379b47f885.html"];
+  dir_0bb7399e2f3c62ef7915ce6647cfe9f4->dir_a40f6956c5bd149f1a04d7e8ec3869a6 [headlabel="5", labeldistance=1.5 headhref="dir_000005_000006.html"];
+  dir_0bb7399e2f3c62ef7915ce6647cfe9f4->dir_134381abc7ea5127381f5d379b47f885 [headlabel="6", labeldistance=1.5 headhref="dir_000005_000002.html"];
+  dir_0bb7399e2f3c62ef7915ce6647cfe9f4->dir_75ab8dc5d5c1beda15354fdbab594ecf [headlabel="1", labeldistance=1.5 headhref="dir_000005_000009.html"];
+}

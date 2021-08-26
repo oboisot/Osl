@@ -1,0 +1,546 @@
+\hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{}\doxysection{Osl\+::Maths\+::Interpolator\+::Complex\+Cubic\+Spline Class Reference}
+\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+
+
+Class to construct a piecewise Cubic Spline interpolator from complex data.  
+
+
+
+
+{\ttfamily \#include $<$Complex\+Cubic\+Spline.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af869ca3266ed0e4065cce3a46067e6c0}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af869ca3266ed0e4065cce3a46067e6c0}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af869ca3266ed0e4065cce3a46067e6c0}{Complex\+Cubic\+Spline}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ac461c3747143b1ee506442eca168f284}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ac461c3747143b1ee506442eca168f284}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ac461c3747143b1ee506442eca168f284}{Complex\+Cubic\+Spline}} (const \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a75d5513c527036c529771db214c449cd}{Complex\+Cubic\+Spline}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&y, enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Cubic\+Spline\+Boundary}} bc=\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}})
+\begin{DoxyCompactList}\small\item\em Cubic spline interpolator constructor for complex data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ae44946c22ae38e13c5eccaf239123a97}{Complex\+Cubic\+Spline}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&y, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&yp)
+\begin{DoxyCompactList}\small\item\em Hermite cubic spline interpolator constructor for complex data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a868445aec615baf56fe3c124bf551016}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a868445aec615baf56fe3c124bf551016}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a868445aec615baf56fe3c124bf551016}{$\sim$\+Complex\+Cubic\+Spline}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a98cc3c4a02074bdefbbb2f3114d4a2f7}{get\+Xmin}} () const
+\begin{DoxyCompactList}\small\item\em Get minimum x value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3e32be053b4d3889f2a7d3da0eefb143}{get\+Xmax}} () const
+\begin{DoxyCompactList}\small\item\em Get maximum x value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aa078f34b77ed4e8833c1e36453d38906}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Get the defining x axis values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af94b1d3952c83829531288302febeecd}{get\+Coeffs}} (\mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&a, \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&b, \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&c, \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&d)
+\begin{DoxyCompactList}\small\item\em Get the interpolator complex coefficients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aacbe93641531329c59b013489914c38b}{set\+Points}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&y, enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Cubic\+Spline\+Boundary}} bc=\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}})
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} points from $x$ and $y$ data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a7f5d74d5546e9c164209901ab5f3ec3d}{set\+Points}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&y, const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&yp)
+\begin{DoxyCompactList}\small\item\em Set the Cubic\+Spline\+Interpolator points from $x$, $y$ and $y\textnormal{\textquotesingle}$ data using the Nominal cubic spline method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a41e60e0e4fd2195d09d799984feb0eb7}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a41e60e0e4fd2195d09d799984feb0eb7}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a41e60e0e4fd2195d09d799984feb0eb7}{operator=}} (const \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignement from another \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a60f61149bbf042da8783dbf871e37d3b}{operator()}} (const double \&x, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a236fc743b0ecbc4773df237281c244bc}{operator()}} (const double \&x, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&yp)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function and its first derivative at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2f83b4f9dfa0e840049d19501af72055}{operator()}} (const double \&x, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&yp, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&ypp)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function, its first and second derivatives at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a82206bd7e5a91986c8a1dd5982e2061b}{operator()}} (const double \&x, const std\+::size\+\_\+t \&index, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ad3be917069fd17374ce9d38ea4072bb2}{operator()}} (const double \&x, const std\+::size\+\_\+t \&index, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&yp)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function and its derivative at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a43a4428fdb64b76a3b4ed92486f22a39}{operator()}} (const double \&x, const std\+::size\+\_\+t \&index, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&y, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&yp, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&ypp)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function, its first and second derivatives at a given point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_acd4d36bf18f211b3e0a798de47c73f80}{at}} (const double \&x, bool extrapolate=false)
+\begin{DoxyCompactList}\small\item\em Evaluate the complex function at a given point with bound checkings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3212572556f2c2ddd47075ac8308be4b}{prime}} (const double \&x, bool extrapolate=false)
+\begin{DoxyCompactList}\small\item\em Evaluate the first derivative of the complex function at a given point with bound checkings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3133b49d8d2f7cacf71c52d5b417bfd1}{primeprime}} (const double \&x, bool extrapolate=false)
+\begin{DoxyCompactList}\small\item\em Evaluate the second derivative of the complex function at a given point with bound checkings. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2b92bc05c565f33960f5a3959bcb0ea2}{search\+\_\+index\+\_\+for\+\_\+interpolation}} (const double \&xeval)
+\begin{DoxyCompactList}\small\item\em Search the index for spline interpolation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to construct a piecewise Cubic Spline interpolator from complex data. 
+
+\DoxyHorRuler{0}
+ \doxyparagraph*{Principle}
+
+This class defines a one dimensional piecewise cubic spline interpolator. Let a set of evaluation points $(x_k)_{k\in[\vert0;N\vert]}$ of size $N+1$ being in a strictly increasing order\+:
+
+\[ x_0<x_1<\cdots<x_{n-1}<x_n \]
+
+The piecewise cubic spline interpolation function at index $k$ is defined by the third order polynomial\+:
+
+\[ f_k(x)=a_k(x-x_k)^3+b_k(x-x_k)^2+c_k(x-x_k)+d_k,\quad \forall x\in[x_k; x_{k+1}[\quad ; \quad\forall k\in[\vert0;N-1\vert] \]
+
+providing a set of $N$ interpolation functions $(f_k)_{k\in[\vert0;N-1\vert]}$ with their corresponding sets of coefficients $(a_k, b_k, c_k, d_k)_{k\in[\vert0;N-1\vert]}$.
+
+\doxyparagraph*{Computation of the interpolator coefficients}
+
+This class provides two main cubic spline interpolators depending on the available data, to know\+:
+
+
+\begin{DoxyItemize}
+\item A {\bfseries{Cubic Hermite Spline}} when evaluation points $x$, function values $y=f(x)$ and function first derivative values $y\textnormal{\textquotesingle}=f\textnormal{\textquotesingle}(x)$ are given.
+
+Expression of the first derivative of the piecewise cubic spline is simply given by\+:
+
+\[ f\textnormal{\textquotesingle}_k(x)=3a_k(x-x_k)^2+2b_k(x-x_k)+c_k,\quad \forall x\in[x_k; x_{k+1}[\quad ; \quad\forall k\in[\vert0;N-1\vert] \]
+
+Coefficients are thus determined by ensuring continuity of the interpolation function and its first derivative at each interval nodes, resulting in the sytem of equations\+:
+
+\[ \begin{array}{rcl} f_k(x_k) & = & y_k\\ f\textnormal{\textquotesingle}_k(x_k) & = & y\textnormal{\textquotesingle}_k \\ f_k(x_{k+1}) & = & y_{k+1}\\ f\textnormal{\textquotesingle}_k(x_{k+1}) & = & y\textnormal{\textquotesingle}_{k+1} \\ \end{array} \]
+
+Solving this system results in the evaluation of the coefficients for the piecewise cubic interpolation functions $f_k$\+:
+
+\[ \left\{\begin{array}{rcl} a_k & = & \dfrac{1}{(x_{k+1}-x_k)^2}\left(-2 \dfrac{y_{k+1}-y_k}{x_{k+1}-x_k}+y\textnormal{\textquotesingle}_k+y\textnormal{\textquotesingle}_{k+1}\right) \\ b_k & = & \dfrac{1}{x_{k+1}-x_k}\left(3 \dfrac{y_{k+1}-y_k}{x_{k+1}-x_k}-2y\textnormal{\textquotesingle}_k-y\textnormal{\textquotesingle}_{k+1}\right) \\ c_k & = & y\textnormal{\textquotesingle}_k \\ d_k & = & y_k \end{array}\right., \quad\forall k\in[\vert0;N-1\vert] \]
+\item A {\bfseries{Cubic Spline}} when evaluation points $x$ and function values at these points are given $y=f(x)$. The cubic spline interpolant satisfies the following conditions\+:
+\begin{DoxyEnumerate}
+\item $f_k(x_k)=y_k$ ({\itshape value at nodes})
+\item $f_{k+1}(x_{k+1})=f_k(x_{k+1})$ ({\itshape continuity at nodes})
+\item $f\textnormal{\textquotesingle}_{k+1}(x_{k+1})=f\textnormal{\textquotesingle}_k(x_{k+1})$ ({\itshape first derivative continuity at nodes})
+\item $f\textnormal{\textquotesingle}\textnormal{\textquotesingle}_{k+1}(x_{k+1})=f\textnormal{\textquotesingle}\textnormal{\textquotesingle}_k(x_{k+1})$ ({\itshape second derivative continuity at nodes})
+\end{DoxyEnumerate}
+
+Those relationships can be rewritten into the following system for the coefficients of the piecewise cubic spline interpolators (see \cite{Burden_10} pages 146-\/148)\+:
+
+\[ \begin{array}{rclr} d_k & = & y_k & \mbox{ (1)}\\ h_{k-1}b_{k-1}+2(h_{k-1}+h_k)b_k+h_kb_{k+1} & = & \dfrac{3}{h_k}(y_{k+1}-y_k)-\dfrac{3}{h_{k-1}}(y_k-y_{k-1}) & \mbox{ (2)} \\ c_k & = & \dfrac{y_{k+1}-y_k}{h_k}-\dfrac{h_k}{3}(2b_k+b_{k+1}) & \mbox{ (3)} \\ a_k & = & \dfrac{b_{k+1}-b_k}{3h_k} & \mbox{ (4)} \end{array} \]
+
+where $h_k=x_{k+1}-x_k,\quad\forall k\in[\vert0;N-1\vert]$. Equation (1) finds the $d_k$ coefficients and is simply given by data, equation (2) requires to solve a linear system to estimate the $b_k$ coefficients. Once all $b_k$ coefficients are determined, coefficients $c_k$ and $a_k$ are determined through equations (3) and (4), respectively.
+
+System of equation (2) can be written in a matrix form as\+:
+
+\[ A\mathbf{x}=\mathbf{b} \] with\+:
+
+\[ A=\begin{pmatrix} - & - & - & - & - & - \\ h_0 & 2(h_0+h_1) & h_1 & 0 & \cdots & 0 \\ 0 & h_1 & 2(h_1+h_2) & h_2 & \ddots & \vdots \\ \vdots & \ddots & \ddots & \ddots & \ddots & 0 \\ 0 & \cdots & 0 & h_{n-2} & 2(h_{n-2}+h_{n-1}) & h_{n-1} \\ - & - & - & - & - & - \end{pmatrix} \]
+
+\[ \mathbf{x}=\begin{pmatrix} b_0 \\ b_1 \\ \vdots \\ b_n \end{pmatrix} \quad\mbox{and}\quad \mathbf{b}=\begin{pmatrix} - \\ \dfrac{3}{h_1}(y_2-y_1)-\dfrac{3}{h_0}(d_1-d_0) \\ \vdots \\ \dfrac{3}{h_{n-1}}(y_n-y_{n-1})-\dfrac{3}{h_{n-2}}(y_{n-1}-y_{n-2}) \\ - \end{pmatrix} \]
+
+However, equation (2) gives only access to $N-1$ equations for a $N+1$ system of equations (see matrix $A$ and vector $\mathbf{b}$), two more equations are thus required to solve this system.
+
+This can be achieved by imposing two {\bfseries{boundary conditions}} on the cubic spline interpolators, the most classical are\+:
+\begin{DoxyItemize}
+\item The {\bfseries{Natural}} or {\bfseries{Free}} boundary which supposes that the second derivative of the function at first and last points are equal to zero\+: \[ f\textnormal{\textquotesingle}\textnormal{\textquotesingle}_0(x_0)=f\textnormal{\textquotesingle}\textnormal{\textquotesingle}_n(x_n)=0 \] resulting in the two supplementary equations\+: \[ b_0=b_n=0 \] Using these two equations, matrix $A$ is thus equal to\+: \[ A=\begin{pmatrix} 1 & 0 & 0 & \cdots & \cdots & 0 \\ h_0 & 2(h_0+h_1) & h_1 & \ddots & & \vdots \\ 0 & h_1 & 2(h_1+h_2) & h_2 & \ddots & \vdots \\ \vdots & \ddots & \ddots & \ddots & \ddots & 0 \\ \vdots & & \ddots & h_{n-2} & 2(h_{n-2}+h_{n-1}) & h_{n-1} \\ 0 & \cdots & \cdots & 0 & 0 & 1 \end{pmatrix} \] and vector $\mathbf{b}$ to\+: \[ \mathbf{b}=\begin{pmatrix} 0 \\ \dfrac{3}{h_1}(y_2-y_1)-\dfrac{3}{h_0}(d_1-d_0) \\ \vdots \\ \dfrac{3}{h_{n-1}}(y_n-y_{n-1})-\dfrac{3}{h_{n-2}}(y_{n-1}-y_{n-2}) \\ 0 \end{pmatrix} \] The estimation of the piecewise cubic polynomials coefficients requires the inversion of a tridiagonal matrix and follows algorithm 3.\+4 pages 149-\/150 of \cite{Burden_10}.
+\item The {\bfseries{Quadratic}} boundary defines the first and last piecewise polynomials as quadratic polynomials, imposing that\+: \[ a_0=a_{n-1}=0 \] in order to get quadratic polynomials for the first and last interpolator. Plugging these conditions in equation (4), we obtain the matrix $A$\+: \[ A=\begin{pmatrix} 1 & -1 & 0 & \cdots & \cdots & 0 \\ h_0 & 2(h_0+h_1) & h_1 & \ddots & & \vdots \\ 0 & h_1 & 2(h_1+h_2) & h_2 & \ddots & \vdots \\ \vdots & \ddots & \ddots & \ddots & \ddots & 0 \\ \vdots & & \ddots & h_{n-2} & 2(h_{n-2}+h_{n-1}) & h_{n-1} \\ 0 & \cdots & \cdots & 0 & -1 & 1 \end{pmatrix} \] and the corresponding vector $\mathbf{b}$\+: \[ \mathbf{b}=\begin{pmatrix} 0 \\ \dfrac{3}{h_1}(y_2-y_1)-\dfrac{3}{h_0}(d_1-d_0) \\ \vdots \\ \dfrac{3}{h_{n-1}}(y_n-y_{n-1})-\dfrac{3}{h_{n-2}}(y_{n-1}-y_{n-2}) \\ 0 \end{pmatrix} \] Matrix $A$ is a tridiagonal matrix and the Crout factorization for tridiagonal linear systems presented in algorithm 6.\+7 pages 422-\/423 of \cite{Burden_10} is used to estimate the $b_k$ coefficients.
+\item The {\bfseries{Not-\/a-\/\+Knot}} boundary which imposes that the third derivative of the function at the two first and two last piecewise polynomials are continuous\+: \[ f\textnormal{\textquotesingle}\textnormal{\textquotesingle}\textnormal{\textquotesingle}_0(x_1)=f\textnormal{\textquotesingle}\textnormal{\textquotesingle}\textnormal{\textquotesingle}_1(x_1)\quad\mbox{and}\quad f\textnormal{\textquotesingle}\textnormal{\textquotesingle}\textnormal{\textquotesingle}_{n-2}(x_{n-1})=f\textnormal{\textquotesingle}\textnormal{\textquotesingle}\textnormal{\textquotesingle}_{n-1}(x_{n-1}) \] resulting in the two supplementary conditions\+: \[ a_0=a_1\quad\mbox{and}\quad a_{n-2}=a_{n-1} \] which, using equation (4), allows to estimate the matrix $A$ as\+: \[ A=\begin{pmatrix} h_1 & -(h_0+h_1) & h_0 & 0 & \cdots & 0 \\ h_0 & 2(h_0+h_1) & h_1 & 0 & & \vdots \\ 0 & h_1 & 2(h_1+h_2) & h_2 & \ddots & \vdots \\ \vdots & \ddots & \ddots & \ddots & \ddots & 0 \\ \vdots & & 0 & h_{n-2} & 2(h_{n-2}+h_{n-1}) & h_{n-1} \\ 0 & \cdots & 0 & h_{n-1} & -(h_{n-2}+h_{n-1}) & h_{n-2} \end{pmatrix} \] and vector $\mathbf{b}$ to\+: \[ \mathbf{b}=\begin{pmatrix} 0 \\ \dfrac{3}{h_1}(y_2-y_1)-\dfrac{3}{h_0}(d_1-d_0) \\ \vdots \\ \dfrac{3}{h_{n-1}}(y_n-y_{n-1})-\dfrac{3}{h_{n-2}}(y_{n-1}-y_{n-2}) \\ 0 \end{pmatrix} \]
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1CubicSpline}{Cubic\+Spline}} a cubic spline interpolator class for real data. 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a75d5513c527036c529771db214c449cd}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a75d5513c527036c529771db214c449cd}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!ComplexCubicSpline@{ComplexCubicSpline}}
+\index{ComplexCubicSpline@{ComplexCubicSpline}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{ComplexCubicSpline()}{ComplexCubicSpline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::\+Complex\+Cubic\+Spline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{y,  }\item[{enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Cubic\+Spline\+Boundary}}}]{bc = {\ttfamily \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}}} }\end{DoxyParamCaption})}
+
+
+
+Cubic spline interpolator constructor for complex data. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the complex function evaluated at $x$ values. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bc} & an enumeration to determine what boundary condition to use for the cubic spline interpolator. Default to \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ae44946c22ae38e13c5eccaf239123a97}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ae44946c22ae38e13c5eccaf239123a97}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!ComplexCubicSpline@{ComplexCubicSpline}}
+\index{ComplexCubicSpline@{ComplexCubicSpline}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{ComplexCubicSpline()}{ComplexCubicSpline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::\+Complex\+Cubic\+Spline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{y,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{yp }\end{DoxyParamCaption})}
+
+
+
+Hermite cubic spline interpolator constructor for complex data. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the complex function evaluated at $x$ values. \\
+\hline
+\mbox{\texttt{ in}}  & {\em yp} & the values of the complex function first derivative evaluated at $x$ values. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a98cc3c4a02074bdefbbb2f3114d4a2f7}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a98cc3c4a02074bdefbbb2f3114d4a2f7}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!getXmin@{getXmin}}
+\index{getXmin@{getXmin}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{getXmin()}{getXmin()}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::get\+Xmin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get minimum x value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The minimum x value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3e32be053b4d3889f2a7d3da0eefb143}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3e32be053b4d3889f2a7d3da0eefb143}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!getXmax@{getXmax}}
+\index{getXmax@{getXmax}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{getXmax()}{getXmax()}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::get\+Xmax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get maximum x value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The maximum x value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aa078f34b77ed4e8833c1e36453d38906}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aa078f34b77ed4e8833c1e36453d38906}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!getX@{getX}}
+\index{getX@{getX}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the defining x axis values. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+A vector containing the defining x axis values (a copy of the input x vector). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af94b1d3952c83829531288302febeecd}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_af94b1d3952c83829531288302febeecd}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!getCoeffs@{getCoeffs}}
+\index{getCoeffs@{getCoeffs}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{getCoeffs()}{getCoeffs()}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::get\+Coeffs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{a,  }\item[{\mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{b,  }\item[{\mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{c,  }\item[{\mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{d }\end{DoxyParamCaption})}
+
+
+
+Get the interpolator complex coefficients. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & A vector containing the $a_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & A vector containing the $b_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & A vector containing the $c_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em d} & A vector containing the $d_k$ coefficients of the interpolator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The size of these vectors are the size of the input data minus 1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aacbe93641531329c59b013489914c38b}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_aacbe93641531329c59b013489914c38b}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::set\+Points (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{y,  }\item[{enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Cubic\+Spline\+Boundary}}}]{bc = {\ttfamily \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}}} }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} points from $x$ and $y$ data. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the complex function evaluated at $x$ values. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bc} & an enumeration to determine what boundary condition to use for the cubic spline interpolator. Default to \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This setter method initializes a new \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} through its corresponding constructor Complex\+Cubic\+Spline(const vector \&x, const vector \&y, enum Cubic\+Spline\+Boundary bc). 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a7f5d74d5546e9c164209901ab5f3ec3d}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a7f5d74d5546e9c164209901ab5f3ec3d}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::set\+Points (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{y,  }\item[{const \mbox{\hyperlink{namespaceOsl_ad1287dfd39aeb39374626f3a67daa429}{cvector}} \&}]{yp }\end{DoxyParamCaption})}
+
+
+
+Set the Cubic\+Spline\+Interpolator points from $x$, $y$ and $y\textnormal{\textquotesingle}$ data using the Nominal cubic spline method. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the complex function evaluated at $x$ values. \\
+\hline
+\mbox{\texttt{ in}}  & {\em yp} & the values of the complex function first derivative evaluated at $x$ values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This setter method initializes a new \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}} through its corresponding constructor Complex\+Cubic\+Spline(const vector \&x, const vector \&y, const vector \&yp). 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a60f61149bbf042da8783dbf871e37d3b}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a60f61149bbf042da8783dbf871e37d3b}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function at a given point. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated complex value of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a236fc743b0ecbc4773df237281c244bc}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a236fc743b0ecbc4773df237281c244bc}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{yp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function and its first derivative at a given point. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated complex value of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em yp} & the interpolated complex value of the first derivative of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2f83b4f9dfa0e840049d19501af72055}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2f83b4f9dfa0e840049d19501af72055}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{yp,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{ypp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function, its first and second derivatives at a given point. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated complex value of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em yp} & the interpolated complex value of the first derivative of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ypp} & the interpolated complex value of the second derivative of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a82206bd7e5a91986c8a1dd5982e2061b}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a82206bd7e5a91986c8a1dd5982e2061b}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{const std\+::size\+\_\+t \&}]{index,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function at a given point. 
+
+\DoxyHorRuler{0}
+ This function call overload allows efficient call when interpolating between two values of the provided data through the \textquotesingle{}index\textquotesingle{} parameter. (This avoid the search for index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & the index to which compute the interpolated values. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated complex value of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+1. This function call doesn\textquotesingle{}t make bound checkings. 
+
+2. It is up to you to check or be sure that {\itshape index} and the value where the function is interpolated {\itshape x} coincides. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ad3be917069fd17374ce9d38ea4072bb2}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_ad3be917069fd17374ce9d38ea4072bb2}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{const std\+::size\+\_\+t \&}]{index,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{yp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function and its derivative at a given point. 
+
+\DoxyHorRuler{0}
+ This function call overload allows efficient call when interpolating between two values of the provided data through the \textquotesingle{}index\textquotesingle{} parameter. (This avoid the search for index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & the index to which compute the interpolated values. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated complex value of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em yp} & the interpolated complex value of the first derivative of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+1. This function call doesn\textquotesingle{}t make bound checkings. 
+
+2. It is up to you to check or be sure that {\itshape index} and the value where the function is interpolated {\itshape x} coincides. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a43a4428fdb64b76a3b4ed92486f22a39}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a43a4428fdb64b76a3b4ed92486f22a39}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{const std\+::size\+\_\+t \&}]{index,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{y,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{yp,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \&}]{ypp }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function, its first and second derivatives at a given point. 
+
+\DoxyHorRuler{0}
+ This function call overload allows efficient call when interpolating between two values of the provided data through the \textquotesingle{}index\textquotesingle{} parameter. (This avoid the search for index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & the index to which compute the interpolated values. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the complex interpolated value of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em yp} & the interpolated complex value of the first derivative of the function. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ypp} & the interpolated complex value of the second derivative of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+1. This function call doesn\textquotesingle{}t make bound checkings. 
+
+2. It is up to you to check or be sure that {\itshape index} and the value where the function is interpolated {\itshape x} coincides. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_acd4d36bf18f211b3e0a798de47c73f80}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_acd4d36bf18f211b3e0a798de47c73f80}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!at@{at}}
+\index{at@{at}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::at (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{bool}]{extrapolate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Evaluate the complex function at a given point with bound checkings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em extrapolate} & whether to authorize extrapolation or not. Default to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The complex value of the function at the given point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3212572556f2c2ddd47075ac8308be4b}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3212572556f2c2ddd47075ac8308be4b}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!prime@{prime}}
+\index{prime@{prime}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{prime()}{prime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::prime (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{bool}]{extrapolate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Evaluate the first derivative of the complex function at a given point with bound checkings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em extrapolate} & whether to authorize extrapolation or not. Default to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The complex value of the first derivative of the function at the given point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3133b49d8d2f7cacf71c52d5b417bfd1}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a3133b49d8d2f7cacf71c52d5b417bfd1}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!primeprime@{primeprime}}
+\index{primeprime@{primeprime}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{primeprime()}{primeprime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::primeprime (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{bool}]{extrapolate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Evaluate the second derivative of the complex function at a given point with bound checkings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em extrapolate} & whether to authorize extrapolation or not. Default to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The complex value of the second derivative of the function at the given point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2b92bc05c565f33960f5a3959bcb0ea2}\label{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline_a2b92bc05c565f33960f5a3959bcb0ea2}} 
+\index{Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}!search\_index\_for\_interpolation@{search\_index\_for\_interpolation}}
+\index{search\_index\_for\_interpolation@{search\_index\_for\_interpolation}!Osl::Maths::Interpolator::ComplexCubicSpline@{Osl::Maths::Interpolator::ComplexCubicSpline}}
+\doxysubsubsection{\texorpdfstring{search\_index\_for\_interpolation()}{search\_index\_for\_interpolation()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Osl\+::\+Maths\+::\+Interpolator\+::\+Complex\+Cubic\+Spline\+::search\+\_\+index\+\_\+for\+\_\+interpolation (\begin{DoxyParamCaption}\item[{const double \&}]{xeval }\end{DoxyParamCaption})}
+
+
+
+Search the index for spline interpolation. 
+
+\DoxyHorRuler{0}
+ This function makes use of binary search to find the first index $i$ of reference axis $x[i]$ (in strictly increasing order) such that, for the search value $x_{eval}$\+:
+
+\[ x_{eval} \geq x[i] \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xeval} & the value for which the index is searched. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index to evaluate the spline function at xeval. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+1. If $x_{eval}\geq\underset{i}{\max}(x[i])$, last index minus 1 is returned. 
+
+2. If $x_{eval}\leq\underset{i}{\min}(x[i])$, index 0 is returned. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ComplexCubicSpline_8h}{Complex\+Cubic\+Spline.\+h}}\item 
+Complex\+Cubic\+Spline.\+cpp\end{DoxyCompactItemize}

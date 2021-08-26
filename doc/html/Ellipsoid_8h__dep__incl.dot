@@ -1,0 +1,20 @@
+digraph "Ellipsoid.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Ellipsoid.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file of Osl::Geography::Ellipsoid class."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Ellipsoid.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ellipsoid_8cpp.html",tooltip="Source file of Osl::Geography::Ellipsoid class."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Geography.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Geography_8h.html",tooltip="Header file of Osl::Geography namespace."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Osl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Osl_8h.html",tooltip="Header file for the Osl library."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GeoPoint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$GeoPoint_8h.html",tooltip="Header file of Osl::Geography::GeoPoint class."];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="GeoPoint.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$GeoPoint_8cpp.html",tooltip="Source file of Osl::Geography::GeoPoint class."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LocalCartesian.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LocalCartesian_8h.html",tooltip="Header file of Osl::Geography::LocalENU and Osl::Geography::LocalNED."];
+}

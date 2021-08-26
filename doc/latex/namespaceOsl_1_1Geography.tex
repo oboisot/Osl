@@ -1,0 +1,200 @@
+\hypertarget{namespaceOsl_1_1Geography}{}\doxysection{Osl\+::Geography Namespace Reference}
+\label{namespaceOsl_1_1Geography}\index{Osl::Geography@{Osl::Geography}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}
+\begin{DoxyCompactList}\small\item\em Class to manage \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} of revolution for geographic applications. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}{Ellipsoid\+Init}} \{ \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}}, 
+\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}{Ellipsoid\+Init\+::from\+Radius\+And\+Radius}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the initialization of the Ellipsoid class. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}{Geo\+Point\+Init}} \{ \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}{Geo\+Point\+Init\+::from\+Geodetic}}, 
+\mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a75cfea2f7defaa5b582777988ed6d7ea}{Geo\+Point\+Init\+::from\+Geocentric}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the initialization of the Geo\+Point class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceOsl_1_1Geography_a409a02ba5df61b284af6ca6c5807b5ed}{dd\+\_\+to\+\_\+dms}} (const double \&dd, double \&d, double \&m, double \&s)
+\begin{DoxyCompactList}\small\item\em Convert geodetic coordinates from decimal degrees to Degrees-\/\+Minutes-\/\+Seconds (D\+MS). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespaceOsl_1_1Geography_aad1865be85da9e900e544a12a6ee9b4b}{dms\+\_\+to\+\_\+dd}} (const double \&d, const double \&m, const double \&s)
+\begin{DoxyCompactList}\small\item\em Convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceOsl_1_1Geography_a6e07f5d0893f3f57e2f71cdae3fd156e}{dms\+\_\+to\+\_\+dd}} (const double \&d, const double \&m, const double \&s, double \&dd)
+\begin{DoxyCompactList}\small\item\em Convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \mbox{\hyperlink{namespaceOsl_1_1Geography_a6e21db6344b2ac8c66521d2ba446d20d}{Clk80\+I\+GN}} (\mbox{\hyperlink{namespaceOsl_1_1Constants_a293a0895d576560c7c0e44b0aa49f6fb}{Constants\+::\+C\+L\+K80\+I\+G\+N\+\_\+a}}, \mbox{\hyperlink{namespaceOsl_1_1Constants_ae69f3d240bf3150a296fa31ffea2aade}{Constants\+::\+C\+L\+K80\+I\+G\+N\+\_\+b}}, \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}{Ellipsoid\+Init\+::from\+Radius\+And\+Radius}})
+\begin{DoxyCompactList}\small\item\em The Clarke 1880 I\+GN \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \mbox{\hyperlink{namespaceOsl_1_1Geography_acddc4fe3134afad79005b4619c48b4bd}{G\+R\+S80}} (\mbox{\hyperlink{namespaceOsl_1_1Constants_afa0497ccfb6d442e354fc6b965834b23}{Constants\+::\+G\+R\+S80\+\_\+a}}, \mbox{\hyperlink{namespaceOsl_1_1Constants_a494cb2462c3e0252f78d55573b2ca45e}{Constants\+::\+G\+R\+S80\+\_\+f}}, \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}})
+\begin{DoxyCompactList}\small\item\em The G\+R\+S80 \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \mbox{\hyperlink{namespaceOsl_1_1Geography_aa7f30626a8d95b1e3e8bc1c56ebb1b30}{W\+G\+S84}} (\mbox{\hyperlink{namespaceOsl_1_1Constants_a009b387b9487e64d682a9ba1c72c5adb}{Constants\+::\+W\+G\+S84\+\_\+a}}, \mbox{\hyperlink{namespaceOsl_1_1Constants_adf92bc416ef648b757030f4b1d3e700b}{Constants\+::\+W\+G\+S84\+\_\+f}}, \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}})
+\begin{DoxyCompactList}\small\item\em The W\+G\+S84 \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{namespaceOsl_1_1Geography}{Osl\+::\+Geography}} namespace which provides a set of geographic Classes and functions. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}\label{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}} 
+\index{Osl::Geography@{Osl::Geography}!EllipsoidInit@{EllipsoidInit}}
+\index{EllipsoidInit@{EllipsoidInit}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{EllipsoidInit}{EllipsoidInit}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}{Osl\+::\+Geography\+::\+Ellipsoid\+Init}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for the initialization of the \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} class. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fromRadiusAndFlattening@{fromRadiusAndFlattening}!Osl::Geography@{Osl::Geography}}\index{Osl::Geography@{Osl::Geography}!fromRadiusAndFlattening@{fromRadiusAndFlattening}}}\mbox{\Hypertarget{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}\label{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}} 
+from\+Radius\+And\+Flattening&\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} initialization from equatorial radius and flattening. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fromRadiusAndRadius@{fromRadiusAndRadius}!Osl::Geography@{Osl::Geography}}\index{Osl::Geography@{Osl::Geography}!fromRadiusAndRadius@{fromRadiusAndRadius}}}\mbox{\Hypertarget{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}\label{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}} 
+from\+Radius\+And\+Radius&\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} initialization from equatorial and polar radius. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}\label{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}} 
+\index{Osl::Geography@{Osl::Geography}!GeoPointInit@{GeoPointInit}}
+\index{GeoPointInit@{GeoPointInit}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{GeoPointInit}{GeoPointInit}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2}{Osl\+::\+Geography\+::\+Geo\+Point\+Init}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for the initialization of the \mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} class. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fromGeodetic@{fromGeodetic}!Osl::Geography@{Osl::Geography}}\index{Osl::Geography@{Osl::Geography}!fromGeodetic@{fromGeodetic}}}\mbox{\Hypertarget{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}\label{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a94454094fc58a59453c2312c01041bae}} 
+from\+Geodetic&\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} initialization from geodetic coordinates. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fromGeocentric@{fromGeocentric}!Osl::Geography@{Osl::Geography}}\index{Osl::Geography@{Osl::Geography}!fromGeocentric@{fromGeocentric}}}\mbox{\Hypertarget{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a75cfea2f7defaa5b582777988ed6d7ea}\label{namespaceOsl_1_1Geography_a2bbbbca9c7984d358cb76da0108fb7d2a75cfea2f7defaa5b582777988ed6d7ea}} 
+from\+Geocentric&\mbox{\hyperlink{classOsl_1_1Geography_1_1GeoPoint}{Geo\+Point}} initialization from geocentric coordinates. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_a409a02ba5df61b284af6ca6c5807b5ed}\label{namespaceOsl_1_1Geography_a409a02ba5df61b284af6ca6c5807b5ed}} 
+\index{Osl::Geography@{Osl::Geography}!dd\_to\_dms@{dd\_to\_dms}}
+\index{dd\_to\_dms@{dd\_to\_dms}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{dd\_to\_dms()}{dd\_to\_dms()}}
+{\footnotesize\ttfamily void Osl\+::\+Geography\+::dd\+\_\+to\+\_\+dms (\begin{DoxyParamCaption}\item[{const double \&}]{dd,  }\item[{double \&}]{d,  }\item[{double \&}]{m,  }\item[{double \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert geodetic coordinates from decimal degrees to Degrees-\/\+Minutes-\/\+Seconds (D\+MS). 
+
+\DoxyHorRuler{0}
+ This function allows to convert geodetic coordinates from decimal degrees to Degrees-\/\+Minutes-\/\+Seconds (D\+MS).
+
+Decimal degrees $dd$ are converted to D\+MS coordinates $d$, $m$, $s$ following the algorithm\+:
+
+
+\begin{DoxyEnumerate}
+\item $d = \big\lfloor\left\vert dd\right\vert\big\rfloor$
+\item $m_d = 60\left(\left\vert dd\right\vert-d\right)$
+\item $m = \big\lfloor m_t\big\rfloor$
+\item $s = 60\left(m_t-m\right)$
+\item $d = \mathrm{sign}(dd)d$
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dd} & The decimal degrees representation of the geodetic coordinate. \\
+\hline
+\mbox{\texttt{ out}}  & {\em d,m,s} & The degrees, minutes and seconds representation of the geodetic coordinates in that order. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_aad1865be85da9e900e544a12a6ee9b4b}\label{namespaceOsl_1_1Geography_aad1865be85da9e900e544a12a6ee9b4b}} 
+\index{Osl::Geography@{Osl::Geography}!dms\_to\_dd@{dms\_to\_dd}}
+\index{dms\_to\_dd@{dms\_to\_dd}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{dms\_to\_dd()}{dms\_to\_dd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::dms\+\_\+to\+\_\+dd (\begin{DoxyParamCaption}\item[{const double \&}]{d,  }\item[{const double \&}]{m,  }\item[{const double \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. 
+
+\DoxyHorRuler{0}
+ This function allows to convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. The orientation of the coordinates (North-\/\+South, or West-\/\+East) are taken into account through the sign of the {\itshape d} (degree) parameter with +1 for North or East orientation and -\/1 for South or West orientation.
+
+D\+MS coordinates ( $d$, $m$, $s$) are converted to decimal degrees $dd$ through the relationship\+:
+
+\[ dd=\mathrm{sign}(d)\left(\vert d\vert+\dfrac{m}{60}+\dfrac{s}{3600}\right) \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d,m,s} & The degrees, minutes and seconds representation of the geodetic coordinates in that order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decimal degrees representation of the geodetic coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_a6e07f5d0893f3f57e2f71cdae3fd156e}\label{namespaceOsl_1_1Geography_a6e07f5d0893f3f57e2f71cdae3fd156e}} 
+\index{Osl::Geography@{Osl::Geography}!dms\_to\_dd@{dms\_to\_dd}}
+\index{dms\_to\_dd@{dms\_to\_dd}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{dms\_to\_dd()}{dms\_to\_dd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Geography\+::dms\+\_\+to\+\_\+dd (\begin{DoxyParamCaption}\item[{const double \&}]{d,  }\item[{const double \&}]{m,  }\item[{const double \&}]{s,  }\item[{double \&}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. 
+
+\DoxyHorRuler{0}
+ This function allows to convert geodetic coordinates from Degrees-\/\+Minutes-\/\+Seconds (D\+MS) to decimal degrees. The orientation of the coordinates (North-\/\+South, or West-\/\+East) are taken into account through the sign of the {\itshape d} (degree) parameter with +1 for North or East orientation and -\/1 for South or West orientation.
+
+D\+MS coordinates ( $d$, $m$, $s$) are converted to decimal degrees $dd$ through the relationship\+:
+
+\[ dd=\mathrm{sign}(d)\left(\vert d\vert+\dfrac{m}{60}+\dfrac{s}{3600}\right) \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d,m,s} & The degrees, minutes and seconds representation of the geodetic coordinates in that order. \\
+\hline
+\mbox{\texttt{ out}}  & {\em dd} & The decimal degrees representation of the geodetic coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceOsl_1_1Geography_a6e21db6344b2ac8c66521d2ba446d20d}\label{namespaceOsl_1_1Geography_a6e21db6344b2ac8c66521d2ba446d20d}} 
+\index{Osl::Geography@{Osl::Geography}!Clk80IGN@{Clk80IGN}}
+\index{Clk80IGN@{Clk80IGN}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{Clk80IGN()}{Clk80IGN()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} Osl\+::\+Geography\+::\+Clk80\+I\+GN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_a293a0895d576560c7c0e44b0aa49f6fb}{Constants\+::\+C\+L\+K80\+I\+G\+N\+\_\+a}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_ae69f3d240bf3150a296fa31ffea2aade}{Constants\+::\+C\+L\+K80\+I\+G\+N\+\_\+b}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}{Ellipsoid\+Init\+::from\+Radius\+And\+Radius}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The Clarke 1880 I\+GN \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{namespaceOsl_1_1Geography_acddc4fe3134afad79005b4619c48b4bd}\label{namespaceOsl_1_1Geography_acddc4fe3134afad79005b4619c48b4bd}} 
+\index{Osl::Geography@{Osl::Geography}!GRS80@{GRS80}}
+\index{GRS80@{GRS80}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{GRS80()}{GRS80()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} Osl\+::\+Geography\+::\+G\+R\+S80 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_afa0497ccfb6d442e354fc6b965834b23}{Constants\+::\+G\+R\+S80\+\_\+a}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_a494cb2462c3e0252f78d55573b2ca45e}{Constants\+::\+G\+R\+S80\+\_\+f}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The G\+R\+S80 \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{namespaceOsl_1_1Geography_aa7f30626a8d95b1e3e8bc1c56ebb1b30}\label{namespaceOsl_1_1Geography_aa7f30626a8d95b1e3e8bc1c56ebb1b30}} 
+\index{Osl::Geography@{Osl::Geography}!WGS84@{WGS84}}
+\index{WGS84@{WGS84}!Osl::Geography@{Osl::Geography}}
+\doxysubsubsection{\texorpdfstring{WGS84()}{WGS84()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} Osl\+::\+Geography\+::\+W\+G\+S84 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_a009b387b9487e64d682a9ba1c72c5adb}{Constants\+::\+W\+G\+S84\+\_\+a}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Constants_adf92bc416ef648b757030f4b1d3e700b}{Constants\+::\+W\+G\+S84\+\_\+f}}}]{,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The W\+G\+S84 \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. 
+
+\DoxyHorRuler{0}
+ 

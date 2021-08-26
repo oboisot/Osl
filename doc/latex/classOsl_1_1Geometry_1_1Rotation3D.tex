@@ -1,0 +1,403 @@
+\hypertarget{classOsl_1_1Geometry_1_1Rotation3D}{}\doxysection{Osl\+::Geometry\+::Rotation3D Class Reference}
+\label{classOsl_1_1Geometry_1_1Rotation3D}\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_abca9f76744ff5686d8d0550b66bca167}\label{classOsl_1_1Geometry_1_1Rotation3D_abca9f76744ff5686d8d0550b66bca167}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_abca9f76744ff5686d8d0550b66bca167}{Rotation3D}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a30e82a57ad976fe8eed3a54fe9538c32}{Rotation3D}} (const char \&axis, const double \&angle, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Initialization from axis and angle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_aaf9a1a106510bcbae31a98d7a8096e5d}{Rotation3D}} (const std\+::string \&axis, const double \&angle, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Initialization from axis and angle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a479821bbbf7459cc0da2bc6ee251d58a}{Rotation3D}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&axis, const double \&angle, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Initialization from axis and angle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_ac1ceb0b4ae50c5b50001f3a406b51a1b}{Rotation3D}} (const std\+::string \&convention, const double \&a1, const double \&a2, const double \&a3, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Initialization from Euler angles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_abff59015a14ff817b49c5d577944d1ba}{Rotation3D}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&u1, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&v1, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&u2, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&v2)
+\begin{DoxyCompactList}\small\item\em Initialization from two couple of non colinear vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a3f5aad064138635ad7993014c42c7680}{Rotation3D}} (const double \&m00, const double \&m01, const double \&m02, const double \&m10, const double \&m11, const double \&m12, const double \&m20, const double \&m21, const double \&m22)
+\begin{DoxyCompactList}\small\item\em Initialization from matrix coefficients. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_ae30f546d630a681d4bcdf5ae7bb70883}{Rotation3D}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a693821dc102767d9c3fb186c7a4e7638}\label{classOsl_1_1Geometry_1_1Rotation3D_a693821dc102767d9c3fb186c7a4e7638}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a693821dc102767d9c3fb186c7a4e7638}{$\sim$\+Rotation3D}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a1225253b21c2d0f9fecc7ad497bde5bc}\label{classOsl_1_1Geometry_1_1Rotation3D_a1225253b21c2d0f9fecc7ad497bde5bc}} 
+void {\bfseries set\+Rotation} (const char \&axis, const double \&angle, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a4f662d69101efb9b09879dbd32a2ec6e}\label{classOsl_1_1Geometry_1_1Rotation3D_a4f662d69101efb9b09879dbd32a2ec6e}} 
+void {\bfseries set\+Rotation} (const std\+::string \&axis, const double \&angle, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a01f765458a0e62506ba6dd83663c6cb7}\label{classOsl_1_1Geometry_1_1Rotation3D_a01f765458a0e62506ba6dd83663c6cb7}} 
+void {\bfseries set\+Rotation} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&axis, const double \&angle, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a39fec3e9356f9755017626b7b596b5fb}\label{classOsl_1_1Geometry_1_1Rotation3D_a39fec3e9356f9755017626b7b596b5fb}} 
+void {\bfseries set\+Rotation} (const std\+::string \&convention, const double \&a1, const double \&a2, const double \&a3, bool degrees=true)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a7f4612946c100544765b3c01e2c1b179}\label{classOsl_1_1Geometry_1_1Rotation3D_a7f4612946c100544765b3c01e2c1b179}} 
+void {\bfseries set\+Rotation} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&u1, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&v1, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&u2, const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&v2)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aafdcf30ad14be0fcbe2c8de55e8fac84}\label{classOsl_1_1Geometry_1_1Rotation3D_aafdcf30ad14be0fcbe2c8de55e8fac84}} 
+void {\bfseries set\+Rotation} (const double \&m00, const double \&m01, const double \&m02, const double \&m10, const double \&m11, const double \&m12, const double \&m20, const double \&m21, const double \&m22)
+\item 
+double \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a289f2e14590bd622a0378f6641899728}{get\+Coeff}} (std\+::size\+\_\+t row, std\+::size\+\_\+t col) const
+\begin{DoxyCompactList}\small\item\em Get coefficient of the rotation matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_ab96e64898ead5593c231c413f7a63c64}{matrix}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a64d907d7b8eaeba4f6e025f37fcfb842}{get\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Get roation matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aae60ff28b774b3581e9648de274c80ca}\label{classOsl_1_1Geometry_1_1Rotation3D_aae60ff28b774b3581e9648de274c80ca}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} {\bfseries operator=} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aa45d4c9df4935daa5d95a5f819b535d2}\label{classOsl_1_1Geometry_1_1Rotation3D_aa45d4c9df4935daa5d95a5f819b535d2}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_ab9844758ae7c8e8ba06e4cbb9232a642}\label{classOsl_1_1Geometry_1_1Rotation3D_ab9844758ae7c8e8ba06e4cbb9232a642}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \& {\bfseries operator$\ast$=} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other)
+\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a8a645ebf3101b56cdb2c14c5b60a8158}{operator$\ast$}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&vec)
+\begin{DoxyCompactList}\small\item\em Compute the product of this rotation matrix to a vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a2f281db3abdfed22372d3ec9e6542930}{operator==}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other) const
+\begin{DoxyCompactList}\small\item\em Check equality between two rotation matrices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a31f4e61e53bdbca228061dfd3b832e20}\label{classOsl_1_1Geometry_1_1Rotation3D_a31f4e61e53bdbca228061dfd3b832e20}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&other) const
+\item 
+double \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_af75210a5616ad28255c8d83a059c8913}{trace}} () const
+\begin{DoxyCompactList}\small\item\em Compute the trace of the rotation matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_aa1176cc64de1550a271ddb67ca858662}{transpose}} () const
+\begin{DoxyCompactList}\small\item\em Compute the matrix transpose of the rotation matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a61f1503557e1b750fb8a5542d6f39241}{inverse}} () const
+\begin{DoxyCompactList}\small\item\em Compute the inverse matrix of the rotation matrix. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a919898363f2986c77e22ece7a082cd81}{is\+Identity}} () const
+\begin{DoxyCompactList}\small\item\em Check if the rotation matrix is the identity matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_abba882609e91419960abc6299a13ea68}{rotation\+Vector}} (bool degrees=true) const
+\begin{DoxyCompactList}\small\item\em Compute the rotation matrix as a \char`\"{}rotation vector\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_aa02243254b8687ddf5f8212841293962}{euler\+Angles}} (const std\+::string \&convention, double \&a1, double \&a2, double \&a3, bool degrees=true) const
+\begin{DoxyCompactList}\small\item\em Compute Euler angles of the rotation matrix following the given convention. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a30e82a57ad976fe8eed3a54fe9538c32}\label{classOsl_1_1Geometry_1_1Rotation3D_a30e82a57ad976fe8eed3a54fe9538c32}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const char \&}]{axis,  }\item[{const double \&}]{angle,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Initialization from axis and angle. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em angle} & \\
+\hline
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aaf9a1a106510bcbae31a98d7a8096e5d}\label{classOsl_1_1Geometry_1_1Rotation3D_aaf9a1a106510bcbae31a98d7a8096e5d}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{axis,  }\item[{const double \&}]{angle,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Initialization from axis and angle. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em angle} & \\
+\hline
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a479821bbbf7459cc0da2bc6ee251d58a}\label{classOsl_1_1Geometry_1_1Rotation3D_a479821bbbf7459cc0da2bc6ee251d58a}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{axis,  }\item[{const double \&}]{angle,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Initialization from axis and angle. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em angle} & \\
+\hline
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_ac1ceb0b4ae50c5b50001f3a406b51a1b}\label{classOsl_1_1Geometry_1_1Rotation3D_ac1ceb0b4ae50c5b50001f3a406b51a1b}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{convention,  }\item[{const double \&}]{a1,  }\item[{const double \&}]{a2,  }\item[{const double \&}]{a3,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Initialization from Euler angles. 
+
+\DoxyHorRuler{0}
+
+
+Initialize the rotation matrix from Euler angles (proper and improper, using intrinsic definition) \begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Euler_angles}{\texttt{ W\+I\+KI}} Returns the rotation \mbox{\hyperlink{namespaceOsl_ab96e64898ead5593c231c413f7a63c64}{matrix}} in the form \+: R = R(c\mbox{[}0\mbox{]},a1) $\ast$ R(c\mbox{[}1\mbox{]},a2) $\ast$ R(c\mbox{[}2\mbox{]},a2) It must be noted that the application of a rotation \mbox{\hyperlink{namespaceOsl_ab96e64898ead5593c231c413f7a63c64}{matrix}} is made from right to left on the resulting \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_abff59015a14ff817b49c5d577944d1ba}\label{classOsl_1_1Geometry_1_1Rotation3D_abff59015a14ff817b49c5d577944d1ba}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{u1,  }\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{u2,  }\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Initialization from two couple of non colinear vectors. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em u1} & \\
+\hline
+{\em v1} & \\
+\hline
+{\em u2} & \\
+\hline
+{\em v2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a3f5aad064138635ad7993014c42c7680}\label{classOsl_1_1Geometry_1_1Rotation3D_a3f5aad064138635ad7993014c42c7680}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const double \&}]{m00,  }\item[{const double \&}]{m01,  }\item[{const double \&}]{m02,  }\item[{const double \&}]{m10,  }\item[{const double \&}]{m11,  }\item[{const double \&}]{m12,  }\item[{const double \&}]{m20,  }\item[{const double \&}]{m21,  }\item[{const double \&}]{m22 }\end{DoxyParamCaption})}
+
+
+
+Initialization from matrix coefficients. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em m00,m01,m02,m10,m11,m12,m20,m21,m22} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_ae30f546d630a681d4bcdf5ae7bb70883}\label{classOsl_1_1Geometry_1_1Rotation3D_ae30f546d630a681d4bcdf5ae7bb70883}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!Rotation3D@{Rotation3D}}
+\index{Rotation3D@{Rotation3D}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{Rotation3D()}{Rotation3D()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Rotation3\+D\+::\+Rotation3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+\DoxyHorRuler{0}
+
+
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a289f2e14590bd622a0378f6641899728}\label{classOsl_1_1Geometry_1_1Rotation3D_a289f2e14590bd622a0378f6641899728}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!getCoeff@{getCoeff}}
+\index{getCoeff@{getCoeff}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{getCoeff()}{getCoeff()}}
+{\footnotesize\ttfamily double Osl\+::\+Geometry\+::\+Rotation3\+D\+::get\+Coeff (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{row,  }\item[{std\+::size\+\_\+t}]{col }\end{DoxyParamCaption}) const}
+
+
+
+Get coefficient of the rotation matrix. 
+
+get\+Coeff 
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a64d907d7b8eaeba4f6e025f37fcfb842}\label{classOsl_1_1Geometry_1_1Rotation3D_a64d907d7b8eaeba4f6e025f37fcfb842}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!getMatrix@{getMatrix}}
+\index{getMatrix@{getMatrix}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{getMatrix()}{getMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab96e64898ead5593c231c413f7a63c64}{matrix}} Osl\+::\+Geometry\+::\+Rotation3\+D\+::get\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get roation matrix. 
+
+get\+Matrix \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a8a645ebf3101b56cdb2c14c5b60a8158}\label{classOsl_1_1Geometry_1_1Rotation3D_a8a645ebf3101b56cdb2c14c5b60a8158}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} Osl\+::\+Geometry\+::\+Rotation3\+D\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Compute the product of this rotation matrix to a vector. 
+
+operator $\ast$ 
+\begin{DoxyParams}{Parameters}
+{\em vec} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a2f281db3abdfed22372d3ec9e6542930}\label{classOsl_1_1Geometry_1_1Rotation3D_a2f281db3abdfed22372d3ec9e6542930}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!operator==@{operator==}}
+\index{operator==@{operator==}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Osl\+::\+Geometry\+::\+Rotation3\+D\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Check equality between two rotation matrices. 
+
+operator == 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+operator != () 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_af75210a5616ad28255c8d83a059c8913}\label{classOsl_1_1Geometry_1_1Rotation3D_af75210a5616ad28255c8d83a059c8913}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!trace@{trace}}
+\index{trace@{trace}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily double Osl\+::\+Geometry\+::\+Rotation3\+D\+::trace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute the trace of the rotation matrix. 
+
+trace \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aa1176cc64de1550a271ddb67ca858662}\label{classOsl_1_1Geometry_1_1Rotation3D_aa1176cc64de1550a271ddb67ca858662}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!transpose@{transpose}}
+\index{transpose@{transpose}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} Osl\+::\+Geometry\+::\+Rotation3\+D\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute the matrix transpose of the rotation matrix. 
+
+transpose \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_a61f1503557e1b750fb8a5542d6f39241}{inverse()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a61f1503557e1b750fb8a5542d6f39241}\label{classOsl_1_1Geometry_1_1Rotation3D_a61f1503557e1b750fb8a5542d6f39241}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!inverse@{inverse}}
+\index{inverse@{inverse}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D}{Rotation3D}} Osl\+::\+Geometry\+::\+Rotation3\+D\+::inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute the inverse matrix of the rotation matrix. 
+
+inverse \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Rotation3D_aa1176cc64de1550a271ddb67ca858662}{transpose()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_a919898363f2986c77e22ece7a082cd81}\label{classOsl_1_1Geometry_1_1Rotation3D_a919898363f2986c77e22ece7a082cd81}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!isIdentity@{isIdentity}}
+\index{isIdentity@{isIdentity}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{isIdentity()}{isIdentity()}}
+{\footnotesize\ttfamily bool Osl\+::\+Geometry\+::\+Rotation3\+D\+::is\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the rotation matrix is the identity matrix. 
+
+is\+Identity \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_abba882609e91419960abc6299a13ea68}\label{classOsl_1_1Geometry_1_1Rotation3D_abba882609e91419960abc6299a13ea68}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!rotationVector@{rotationVector}}
+\index{rotationVector@{rotationVector}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{rotationVector()}{rotationVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} Osl\+::\+Geometry\+::\+Rotation3\+D\+::rotation\+Vector (\begin{DoxyParamCaption}\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+
+
+Compute the rotation matrix as a \char`\"{}rotation vector\char`\"{}. 
+
+get\+Rotation\+Vector 
+\begin{DoxyParams}{Parameters}
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation vector
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Axis\%E2\%80\%93angle_representation\#Rotation_vector}{\texttt{ W\+I\+KI}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Rotation3D_aa02243254b8687ddf5f8212841293962}\label{classOsl_1_1Geometry_1_1Rotation3D_aa02243254b8687ddf5f8212841293962}} 
+\index{Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}!eulerAngles@{eulerAngles}}
+\index{eulerAngles@{eulerAngles}!Osl::Geometry::Rotation3D@{Osl::Geometry::Rotation3D}}
+\doxysubsubsection{\texorpdfstring{eulerAngles()}{eulerAngles()}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Rotation3\+D\+::euler\+Angles (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{convention,  }\item[{double \&}]{a1,  }\item[{double \&}]{a2,  }\item[{double \&}]{a3,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+
+
+Compute Euler angles of the rotation matrix following the given convention. 
+
+get\+Euler\+Angles 
+\begin{DoxyParams}{Parameters}
+{\em convention} & \\
+\hline
+{\em a1} & \\
+\hline
+{\em a2} & \\
+\hline
+{\em a3} & \\
+\hline
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Rotation3D_8h}{Rotation3\+D.\+h}}\item 
+Rotation3\+D.\+cpp\end{DoxyCompactItemize}

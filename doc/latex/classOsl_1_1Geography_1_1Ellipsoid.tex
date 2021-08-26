@@ -1,0 +1,758 @@
+\hypertarget{classOsl_1_1Geography_1_1Ellipsoid}{}\doxysection{Osl\+::Geography\+::Ellipsoid Class Reference}
+\label{classOsl_1_1Geography_1_1Ellipsoid}\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+
+
+Class to manage \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} of revolution for geographic applications.  
+
+
+
+
+{\ttfamily \#include $<$Ellipsoid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ae412f209c7c7764b7e3350f701a0969b}\label{classOsl_1_1Geography_1_1Ellipsoid_ae412f209c7c7764b7e3350f701a0969b}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ae412f209c7c7764b7e3350f701a0969b}{Ellipsoid}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a16ca198b92ce607d2fbba30ad728ed43}\label{classOsl_1_1Geography_1_1Ellipsoid_a16ca198b92ce607d2fbba30ad728ed43}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a16ca198b92ce607d2fbba30ad728ed43}{Ellipsoid}} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a7d790a6e7d77989314fd062c5a7ced08}{Ellipsoid}} (const double \&a, const double \&f, enum \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}{Ellipsoid\+Init}} init=\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aeab8de2f7ccee2c49b0a7358431ba175}\label{classOsl_1_1Geography_1_1Ellipsoid_aeab8de2f7ccee2c49b0a7358431ba175}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aeab8de2f7ccee2c49b0a7358431ba175}{$\sim$\+Ellipsoid}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a2aa79b8a785141c24ea3febf5771a970}{get\+Equatorial\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get the equatorial radius of the ellipsoid $a$ in meters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ad5017d543bd5cbc57ca15b628bd5a397}{get\+Polar\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get the polar radius of the ellipsoid $b$ in meters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a7540a4c37a911dc9700e259a6722ec33}{get\+First\+Flattening}} () const
+\begin{DoxyCompactList}\small\item\em Get the first flattening parameter $f$ of the ellipsoid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aa3e17f4e3f11a7a0d852ac914927eb56}{get\+Second\+Flattening}} () const
+\begin{DoxyCompactList}\small\item\em Get the second flattening parameter $f_2$ of the ellipsoid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a36cbf392a84b745a5f3452ef10c0f299}{get\+Third\+Flattening}} () const
+\begin{DoxyCompactList}\small\item\em Get the third flattening parameter $n$ of the ellipsoid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a2cd89e2ae53d0e4e1bc31dd769b3b436}{get\+Eccentricity}} () const
+\begin{DoxyCompactList}\small\item\em Get the eccentriciy $e$ of the ellipsoid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aefc2f0dc91eb155320a0a298aec5d2d9}{get\+Eccentricity\+Squared}} () const
+\begin{DoxyCompactList}\small\item\em Get the eccentriciy squared $e^2$ of the ellipsoid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a19e4c6b30e89ddafd7c45c32ef5c9db7}{get\+Quarter\+Meridian\+Distance}} () const
+\begin{DoxyCompactList}\small\item\em Get the quarter meridian distance $m_p$ of the ellipsoid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aa309459a9e503236f047630b6d1812e2}\label{classOsl_1_1Geography_1_1Ellipsoid_aa309459a9e503236f047630b6d1812e2}} 
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} {\bfseries operator=} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&other)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a7b5ac2e119199960e97f96616c3236d2}\label{classOsl_1_1Geography_1_1Ellipsoid_a7b5ac2e119199960e97f96616c3236d2}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&other) const
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aee8aebfc2f48ba1496769ba05aae7444}\label{classOsl_1_1Geography_1_1Ellipsoid_aee8aebfc2f48ba1496769ba05aae7444}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} \&other) const
+\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}{meridian\+Distance}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Compute the meridian distance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ae746f508aa760631c147a55c0af019b0}{meridian\+Curvature\+Radius}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Meridian curvature radius. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a5c82a35189ac6f794211637058e507b6}{prime\+Vertical\+Curvature\+Radius}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Prime Vertical Curvature Radius. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a61f054a64c5cd545ec5b926585555bae}{curvature\+Radius}} (const double \&lat, const double \&alpha, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Curvature Radius. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a0db58303ed7cc2afbfdd0e4e54d7d95d}{geocentric\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Geocentric Latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a1d7c4fe7c129262420da489c93656afe}{inverse\+Geocentric\+Latitude}} (const double \&theta, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse Geocentric Latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ae16a2afc64ef3064667b9375f8fe6665}{parametric\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Parametric (reduced) Latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_adc7fb8e2aa2a8a1092b0c40137dd8f2f}{inverse\+Parametric\+Latitude}} (const double \&beta, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse parametric latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a3f0139b6f5888206cec7f0a046b76633}{rectifying\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Rectifying latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac7eb5a06735f1c75e0aa5a6ce806fda8}{inverse\+Rectifying\+Latitude}} (const double \&mu, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse rectifying latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aa20acbfc04b79f6665adfed025b5158e}{authalic\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Authalic latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a3d7479df4804b75816b15fae36f19569}{inverse\+Authalic\+Latitude}} (const double \&xi, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse authalic latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aa564eb087765788973dc57849a005e9d}{conformal\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Conformal latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aa0c70ad570bfdf5bb3f082634a65a844}{inverse\+Conformal\+Latitude}} (const double \&chi, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse conformal latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a4a54e4f858979e92381687a3022b7367}{isometric\+Latitude}} (const double \&lat, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Isometric latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a734d8de8f6b55a71884758ab5d6da8e5}{inverse\+Isometric\+Latitude}} (const double \&psi, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Inverse isometric latitude. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a5ea1f0d5752f23eb899059a86608ca15}{geodetic\+To\+Geocentric}} (const double \&lon, const double \&lat, const double \&alt, double \&x, double \&y, double \&z, bool degrees=true)
+\begin{DoxyCompactList}\small\item\em Transform geodetic coordinates to geocentric (E\+C\+EF) coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a2a0acb7223d8cad2b10beedd825720f3}{geocentric\+To\+Geodetic}} (const double \&x, const double \&y, const double \&z, double \&lon, double \&lat, double \&alt, bool degrees=true, std\+::size\+\_\+t maxiter=10)
+\begin{DoxyCompactList}\small\item\em Transform geocentric (E\+C\+EF) coordinates to geodetic coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to manage \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} of revolution for geographic applications. 
+
+\DoxyHorRuler{0}
+ This class defines the reference \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} of revolution (also called Spheroid) to be used for geographic applications. The \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}} is generally defined from one of the two following couples\+:
+
+
+\begin{DoxyItemize}
+\item $(a,f)$ $\rightarrow$ (equatorial radius and flattening)
+\item $(a,b)$ $\rightarrow$ (equatorial radius and polar radius)
+\end{DoxyItemize}
+
+\cite{Osborne_13} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a7d790a6e7d77989314fd062c5a7ced08}\label{classOsl_1_1Geography_1_1Ellipsoid_a7d790a6e7d77989314fd062c5a7ced08}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!Ellipsoid@{Ellipsoid}}
+\index{Ellipsoid@{Ellipsoid}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{Ellipsoid()}{Ellipsoid()}}
+{\footnotesize\ttfamily Osl\+::\+Geography\+::\+Ellipsoid\+::\+Ellipsoid (\begin{DoxyParamCaption}\item[{const double \&}]{a,  }\item[{const double \&}]{f,  }\item[{enum \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910}{Ellipsoid\+Init}}}]{init = {\ttfamily \mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}}} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid}{Ellipsoid}}. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & The equatorial radius of the ellipsoid in meters. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f} & if init=\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910ab51e9b26750aa5ce359de5fe1111abb6}{Ellipsoid\+Init\+::from\+Radius\+And\+Flattening}} use the flattening of the ellispoid, if init=\mbox{\hyperlink{namespaceOsl_1_1Geography_ac3c1834577afd620c24d213fc44b8910a17e107f80dfa4378df485b3f42766fd2}{Ellipsoid\+Init\+::from\+Radius\+And\+Radius}} use the polar radius of the ellipsoid in meters. \\
+\hline
+\mbox{\texttt{ in}}  & {\em init} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a2aa79b8a785141c24ea3febf5771a970}\label{classOsl_1_1Geography_1_1Ellipsoid_a2aa79b8a785141c24ea3febf5771a970}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getEquatorialRadius@{getEquatorialRadius}}
+\index{getEquatorialRadius@{getEquatorialRadius}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getEquatorialRadius()}{getEquatorialRadius()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Equatorial\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the equatorial radius of the ellipsoid $a$ in meters. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ad5017d543bd5cbc57ca15b628bd5a397}\label{classOsl_1_1Geography_1_1Ellipsoid_ad5017d543bd5cbc57ca15b628bd5a397}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getPolarRadius@{getPolarRadius}}
+\index{getPolarRadius@{getPolarRadius}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getPolarRadius()}{getPolarRadius()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Polar\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the polar radius of the ellipsoid $b$ in meters. 
+
+\DoxyHorRuler{0}
+ The Polar radius is related to the first flattening parameter $f$ or the eccentricity $e$ through the relationships\+:
+
+\[ b=a(1-f)=a\sqrt{1-e^2} \] \mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a7540a4c37a911dc9700e259a6722ec33}\label{classOsl_1_1Geography_1_1Ellipsoid_a7540a4c37a911dc9700e259a6722ec33}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getFirstFlattening@{getFirstFlattening}}
+\index{getFirstFlattening@{getFirstFlattening}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getFirstFlattening()}{getFirstFlattening()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+First\+Flattening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the first flattening parameter $f$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ The first flattening parameter $f$ is related to the ellipsoid of revolution radii through the relationship\+:
+
+\[ f=\dfrac{a-b}{a} \]
+
+If $f<0$ the ellipsoid is called {\itshape oblate} (as for the terrestrial ellipsoids), if $f>0$ it is called {\itshape prolate} and, in the case where $f=0$ the ellipsoid becomes a sphere. \mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aa3e17f4e3f11a7a0d852ac914927eb56}\label{classOsl_1_1Geography_1_1Ellipsoid_aa3e17f4e3f11a7a0d852ac914927eb56}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getSecondFlattening@{getSecondFlattening}}
+\index{getSecondFlattening@{getSecondFlattening}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getSecondFlattening()}{getSecondFlattening()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Second\+Flattening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the second flattening parameter $f_2$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ The second flattening parameter $f_2$ is related to the ellipsoid of revolution radii through the relationship\+:
+
+\[ f_2=\dfrac{a-b}{b} \] \mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a36cbf392a84b745a5f3452ef10c0f299}\label{classOsl_1_1Geography_1_1Ellipsoid_a36cbf392a84b745a5f3452ef10c0f299}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getThirdFlattening@{getThirdFlattening}}
+\index{getThirdFlattening@{getThirdFlattening}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getThirdFlattening()}{getThirdFlattening()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Third\+Flattening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the third flattening parameter $n$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ The third flattening parameter $n$ is related to the ellipsoid of revolution radii or the first flattening parameter through the relationships\+:
+
+\[ n=\dfrac{a-b}{a+b}=\dfrac{f}{2-f} \] \mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a2cd89e2ae53d0e4e1bc31dd769b3b436}\label{classOsl_1_1Geography_1_1Ellipsoid_a2cd89e2ae53d0e4e1bc31dd769b3b436}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getEccentricity@{getEccentricity}}
+\index{getEccentricity@{getEccentricity}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getEccentricity()}{getEccentricity()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Eccentricity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the eccentriciy $e$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ The eccentricity $e$ is related to the first flattening parameter $f$ through the relationship\+:
+
+\[ e=\sqrt{f(2-f)} \]
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_aefc2f0dc91eb155320a0a298aec5d2d9}{get\+Eccentricity\+Squared}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aefc2f0dc91eb155320a0a298aec5d2d9}\label{classOsl_1_1Geography_1_1Ellipsoid_aefc2f0dc91eb155320a0a298aec5d2d9}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getEccentricitySquared@{getEccentricitySquared}}
+\index{getEccentricitySquared@{getEccentricitySquared}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getEccentricitySquared()}{getEccentricitySquared()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Eccentricity\+Squared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the eccentriciy squared $e^2$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a2cd89e2ae53d0e4e1bc31dd769b3b436}{get\+Eccentricity}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a19e4c6b30e89ddafd7c45c32ef5c9db7}\label{classOsl_1_1Geography_1_1Ellipsoid_a19e4c6b30e89ddafd7c45c32ef5c9db7}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!getQuarterMeridianDistance@{getQuarterMeridianDistance}}
+\index{getQuarterMeridianDistance@{getQuarterMeridianDistance}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{getQuarterMeridianDistance()}{getQuarterMeridianDistance()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::get\+Quarter\+Meridian\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the quarter meridian distance $m_p$ of the ellipsoid. 
+
+\DoxyHorRuler{0}
+ The quarter meridian distance is defined as the distance from the equator to the pole. It is thus defined as the meridian distance (see \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}{Ellipsoid\+::meridian\+Distance}}) evaluated for a latitude of $\pi/2$\+:
+
+\[ m_p=m(\dfrac{\pi}{2})=aE(e) \]
+
+and can be expressed as function of the Legendre\textquotesingle{}s complete elliptic integral of second kind \href{https://dlmf.nist.gov/19.2\#ii}{\texttt{ \mbox{[}D\+L\+MF\mbox{]}}}\+:
+
+\[ E(k)=\int\limits_0^{\pi/2} \sqrt{1-k^2\sin^2\theta}d\theta \]
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}{meridian\+Distance}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}\label{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!meridianDistance@{meridianDistance}}
+\index{meridianDistance@{meridianDistance}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{meridianDistance()}{meridianDistance()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::meridian\+Distance (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Compute the meridian distance. 
+
+\DoxyHorRuler{0}
+ The meridian distance is the distance measured along a meridian from equator to a geodetic latitude $\phi$ and is expressed as\+:
+
+\[ m(\phi)=\int\limits_0^{\phi} \dfrac{a(1-e^2)}{(1-e^2\sin^2(t))^{3/2}}dt \]
+
+This expression can be written as function of the Legendre\textquotesingle{}s incomplete elliptic integral of the third kind $\Pi(\phi,\nu,k)$\+:
+
+\[ m(\phi)=a(1-e^2)\Pi(\phi,e^2,e) \]
+
+with the Legendre\textquotesingle{}s incomplete elliptic integral being defined by \href{https://dlmf.nist.gov/19.2\#ii}{\texttt{ \mbox{[}D\+L\+MF\mbox{]}}}\+:
+
+\[ \Pi(\phi,\alpha^2,k)=\int\limits_0^{\phi}\dfrac{dt} {(1-\alpha^2\sin^2(t))\sqrt{1-k^2\sin^2(t)}} \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & The geodetic latitude. \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & The unit of the given latitude. If true (default) the latitude is provided in degrees, if false it is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The meridian distance from equator to the given latitude in meters. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a3f0139b6f5888206cec7f0a046b76633}{rectifying\+Latitude}}, \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}{meridian\+Distance}} 
+
+\href{https://en.wikipedia.org/wiki/
+              Latitude\#Length_of_a_degree_of_latitude}{\texttt{ \mbox{[}Wikipedia\mbox{]}}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ae746f508aa760631c147a55c0af019b0}\label{classOsl_1_1Geography_1_1Ellipsoid_ae746f508aa760631c147a55c0af019b0}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!meridianCurvatureRadius@{meridianCurvatureRadius}}
+\index{meridianCurvatureRadius@{meridianCurvatureRadius}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{meridianCurvatureRadius()}{meridianCurvatureRadius()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::meridian\+Curvature\+Radius (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Meridian curvature radius. 
+
+Compute the meridian curvature radius at a given latitude $\phi$\+:
+
+\[ \rho(\phi)=\dfrac{a(1-e^2)}{(1-e^2\sin^2\phi)^{3/2}} \]
+
+meridian\+Curvature\+Radius 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a5c82a35189ac6f794211637058e507b6}\label{classOsl_1_1Geography_1_1Ellipsoid_a5c82a35189ac6f794211637058e507b6}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!primeVerticalCurvatureRadius@{primeVerticalCurvatureRadius}}
+\index{primeVerticalCurvatureRadius@{primeVerticalCurvatureRadius}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{primeVerticalCurvatureRadius()}{primeVerticalCurvatureRadius()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::prime\+Vertical\+Curvature\+Radius (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Prime Vertical Curvature Radius. 
+
+Compute the prime vertical curvature radius at a given latitude $\phi$\+:
+
+\[ \nu(\phi)=\dfrac{a}{\sqrt{1-e^2\sin^2\phi}} \]
+
+prime\+Vertical\+Curvature\+Radius 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a61f054a64c5cd545ec5b926585555bae}\label{classOsl_1_1Geography_1_1Ellipsoid_a61f054a64c5cd545ec5b926585555bae}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!curvatureRadius@{curvatureRadius}}
+\index{curvatureRadius@{curvatureRadius}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{curvatureRadius()}{curvatureRadius()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::curvature\+Radius (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{const double \&}]{alpha,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Curvature Radius. 
+
+Compute the curvature radius of a point on the ellispoid at a given geodetic latitude $\phi$ orientated following a given azimut $\alpha$\+:
+
+\[ \dfrac{1}{R(\phi,\alpha)}= \dfrac{\cos^2(\alpha)}{\rho(\phi)}+\dfrac{\sin^2(\alpha)}{\nu(\phi)} \]
+
+where $\rho(\phi)$ and $\nu(\phi)$ are the meridian curvature radius and the prime vertical curvature radius of the ellipsoid at latitude $\phi$, respectively.
+
+curvature\+Radius 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ae746f508aa760631c147a55c0af019b0}{meridian\+Curvature\+Radius}}, \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a5c82a35189ac6f794211637058e507b6}{prime\+Vertical\+Curvature\+Radius}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a0db58303ed7cc2afbfdd0e4e54d7d95d}\label{classOsl_1_1Geography_1_1Ellipsoid_a0db58303ed7cc2afbfdd0e4e54d7d95d}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!geocentricLatitude@{geocentricLatitude}}
+\index{geocentricLatitude@{geocentricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{geocentricLatitude()}{geocentricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::geocentric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Geocentric Latitude. 
+
+Compute the geocentric latitude $\theta$ as function of the geodetic latitude $\phi$\+:
+
+\[ \theta(\phi)=\arctan\left((1-e^2)\tan(\phi)\right) \]
+
+geocentric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Latitude\#Auxiliary_latitudes}{\texttt{ W\+I\+KI}} 
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a1d7c4fe7c129262420da489c93656afe}{inverse\+Geocentric\+Latitude}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a1d7c4fe7c129262420da489c93656afe}\label{classOsl_1_1Geography_1_1Ellipsoid_a1d7c4fe7c129262420da489c93656afe}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseGeocentricLatitude@{inverseGeocentricLatitude}}
+\index{inverseGeocentricLatitude@{inverseGeocentricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseGeocentricLatitude()}{inverseGeocentricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Geocentric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{theta,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse Geocentric Latitude. 
+
+Compute the geodetic latitude $\phi$ as function of the geocentric latitude $\theta$\+:
+
+\[ \phi(\theta)=\arctan\left(\dfrac{\tan(\theta)}{1-e^2}\right) \]
+
+inverse\+Geocentric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em theta} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a0db58303ed7cc2afbfdd0e4e54d7d95d}{geocentric\+Latitude}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ae16a2afc64ef3064667b9375f8fe6665}\label{classOsl_1_1Geography_1_1Ellipsoid_ae16a2afc64ef3064667b9375f8fe6665}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!parametricLatitude@{parametricLatitude}}
+\index{parametricLatitude@{parametricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{parametricLatitude()}{parametricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::parametric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Parametric (reduced) Latitude. 
+
+Compute the parametric (reduced) latitude $\beta$ as function of the geodetic latitude $\phi$\+:
+
+\[ \beta(\phi)=\arctan\left((1-f)\tan(\phi)\right) \]
+
+parametric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Latitude\#Auxiliary_latitudes}{\texttt{ W\+I\+KI}} 
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_adc7fb8e2aa2a8a1092b0c40137dd8f2f}{inverse\+Parametric\+Latitude}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_adc7fb8e2aa2a8a1092b0c40137dd8f2f}\label{classOsl_1_1Geography_1_1Ellipsoid_adc7fb8e2aa2a8a1092b0c40137dd8f2f}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseParametricLatitude@{inverseParametricLatitude}}
+\index{inverseParametricLatitude@{inverseParametricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseParametricLatitude()}{inverseParametricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Parametric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{beta,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse parametric latitude. 
+
+Compute the geodetic latitude $\phi$ as function of the parametric latitude $\beta$\+:
+
+\[ \phi(\beta)=\arctan\left(\dfrac{\tan(\beta)}{1-f}\right) \]
+
+inverse\+Parametric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em beta} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ae16a2afc64ef3064667b9375f8fe6665}{parametric\+Latitude}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a3f0139b6f5888206cec7f0a046b76633}\label{classOsl_1_1Geography_1_1Ellipsoid_a3f0139b6f5888206cec7f0a046b76633}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!rectifyingLatitude@{rectifyingLatitude}}
+\index{rectifyingLatitude@{rectifyingLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{rectifyingLatitude()}{rectifyingLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::rectifying\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Rectifying latitude. 
+
+Compute the rectifying latitude $\mu$ as function of the geodetic latitude $\phi$\+:
+
+\[ \mu(\phi)=\dfrac{\pi}{2}\dfrac{m(\phi)}{m_p} \]
+
+where $m(\phi)$ is the meridian distance from equator to latitude $\phi$ and $m_p$ is the quarter meridian distance ( $m_p=m(\pi/2)$.
+
+rectifying\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Latitude\#Auxiliary_latitudes}{\texttt{ W\+I\+KI}} 
+
+\mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_ac06a1c3f89525f5cfa2ea77b4d781209}{meridian\+Distance}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_ac7eb5a06735f1c75e0aa5a6ce806fda8}\label{classOsl_1_1Geography_1_1Ellipsoid_ac7eb5a06735f1c75e0aa5a6ce806fda8}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseRectifyingLatitude@{inverseRectifyingLatitude}}
+\index{inverseRectifyingLatitude@{inverseRectifyingLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseRectifyingLatitude()}{inverseRectifyingLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Rectifying\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{mu,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse rectifying latitude. 
+
+TO DO...
+
+inverse\+Rectifying\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mu} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aa20acbfc04b79f6665adfed025b5158e}\label{classOsl_1_1Geography_1_1Ellipsoid_aa20acbfc04b79f6665adfed025b5158e}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!authalicLatitude@{authalicLatitude}}
+\index{authalicLatitude@{authalicLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{authalicLatitude()}{authalicLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::authalic\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Authalic latitude. 
+
+Compute the authalic latitude $\xi$ as function of the geodetic latitude $\phi$\+:
+
+\[ \left\{\begin{array}{rcl} q(\phi) & = &\dfrac{(1-e^2)\sin\phi}{1-e^2\sin^2\phi}+ \dfrac{1-e^2}{e}\mathrm{arctanh}(e\sin\phi)\\ q_p & = & q(\pi/2)=1+\dfrac{1-e^2}{e}\mathrm{arctanh}(e)\\ \xi(\phi) & = & \arcsin\left(\dfrac{q(\phi)}{q_p}\right) \end{array}\right. \]
+
+authalic\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Latitude\#Auxiliary_latitudes}{\texttt{ W\+I\+KI}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a3d7479df4804b75816b15fae36f19569}\label{classOsl_1_1Geography_1_1Ellipsoid_a3d7479df4804b75816b15fae36f19569}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseAuthalicLatitude@{inverseAuthalicLatitude}}
+\index{inverseAuthalicLatitude@{inverseAuthalicLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseAuthalicLatitude()}{inverseAuthalicLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Authalic\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{xi,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse authalic latitude. 
+
+TO DO...
+
+inverse\+Authalic\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xi} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aa564eb087765788973dc57849a005e9d}\label{classOsl_1_1Geography_1_1Ellipsoid_aa564eb087765788973dc57849a005e9d}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!conformalLatitude@{conformalLatitude}}
+\index{conformalLatitude@{conformalLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{conformalLatitude()}{conformalLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::conformal\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Conformal latitude. 
+
+Compute the conformal latitude $\chi$ as function of the geodetic latitude $\phi$\+:
+
+\[ \chi(\phi)=\arcsin\big[\tanh\big(\mathrm{arctanh}(\sin(\phi))- e\mathrm{arctanh}(e\sin(\phi))\big)\big] \]
+
+conformal\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_aa0c70ad570bfdf5bb3f082634a65a844}\label{classOsl_1_1Geography_1_1Ellipsoid_aa0c70ad570bfdf5bb3f082634a65a844}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseConformalLatitude@{inverseConformalLatitude}}
+\index{inverseConformalLatitude@{inverseConformalLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseConformalLatitude()}{inverseConformalLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Conformal\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{chi,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse conformal latitude. 
+
+TO DO...
+
+inverse\+Conformal\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chi} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a4a54e4f858979e92381687a3022b7367}\label{classOsl_1_1Geography_1_1Ellipsoid_a4a54e4f858979e92381687a3022b7367}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!isometricLatitude@{isometricLatitude}}
+\index{isometricLatitude@{isometricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{isometricLatitude()}{isometricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::isometric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{lat,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Isometric latitude. 
+
+Compute the isometric latitude $\psi$ as function of the geodetic latitude $\phi$\+:
+
+\[ \psi(\phi)=\mathrm{arctanh}\big[\sin\big(\chi(\phi)\big)\big] =\mathrm{arctanh}\big[\sin(\phi)\big]- e\mathrm{arctanh}\big[\sin(e\phi)\big] \]
+
+isometric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a734d8de8f6b55a71884758ab5d6da8e5}\label{classOsl_1_1Geography_1_1Ellipsoid_a734d8de8f6b55a71884758ab5d6da8e5}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!inverseIsometricLatitude@{inverseIsometricLatitude}}
+\index{inverseIsometricLatitude@{inverseIsometricLatitude}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{inverseIsometricLatitude()}{inverseIsometricLatitude()}}
+{\footnotesize\ttfamily double Osl\+::\+Geography\+::\+Ellipsoid\+::inverse\+Isometric\+Latitude (\begin{DoxyParamCaption}\item[{const double \&}]{psi,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inverse isometric latitude. 
+
+Compute the geodetic latitude $\phi$ as function of the isometric latitude $\psi$. Computation is made through the inverse conformal latitude\+:
+
+\[ \phi(\psi)=\chi^{-1}\big[\arcsin\big(\tanh(\psi)\big)\big] \]
+
+inverse\+Isometric\+Latitude 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em psi} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a5ea1f0d5752f23eb899059a86608ca15}\label{classOsl_1_1Geography_1_1Ellipsoid_a5ea1f0d5752f23eb899059a86608ca15}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!geodeticToGeocentric@{geodeticToGeocentric}}
+\index{geodeticToGeocentric@{geodeticToGeocentric}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{geodeticToGeocentric()}{geodeticToGeocentric()}}
+{\footnotesize\ttfamily void Osl\+::\+Geography\+::\+Ellipsoid\+::geodetic\+To\+Geocentric (\begin{DoxyParamCaption}\item[{const double \&}]{lon,  }\item[{const double \&}]{lat,  }\item[{const double \&}]{alt,  }\item[{double \&}]{x,  }\item[{double \&}]{y,  }\item[{double \&}]{z,  }\item[{bool}]{degrees = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Transform geodetic coordinates to geocentric (E\+C\+EF) coordinates. 
+
+\DoxyHorRuler{0}
+ Transform geodetic coordinates $(\lambda,\phi,H)$ to geocentric coordinates $(X,Y,Z)$, also knwon as the Earth-\/\+Centered Earth-\/\+Fixed (E\+C\+EF) cartesian coordinates system \href{https://en.wikipedia.org/wiki/ECEF}{\texttt{ \mbox{[}Wiki\mbox{]}}}. The transformation is straightforward from the definition of the ellipsoid\+:
+
+\[ \left\{\begin{array}{rcl} X & = & \big(\nu(\phi) + H\big)\cos(\phi)\cos(\lambda) \\ Y & = & \big(\nu(\phi) + H\big)\cos(\phi)\sin(\lambda) \\ Z & = & \big((1-e^2)\nu(\phi) + H\big)\sin(\phi) \end{array}\right. \]
+
+where $\nu(\phi)$ is the prime vertical curvature radius of the point at latitude $\phi$ (see \mbox{\hyperlink{classOsl_1_1Geography_1_1Ellipsoid_a5c82a35189ac6f794211637058e507b6}{Ellipsoid\+::prime\+Vertical\+Curvature\+Radius}}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lon} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em lat} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em alt} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em z} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOsl_1_1Geography_1_1Ellipsoid_a2a0acb7223d8cad2b10beedd825720f3}\label{classOsl_1_1Geography_1_1Ellipsoid_a2a0acb7223d8cad2b10beedd825720f3}} 
+\index{Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}!geocentricToGeodetic@{geocentricToGeodetic}}
+\index{geocentricToGeodetic@{geocentricToGeodetic}!Osl::Geography::Ellipsoid@{Osl::Geography::Ellipsoid}}
+\doxysubsubsection{\texorpdfstring{geocentricToGeodetic()}{geocentricToGeodetic()}}
+{\footnotesize\ttfamily void Osl\+::\+Geography\+::\+Ellipsoid\+::geocentric\+To\+Geodetic (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{const double \&}]{y,  }\item[{const double \&}]{z,  }\item[{double \&}]{lon,  }\item[{double \&}]{lat,  }\item[{double \&}]{alt,  }\item[{bool}]{degrees = {\ttfamily true},  }\item[{std\+::size\+\_\+t}]{maxiter = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Transform geocentric (E\+C\+EF) coordinates to geodetic coordinates. 
+
+\DoxyHorRuler{0}
+ Transforms geocentric coordinates $(X,Y,Z)$ to geodetic coordinates $(\lambda,\phi,H)$ on an ellipsoid of revolution. The computation is made as follows\+:
+
+
+\begin{DoxyEnumerate}
+\item Longitude $\lambda$ is computed analytically\+:
+
+\[ \lambda=\arctan\left(\frac{Y}{X}\right) \]
+\item Latitude $\phi$ is computed from\+:
+\begin{DoxyEnumerate}
+\item the approximated Bowring\textquotesingle{}s formula \cite{Bowring_85}, \cite{IGN_TCG} \+:
+\end{DoxyEnumerate}
+
+\[ \left\{\begin{array}{rcl} u & = & \arctan\left[\dfrac{Z}{\sqrt{X^2+Y^2}}\left(1-f+ \dfrac{ae^2}{\sqrt{X^2+Y^2+Z^2}}\right)\right] \\ \phi & = & \arctan\left[\dfrac{(1-f)Z+ae^2\sin^3(u)} {(1-f)\left(\sqrt{X^2+Y^2}-ae^2\cos^3(u)\right)}\right] \end{array}\right. \]
+
+This formula provides an accuracy on distances of the order of µm with the W\+G\+S84 Ellipsoïd.
+\begin{DoxyEnumerate}
+\item the computed approximated value can then be improved numerically from iterative method, providing an accurate initial guess. The method used here is the Fixed-\/\+Point Iteration method \cite{WIKI_Fixed_Point_Iteration} by solving the iterative scheme\+:
+\end{DoxyEnumerate}
+
+\[ \phi_{n+1} = \arctan\left[\dfrac{Z+e^2\nu(\phi_n)\sin(\phi_n)} {\sqrt{X^2+Y^2}}\right],\quad n=0,1,2,3,\ldots \]
+
+until the defined numerical precision (here the machine epsilon for double precision floating point type). Initialization of this iterative method with the approximated Bowring\textquotesingle{}s formula provides a very fast convergence of the iterative scheme (generally, one or two iterations are sufficient).
+\item Finally, from longitude and latitude computed previously, altitude is computed from the modified Bowring\textquotesingle{}s expression \cite{Bowring_85} \+:
+
+\[ H=\sqrt{X^2+Y^2}\cos(\phi)+Z\sin(\phi)-a\sqrt{1-e^2\sin^2(\phi)} \]
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y,z} & The geocentric coordinates in meters to be transformed into geodetic coordinates. \\
+\hline
+\mbox{\texttt{ out}}  & {\em lon,lat,alt} & The geodetic coordinates in order\+: longitude, latitude and altitude \mbox{[}in meters\mbox{]}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em degrees} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em maxiter} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Ellipsoid_8h}{Ellipsoid.\+h}}\item 
+\mbox{\hyperlink{Ellipsoid_8cpp}{Ellipsoid.\+cpp}}\end{DoxyCompactItemize}

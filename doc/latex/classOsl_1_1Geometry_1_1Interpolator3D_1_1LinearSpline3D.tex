@@ -1,0 +1,307 @@
+\hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D}{}\doxysection{Osl\+::Geometry\+::Interpolator3D\+::Linear\+Spline3D Class Reference}
+\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D}\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+
+
+Class to construct a piecewise Linear Spline interpolator of a 3D vector.  
+
+
+
+
+{\ttfamily \#include $<$Linear\+Spline3\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7ce0c6f53cd84cafb20e647011acd2dd}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7ce0c6f53cd84cafb20e647011acd2dd}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7ce0c6f53cd84cafb20e647011acd2dd}{Linear\+Spline3D}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a0930d7d2aef40daf9562508741793588}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a0930d7d2aef40daf9562508741793588}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a0930d7d2aef40daf9562508741793588}{Linear\+Spline3D}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D}{Linear\+Spline3D}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a153c61a3b92c6118183f472e71343c1e}{Linear\+Spline3D}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&t, \mbox{\hyperlink{namespaceOsl_1_1Geometry_a5f11c55e57b2de756708564029dd30f5}{vector3d}} vec)
+\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_aadf063aa931c871d5aa208e7e8dd4b9f}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_aadf063aa931c871d5aa208e7e8dd4b9f}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_aadf063aa931c871d5aa208e7e8dd4b9f}{$\sim$\+Linear\+Spline3D}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4c99aee06ba03b80e860039c7a6c0333}{get\+Tmin}} () const
+\begin{DoxyCompactList}\small\item\em Get minimum t value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae03f37cd8ff957a96d7274d8a289a30f}{get\+Tmax}} () const
+\begin{DoxyCompactList}\small\item\em Get maximum t value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ad8688eb8b5eabac05f44e13fa5fd378c}{getT}} () const
+\begin{DoxyCompactList}\small\item\em Get the defining t axis values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7725eddda9c8593878219c0f41735e8d}{get\+CoeffsX}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&a, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&b)
+\begin{DoxyCompactList}\small\item\em Get the interpolator coefficients for x coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd720cb68eadcd6b0ec9ea1e9f5d4a6d}{get\+CoeffsY}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&a, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&b)
+\begin{DoxyCompactList}\small\item\em Get the interpolator coefficients for y coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a6175543458b574c5e04dc753eb114a9a}{get\+CoeffsZ}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&a, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&b)
+\begin{DoxyCompactList}\small\item\em Get the interpolator coefficients for z coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd9037504e840bf8d8250e9051e8e4e2}{set\+Points}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&t, \mbox{\hyperlink{namespaceOsl_1_1Geometry_a5f11c55e57b2de756708564029dd30f5}{vector3d}} vec)
+\begin{DoxyCompactList}\small\item\em Set the Linear\+Spline\+Interpolator3D points from $t$ and {\itshape vec} data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a5415620d786dc6f1bb2b23f5df82dc37}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a5415620d786dc6f1bb2b23f5df82dc37}} 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D}{Linear\+Spline3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a5415620d786dc6f1bb2b23f5df82dc37}{operator=}} (const \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D}{Linear\+Spline3D}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignement from another Linear\+Spline\+Interpolator3D. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4ec55b20aec3ccb7a5e011160e68c799}{operator()}} (const double \&t, \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&vec)
+\begin{DoxyCompactList}\small\item\em Evaluate the vector at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_add7b99f0c15439289b08f92d16946b7f}{operator()}} (const double \&t, const std\+::size\+\_\+t \&index, \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&vec)
+\begin{DoxyCompactList}\small\item\em Evaluate the vector at a given point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \mbox{\hyperlink{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae3b3d05059cba744c4b6db355d832ab3}{vector\+At}} (const double \&t, bool extrapolate=false)
+\begin{DoxyCompactList}\small\item\em Evaluate the vector at a given point with bound checkings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to construct a piecewise Linear Spline interpolator of a 3D vector. 
+
+\DoxyHorRuler{0}
+ \doxyparagraph*{Principle}
+
+Knowing vectors coordinates at a given time $t$, this class defines a Linear Spline interpolator for each x, y and z coordinates of the vectors.
+
+Let a set of temporal points $(t_k)_{k\in[\vert0;N\vert]}$ of size $N+1$ being in a strictly increasing order\+:
+
+\[ t_0<t_1<\cdots<t_{n-1}<t_n \]
+
+with their corresponding coordinates $(x_k, y_k, z_k)_{k\in[\vert0;N\vert]}$.
+
+The piecewise Linear Spline interpolation functions at index $k$ for coordinates x, y and z are defined by the first order polynomials\+:
+
+\[ \begin{split} f_{x,k}(t) & =a_{x,k}(t-t_k)+b_{x,k} \\ f_{y,k}(t) & =a_{y,k}(t-t_k)+b_{y,k} \\ f_{z,k}(t) & =a_{z,k}(t-t_k)+b_{z,k} \end{split} ,\quad\forall t\in[t_k; t_{k+1}[\quad ; \quad\forall k\in[\vert0;N-1\vert] \]
+
+providing a set of $3\times N$ interpolation functions with their corresponding coefficients\+:
+
+\[ \begin{split} (f_{x,k})_{k\in[\vert0;N-1\vert]} & \mbox{ with } (a_{x,k}, b_{x,k})_{k\in[\vert0;N-1\vert]} \\ (f_{y,k})_{k\in[\vert0;N-1\vert]} & \mbox{ with } (a_{y,k}, b_{y,k})_{k\in[\vert0;N-1\vert]} \\ (f_{z,k})_{k\in[\vert0;N-1\vert]} & \mbox{ with } (a_{z,k}, b_{z,k})_{k\in[\vert0;N-1\vert]} \\ \end{split} \]
+
+\doxyparagraph*{Computation of the interpolator coefficients}
+
+Coefficients are determined by ensuring continuity of the interpolation functions (coordinates) at each interval nodes, resulting in the sytem of equations for the $x$ coordinate\+:
+
+\[ \begin{array}{rcl} f_{x,k}(t_k) & = & x_k\\ f_{x,k}(t_{k+1}) & = & x_{k+1}\\ \end{array} \]
+
+Solving this system results in the evaluation of the coefficients for the piecewise cubic interpolation functions $f_{x,k}$\+:
+
+\[ \left\{\begin{array}{rcl} a_{x,k} & = & \dfrac{x_{k+1}-x_{k}}{t_{k+1}-t_k} \\ b_{x,k} & = & x_k \end{array}\right., \quad\forall k\in[\vert0;N-1\vert] \]
+
+The same procedure is applied for y and z coordinates.
+
+\begin{DoxySeeAlso}{See also}
+Maths\+::\+Interpolator\+::\+Linear\+Spline\+Interpolator 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a153c61a3b92c6118183f472e71343c1e}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a153c61a3b92c6118183f472e71343c1e}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!LinearSpline3D@{LinearSpline3D}}
+\index{LinearSpline3D@{LinearSpline3D}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{LinearSpline3D()}{LinearSpline3D()}}
+{\footnotesize\ttfamily Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::\+Linear\+Spline3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{t,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Geometry_a5f11c55e57b2de756708564029dd30f5}{vector3d}}}]{vec }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t,the} & set of time variables \\
+\hline
+{\em vec,the} & set of \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} corresponding to t \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4c99aee06ba03b80e860039c7a6c0333}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4c99aee06ba03b80e860039c7a6c0333}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getTmin@{getTmin}}
+\index{getTmin@{getTmin}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getTmin()}{getTmin()}}
+{\footnotesize\ttfamily double Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::get\+Tmin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get minimum t value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The minimum t value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae03f37cd8ff957a96d7274d8a289a30f}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae03f37cd8ff957a96d7274d8a289a30f}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getTmax@{getTmax}}
+\index{getTmax@{getTmax}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getTmax()}{getTmax()}}
+{\footnotesize\ttfamily double Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::get\+Tmax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get maximum t value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The maximum t value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ad8688eb8b5eabac05f44e13fa5fd378c}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ad8688eb8b5eabac05f44e13fa5fd378c}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getT@{getT}}
+\index{getT@{getT}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getT()}{getT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::getT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the defining t axis values. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+A vector containing the defining t axis values (a copy of the input t vector). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7725eddda9c8593878219c0f41735e8d}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a7725eddda9c8593878219c0f41735e8d}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getCoeffsX@{getCoeffsX}}
+\index{getCoeffsX@{getCoeffsX}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getCoeffsX()}{getCoeffsX()}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::get\+CoeffsX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{a,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Get the interpolator coefficients for x coordinates. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & A vector containing the $a_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & A vector containing the $b_k$ coefficients of the interpolator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The size of these vectors are the size of the input data minus 1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd720cb68eadcd6b0ec9ea1e9f5d4a6d}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd720cb68eadcd6b0ec9ea1e9f5d4a6d}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getCoeffsY@{getCoeffsY}}
+\index{getCoeffsY@{getCoeffsY}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getCoeffsY()}{getCoeffsY()}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::get\+CoeffsY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{a,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Get the interpolator coefficients for y coordinates. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & A vector containing the $a_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & A vector containing the $b_k$ coefficients of the interpolator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The size of these vectors are the size of the input data minus 1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a6175543458b574c5e04dc753eb114a9a}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a6175543458b574c5e04dc753eb114a9a}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!getCoeffsZ@{getCoeffsZ}}
+\index{getCoeffsZ@{getCoeffsZ}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{getCoeffsZ()}{getCoeffsZ()}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::get\+CoeffsZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{a,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Get the interpolator coefficients for z coordinates. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & A vector containing the $a_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & A vector containing the $b_k$ coefficients of the interpolator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The size of these vectors are the size of the input data minus 1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd9037504e840bf8d8250e9051e8e4e2}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_acd9037504e840bf8d8250e9051e8e4e2}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::set\+Points (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{t,  }\item[{\mbox{\hyperlink{namespaceOsl_1_1Geometry_a5f11c55e57b2de756708564029dd30f5}{vector3d}}}]{vec }\end{DoxyParamCaption})}
+
+
+
+Set the Linear\+Spline\+Interpolator3D points from $t$ and {\itshape vec} data. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em vec} & the vectors of the function evaluated at $t$. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This setter method initializes a new Linear\+Spline\+Interpolator3D through its corresponding constructor Linear\+Spline\+Interpolator3\+D(const vector \&t, vector3d vec). 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4ec55b20aec3ccb7a5e011160e68c799}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_a4ec55b20aec3ccb7a5e011160e68c799}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{t,  }\item[{\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Evaluate the vector at a given point. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em vec} & the interpolated \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_add7b99f0c15439289b08f92d16946b7f}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_add7b99f0c15439289b08f92d16946b7f}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{t,  }\item[{const std\+::size\+\_\+t \&}]{index,  }\item[{\mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Evaluate the vector at a given point. 
+
+\DoxyHorRuler{0}
+ This function call overload allows efficient call when interpolating between two values of the provided data through the \textquotesingle{}index\textquotesingle{} parameter. (This avoid the search for index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & the index to which compute the interpolated values. \\
+\hline
+\mbox{\texttt{ out}}  & {\em vec} & the interpolated \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+1. This function call doesn\textquotesingle{}t make bound checkings. 
+
+2. It is up to you to check or be sure that {\itshape index} and the value where the vector is interpolated {\itshape t} coincides. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae3b3d05059cba744c4b6db355d832ab3}\label{classOsl_1_1Geometry_1_1Interpolator3D_1_1LinearSpline3D_ae3b3d05059cba744c4b6db355d832ab3}} 
+\index{Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}!vectorAt@{vectorAt}}
+\index{vectorAt@{vectorAt}!Osl::Geometry::Interpolator3D::LinearSpline3D@{Osl::Geometry::Interpolator3D::LinearSpline3D}}
+\doxysubsubsection{\texorpdfstring{vectorAt()}{vectorAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}} Osl\+::\+Geometry\+::\+Interpolator3\+D\+::\+Linear\+Spline3\+D\+::vector\+At (\begin{DoxyParamCaption}\item[{const double \&}]{t,  }\item[{bool}]{extrapolate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Evaluate the vector at a given point with bound checkings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em extrapolate} & whether to authorize extrapolation or not. Default to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interpolated \mbox{\hyperlink{classOsl_1_1Geometry_1_1Vector3D}{Vector3D}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LinearSpline3D_8h}{Linear\+Spline3\+D.\+h}}\item 
+\mbox{\hyperlink{LinearSpline3D_8cpp}{Linear\+Spline3\+D.\+cpp}}\end{DoxyCompactItemize}

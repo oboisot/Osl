@@ -1,0 +1,247 @@
+\hypertarget{namespaceOsl_1_1Maths_1_1Comparison}{}\doxysection{Osl\+::Maths\+::Comparison Namespace Reference}
+\label{namespaceOsl_1_1Maths_1_1Comparison}\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a8ffe5311cce4c268d4eaf401a62c563a}{almost\+\_\+equal}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Function to compare two real double precision floating points. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a14c70dc9e722122e818950cb2abe5a19}{almost\+\_\+equal}} (\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} x, \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} y)
+\begin{DoxyCompactList}\small\item\em Function to compare two complex double precision floating points. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_ada0f4684983a9a5ea21c797ad4ea0464}{almost\+\_\+one}} (double x)
+\begin{DoxyCompactList}\small\item\em Function to estimate when a real double precision floating points equals one in a machine sense. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a5ee96dcb93a5614a05f085034146ece8}{almost\+\_\+one}} (\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} z)
+\begin{DoxyCompactList}\small\item\em Function to estimate when a complex double precision floating points equals one in a machine sense. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a462f95e868406b551e347798d2709d97}{almost\+\_\+zero}} (double x)
+\begin{DoxyCompactList}\small\item\em Function to estimate when a real double precision floating points equals zero in a machine sense. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_acd751c3974c79f52609ec8a602bef546}{almost\+\_\+zero}} (\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} z)
+\begin{DoxyCompactList}\small\item\em Function to estimate when a complex double precision floating points equals zero in a machine sense. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a0944d49d9bed8cb9fb7ce281cfc7fc67}{true\+\_\+zero}} (double x)
+\begin{DoxyCompactList}\small\item\em Convenient function to replace an almost zero real value with a true zero. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a6e23acc1987ecdf25b223fdd1c1f499d}{true\+\_\+zero}} (\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} z)
+\begin{DoxyCompactList}\small\item\em Convenient function to replace an almost zero complex value with a true complex zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison}{Osl\+::\+Maths\+::\+Comparison}} namespace which provides a set of comparison functions. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a8ffe5311cce4c268d4eaf401a62c563a}\label{namespaceOsl_1_1Maths_1_1Comparison_a8ffe5311cce4c268d4eaf401a62c563a}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_equal@{almost\_equal}}
+\index{almost\_equal@{almost\_equal}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_equal()}{almost\_equal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+equal (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to compare two real double precision floating points. 
+
+\DoxyHorRuler{0}
+ This function compares two double precision floating points $x$ and $y$ against the machine resolution for double $res$\+:
+
+\[ \left\vert x-y\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When this equality holds, the two numbers are considered as almost equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & the two numbers to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if x and y are equal in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a14c70dc9e722122e818950cb2abe5a19}{almost\+\_\+equal(complex x, complex y)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a14c70dc9e722122e818950cb2abe5a19}\label{namespaceOsl_1_1Maths_1_1Comparison_a14c70dc9e722122e818950cb2abe5a19}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_equal@{almost\_equal}}
+\index{almost\_equal@{almost\_equal}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_equal()}{almost\_equal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}}}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to compare two complex double precision floating points. 
+
+\DoxyHorRuler{0}
+ This function compares two complex double precision floating points $x$ and $y$ against the machine resolution for double $res$. The comparison is made on both real and imaginary parts of the two complex numbers as follows\+:
+
+\[ \left\vert\mathcal{R}(x)-\mathcal{R}(y)\right\vert\leq res \quad\mbox{and}\quad \left\vert\mathcal{I}(x)-\mathcal{I}(y)\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When these equality holds, the two complex numbers are considered as almost equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & the two complex numbers to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if x and y are equal in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a8ffe5311cce4c268d4eaf401a62c563a}{almost\+\_\+equal(double x, double y)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_ada0f4684983a9a5ea21c797ad4ea0464}\label{namespaceOsl_1_1Maths_1_1Comparison_ada0f4684983a9a5ea21c797ad4ea0464}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_one@{almost\_one}}
+\index{almost\_one@{almost\_one}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_one()}{almost\_one()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+one (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to estimate when a real double precision floating points equals one in a machine sense. 
+
+\DoxyHorRuler{0}
+ This function compares the given real number $x$ to $1$ against the machine resolution for double $res$\+:
+
+\[ \left\vert x-1\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When this equality holds, the real number is considered as equal to one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the numbers to be compared to one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if x equals one in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a5ee96dcb93a5614a05f085034146ece8}{almost\+\_\+one(complex z)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a5ee96dcb93a5614a05f085034146ece8}\label{namespaceOsl_1_1Maths_1_1Comparison_a5ee96dcb93a5614a05f085034146ece8}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_one@{almost\_one}}
+\index{almost\_one@{almost\_one}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_one()}{almost\_one()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+one (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to estimate when a complex double precision floating points equals one in a machine sense. 
+
+\DoxyHorRuler{0}
+ This function compares the given complex number $z$ real part to $1$ and its imaginary part to $0$ against the machine resolution for double $res$\+:
+
+\[ \left\vert\mathcal{R}(x)-1\right\vert\leq res \quad\mbox{and}\quad \left\vert\mathcal{I}(x)\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When this equality holds, the complex number is considered as equal to one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z} & the number to be compared to one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if z equals zero in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_ada0f4684983a9a5ea21c797ad4ea0464}{almost\+\_\+one(double x)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a462f95e868406b551e347798d2709d97}\label{namespaceOsl_1_1Maths_1_1Comparison_a462f95e868406b551e347798d2709d97}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_zero@{almost\_zero}}
+\index{almost\_zero@{almost\_zero}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_zero()}{almost\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to estimate when a real double precision floating points equals zero in a machine sense. 
+
+\DoxyHorRuler{0}
+ This function compares the given number $x$ to $0$ against the machine resolution for double $res$\+:
+
+\[ \left\vert x\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When this equality holds, the real number is considered as equal to zero.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the number to be compared to zero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if x equals zero in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_acd751c3974c79f52609ec8a602bef546}{almost\+\_\+zero(complex z)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_acd751c3974c79f52609ec8a602bef546}\label{namespaceOsl_1_1Maths_1_1Comparison_acd751c3974c79f52609ec8a602bef546}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!almost\_zero@{almost\_zero}}
+\index{almost\_zero@{almost\_zero}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{almost\_zero()}{almost\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Osl\+::\+Maths\+::\+Comparison\+::almost\+\_\+zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to estimate when a complex double precision floating points equals zero in a machine sense. 
+
+\DoxyHorRuler{0}
+ This function compares the given complex number $z$ real and imaginary part to $0$ against the machine resolution for double $res$\+:
+
+\[ \left\vert\mathcal{R}(z)\right\vert\leq res \quad\mbox{and}\quad \left\vert\mathcal{I}(z)\right\vert\leq res \]
+
+with the machine resolution defined in \mbox{\hyperlink{namespaceOsl_1_1Constants_afa5812cda7fa27de5f41f016eb0df0f4}{Osl\+::\+Constants\+::n\+\_\+machine\+\_\+res}}. When this equality holds, the complex number is considered as equal to zero.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z} & the number to be compared to zero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if z equals zero in a machine sense, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bool \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a462f95e868406b551e347798d2709d97}{almost\+\_\+zero(double x)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a0944d49d9bed8cb9fb7ce281cfc7fc67}\label{namespaceOsl_1_1Maths_1_1Comparison_a0944d49d9bed8cb9fb7ce281cfc7fc67}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!true\_zero@{true\_zero}}
+\index{true\_zero@{true\_zero}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{true\_zero()}{true\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Comparison\+::true\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convenient function to replace an almost zero real value with a true zero. 
+
+\DoxyHorRuler{0}
+ This function compares the given real number $x$ to $0$ against the machine resolution for double $res$ and returns a true zero when the inequality holds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the number to be compared to zero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if x is almost zero, x otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a462f95e868406b551e347798d2709d97}{almost\+\_\+zero(double x)}} 
+
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a6e23acc1987ecdf25b223fdd1c1f499d}{true\+\_\+zero(complex z)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Comparison_a6e23acc1987ecdf25b223fdd1c1f499d}\label{namespaceOsl_1_1Maths_1_1Comparison_a6e23acc1987ecdf25b223fdd1c1f499d}} 
+\index{Osl::Maths::Comparison@{Osl::Maths::Comparison}!true\_zero@{true\_zero}}
+\index{true\_zero@{true\_zero}!Osl::Maths::Comparison@{Osl::Maths::Comparison}}
+\doxysubsubsection{\texorpdfstring{true\_zero()}{true\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} Osl\+::\+Maths\+::\+Comparison\+::true\+\_\+zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convenient function to replace an almost zero complex value with a true complex zero. 
+
+\DoxyHorRuler{0}
+ This function compares the given complex number $z$ to $0$ against the machine resolution for double $res$ and returns a true complex zero when the inequality holds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z} & the number to be compared to zero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if z is almost zero, z otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_acd751c3974c79f52609ec8a602bef546}{almost\+\_\+zero(complex z)}} 
+
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Comparison_a0944d49d9bed8cb9fb7ce281cfc7fc67}{true\+\_\+zero(double x)}} 
+\end{DoxySeeAlso}

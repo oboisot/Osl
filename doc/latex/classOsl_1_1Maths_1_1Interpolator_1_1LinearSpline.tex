@@ -1,0 +1,288 @@
+\hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{}\doxysection{Osl\+::Maths\+::Interpolator\+::Linear\+Spline Class Reference}
+\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+
+
+Class to construct a piecewise Linear Spline interpolator from real data.  
+
+
+
+
+{\ttfamily \#include $<$Linear\+Spline.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a12928bc375205e75ab4f20ee0f9d6a91}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a12928bc375205e75ab4f20ee0f9d6a91}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a12928bc375205e75ab4f20ee0f9d6a91}{Linear\+Spline}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_adaeb9bc315d5dd7024e99ac7e6290694}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_adaeb9bc315d5dd7024e99ac7e6290694}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_adaeb9bc315d5dd7024e99ac7e6290694}{Linear\+Spline}} (const \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a6cf62359f451be2dc88597534e1d954e}{Linear\+Spline}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&y)
+\begin{DoxyCompactList}\small\item\em Linear spline interpolator constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afed7890db3dde635c8eb047092a31378}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afed7890db3dde635c8eb047092a31378}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afed7890db3dde635c8eb047092a31378}{$\sim$\+Linear\+Spline}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a33907d9f9d80c2e4e3181152e39cdc50}{get\+Xmin}} () const
+\begin{DoxyCompactList}\small\item\em Get minimum x value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aee4fa30ed0ea99b4640a417c574815bb}{get\+Xmax}} () const
+\begin{DoxyCompactList}\small\item\em Get maximum x value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_acf19ba983cfd3fcdcca674713781e686}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Get the defining x axis values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a2ccf0bdc88fe32c01f790655443a5e43}{get\+Coeffs}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&a, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&b)
+\begin{DoxyCompactList}\small\item\em Get the interpolator coefficients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aa3d8d96560ace34ab1f3fd058b364416}{set\+Points}} (const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&y)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} points from $x$ and $y$ data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a1eea9fc172dcb9113ed8b5943226e270}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a1eea9fc172dcb9113ed8b5943226e270}} 
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a1eea9fc172dcb9113ed8b5943226e270}{operator=}} (const \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignement from another Linear\+Spline\+Interpolator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a99744174cb01aecfea767633cfb572a0}{operator()}} (const double \&x, double \&y)
+\begin{DoxyCompactList}\small\item\em Evaluate the function at a given point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a03cdc84090155045d833e6729876aaf7}{operator()}} (const double \&x, const std\+::size\+\_\+t \&index, double \&y)
+\begin{DoxyCompactList}\small\item\em Evaluate the function at a given point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a43a487f584ca71db3bf91e320f4aa068}{at}} (const double \&x, bool extrapolate=false)
+\begin{DoxyCompactList}\small\item\em Evaluate the function at a given point with bound checkings. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afd380bd81e654ec2da8a043e1c240484}{search\+\_\+index\+\_\+for\+\_\+interpolation}} (const double \&xeval)
+\begin{DoxyCompactList}\small\item\em Search the index for spline interpolation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to construct a piecewise Linear Spline interpolator from real data. 
+
+\DoxyHorRuler{0}
+ \doxyparagraph*{Principle}
+
+This class defines a one dimensional piecewise linear spline interpolator. Let a set of evaluation points $(x_k)_{k\in[\vert0;N\vert]}$ of size $N+1$ being in a strictly increasing order\+:
+
+\[ x_0<x_1<\cdots<x_{n-1}<x_n \]
+
+The piecewise Linear Spline interpolation function at index $k$ is defined by the first order polynomial\+:
+
+\[ f_k(x)=a_k(x-x_k) + b_k,\quad\forall x\in[x_k;x_{k+1}[\quad ; \quad\forall k\in[\vert0;N-1\vert] \]
+
+providing a set of $N$ interpolation functions $(f_k)_{k\in[\vert0;N-1\vert]}$ with their corresponding coefficients $(a_k, b_k)_{k\in[\vert0;N-1\vert]}$.
+
+\doxyparagraph*{Computation of the interpolator coefficients}
+
+Coefficients are determined by ensuring the continuity of the interpolation function at each interval nodes\+:
+
+\[ \begin{array}{rcl} f_k(x_k) & = & y_k\\ f_k(x_{k+1}) & = & y_{k+1}\\ \end{array} \]
+
+Solving this system results in the evaluation of the coefficients for the piecewise linear interpolation functions $f_k$\+:
+
+\[ \left\{\begin{array}{rcl} a_k & = & \dfrac{y_{k+1}-y_k}{x_{k+1}-x_k} \\ b_k & = & y_k \end{array}\right., \quad\forall k\in[\vert0;N-1\vert] \]
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexLinearSpline}{Complex\+Linear\+Spline}} a linear spline interpolator class for \mbox{\hyperlink{namespaceOsl_a345d1216808f596c8125768858267281}{complex}} data. 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a6cf62359f451be2dc88597534e1d954e}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a6cf62359f451be2dc88597534e1d954e}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!LinearSpline@{LinearSpline}}
+\index{LinearSpline@{LinearSpline}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{LinearSpline()}{LinearSpline()}}
+{\footnotesize\ttfamily Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::\+Linear\+Spline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Linear spline interpolator constructor. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the function evaluated at $x$ values. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a33907d9f9d80c2e4e3181152e39cdc50}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a33907d9f9d80c2e4e3181152e39cdc50}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!getXmin@{getXmin}}
+\index{getXmin@{getXmin}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{getXmin()}{getXmin()}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::get\+Xmin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get minimum x value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The minimum x value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aee4fa30ed0ea99b4640a417c574815bb}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aee4fa30ed0ea99b4640a417c574815bb}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!getXmax@{getXmax}}
+\index{getXmax@{getXmax}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{getXmax()}{getXmax()}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::get\+Xmax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get maximum x value. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The maximum x value of the constructed interpolator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_acf19ba983cfd3fcdcca674713781e686}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_acf19ba983cfd3fcdcca674713781e686}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!getX@{getX}}
+\index{getX@{getX}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the defining x axis values. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+A vector containing the defining x axis values (a copy of the input x vector). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a2ccf0bdc88fe32c01f790655443a5e43}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a2ccf0bdc88fe32c01f790655443a5e43}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!getCoeffs@{getCoeffs}}
+\index{getCoeffs@{getCoeffs}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{getCoeffs()}{getCoeffs()}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::get\+Coeffs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{a,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Get the interpolator coefficients. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & A vector containing the $a_k$ coefficients of the interpolator. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & A vector containing the $b_k$ coefficients of the interpolator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The size of these vectors are the size of the input data minus 1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aa3d8d96560ace34ab1f3fd058b364416}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_aa3d8d96560ace34ab1f3fd058b364416}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::set\+Points (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{const \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} points from $x$ and $y$ data. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the axis where the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & the values of the function evaluated at $x$ values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This setter method initializes a new \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}} through its corresponding constructor \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a6cf62359f451be2dc88597534e1d954e}{Linear\+Spline(const vector \&x, const vector \&y)}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a99744174cb01aecfea767633cfb572a0}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a99744174cb01aecfea767633cfb572a0}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{double \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Evaluate the function at a given point. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated value of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a03cdc84090155045d833e6729876aaf7}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a03cdc84090155045d833e6729876aaf7}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!operator()@{operator()}}
+\index{operator()@{operator()}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::operator() (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{const std\+::size\+\_\+t \&}]{index,  }\item[{double \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Evaluate the function at a given point. 
+
+\DoxyHorRuler{0}
+ This function call overload allows efficient call when interpolating between two values of the provided data through the {\itshape index} parameter. (This avoid the search for index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & the index to which compute the interpolated values. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & the interpolated value of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+1. This function call doesn\textquotesingle{}t make bound checkings. 
+
+2. It is up to you to check or be sure that {\itshape index} and the value where the function is interpolated {\itshape x} coincides. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a43a487f584ca71db3bf91e320f4aa068}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_a43a487f584ca71db3bf91e320f4aa068}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!at@{at}}
+\index{at@{at}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::at (\begin{DoxyParamCaption}\item[{const double \&}]{x,  }\item[{bool}]{extrapolate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Evaluate the function at a given point with bound checkings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & the value at which the function is evaluated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em extrapolate} & whether to authorize extrapolation or not. Default to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the function at the given point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afd380bd81e654ec2da8a043e1c240484}\label{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline_afd380bd81e654ec2da8a043e1c240484}} 
+\index{Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}!search\_index\_for\_interpolation@{search\_index\_for\_interpolation}}
+\index{search\_index\_for\_interpolation@{search\_index\_for\_interpolation}!Osl::Maths::Interpolator::LinearSpline@{Osl::Maths::Interpolator::LinearSpline}}
+\doxysubsubsection{\texorpdfstring{search\_index\_for\_interpolation()}{search\_index\_for\_interpolation()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Osl\+::\+Maths\+::\+Interpolator\+::\+Linear\+Spline\+::search\+\_\+index\+\_\+for\+\_\+interpolation (\begin{DoxyParamCaption}\item[{const double \&}]{xeval }\end{DoxyParamCaption})}
+
+
+
+Search the index for spline interpolation. 
+
+\DoxyHorRuler{0}
+ This function makes use of binary search to find the first index $i$ of reference axis $x[i]$ (in strictly increasing order) such that, for the search value $x_{eval}$\+:
+
+\[ x_{eval} \geq x[i] \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xeval} & the value for which the index is searched. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index to evaluate the spline function at xeval. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+1. If $x_{eval}\geq\underset{i}{\max}(x[i])$, last index minus 1 is returned. 
+
+2. If $x_{eval}\leq\underset{i}{\min}(x[i])$, index 0 is returned. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LinearSpline_8h}{Linear\+Spline.\+h}}\item 
+\mbox{\hyperlink{LinearSpline_8cpp}{Linear\+Spline.\+cpp}}\end{DoxyCompactItemize}

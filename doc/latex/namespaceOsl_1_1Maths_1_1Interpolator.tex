@@ -1,0 +1,144 @@
+\hypertarget{namespaceOsl_1_1Maths_1_1Interpolator}{}\doxysection{Osl\+::Maths\+::Interpolator Namespace Reference}
+\label{namespaceOsl_1_1Maths_1_1Interpolator}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexCubicSpline}{Complex\+Cubic\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Cubic Spline interpolator from complex data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexLinearSpline}{Complex\+Linear\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Linear Spline interpolator from complex data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1ComplexQuadraticSpline}{Complex\+Quadratic\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Quadratic Spline interpolator from complex data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1CubicSpline}{Cubic\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Cubic Spline interpolator from real data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1LinearSpline}{Linear\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Linear Spline interpolator from real data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1QuadraticSpline}{Quadratic\+Spline}}
+\begin{DoxyCompactList}\small\item\em Class to construct a piecewise Quadratic Spline interpolator from real data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOsl_1_1Maths_1_1Interpolator_1_1Sinc}{Sinc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Cubic\+Spline\+Boundary}} \{ \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}{Cubic\+Spline\+Boundary\+::natural}}, 
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80ad2ac8798d82192d415e5a4d797dda30a}{Cubic\+Spline\+Boundary\+::quadratic}}, 
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a3e4d36d90b6af32d84199011fe1ff009}{Cubic\+Spline\+Boundary\+::not\+A\+Knot}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the initialization of the Cubic Spline Interpolator classes. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700b}{Quadratic\+Spline\+Boundary}} \{ \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba4b380822a2ac31b2436f615e09479bcd}{Quadratic\+Spline\+Boundary\+::linear\+First}}, 
+\mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba9ae61fa860452251fcffca05a68b9e17}{Quadratic\+Spline\+Boundary\+::linear\+Last}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the initialization of the Quadratic Spline Interpolator classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_a67496ff5cc6f28914a87ffc95087dd45}{linear\+\_\+interpolation}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&y, const double \&xeval)
+\begin{DoxyCompactList}\small\item\em Linear interpolation function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_a4ac8fb157c7b1b7980ff21bf27eb3839}{linear\+\_\+interpolation}} (\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&x, \mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&y, const double \&xeval, double \&yinterp)
+\begin{DoxyCompactList}\small\item\em Linear interpolation function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator}{Osl\+::\+Maths\+::\+Interpolator}} namespace which provides a set of interpolator classes. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}} 
+\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!CubicSplineBoundary@{CubicSplineBoundary}}
+\index{CubicSplineBoundary@{CubicSplineBoundary}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}
+\doxysubsubsection{\texorpdfstring{CubicSplineBoundary}{CubicSplineBoundary}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80}{Osl\+::\+Maths\+::\+Interpolator\+::\+Cubic\+Spline\+Boundary}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for the initialization of the Cubic Spline \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator}{Interpolator}} classes. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{natural@{natural}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!natural@{natural}}}\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a8f4ef05b543fb6157b374099100574b3}} 
+natural&Create a cubic spline interpolator with \char`\"{}natural\char`\"{} boundary conditions. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{quadratic@{quadratic}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!quadratic@{quadratic}}}\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80ad2ac8798d82192d415e5a4d797dda30a}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80ad2ac8798d82192d415e5a4d797dda30a}} 
+quadratic&Create a cubic spline interpolator with first and last polynomials being quadratic polynomials. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{notAKnot@{notAKnot}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!notAKnot@{notAKnot}}}\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a3e4d36d90b6af32d84199011fe1ff009}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa24d4e21322a65cc15188374e3cc0c80a3e4d36d90b6af32d84199011fe1ff009}} 
+not\+A\+Knot&Create a cubic spline interpolator with \char`\"{}not-\/a-\/knot\char`\"{} boundary conditions. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700b}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700b}} 
+\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!QuadraticSplineBoundary@{QuadraticSplineBoundary}}
+\index{QuadraticSplineBoundary@{QuadraticSplineBoundary}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}
+\doxysubsubsection{\texorpdfstring{QuadraticSplineBoundary}{QuadraticSplineBoundary}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700b}{Osl\+::\+Maths\+::\+Interpolator\+::\+Quadratic\+Spline\+Boundary}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for the initialization of the Quadratic Spline \mbox{\hyperlink{namespaceOsl_1_1Maths_1_1Interpolator}{Interpolator}} classes. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{linearFirst@{linearFirst}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!linearFirst@{linearFirst}}}\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba4b380822a2ac31b2436f615e09479bcd}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba4b380822a2ac31b2436f615e09479bcd}} 
+linear\+First&Create a quadratic spline interpolator with first polynomial being linear. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{linearLast@{linearLast}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!linearLast@{linearLast}}}\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba9ae61fa860452251fcffca05a68b9e17}\label{namespaceOsl_1_1Maths_1_1Interpolator_aa99791e91d5593f355a5c778b832700ba9ae61fa860452251fcffca05a68b9e17}} 
+linear\+Last&Create a quadratic spline interpolator with last polynomial being linear. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_a67496ff5cc6f28914a87ffc95087dd45}\label{namespaceOsl_1_1Maths_1_1Interpolator_a67496ff5cc6f28914a87ffc95087dd45}} 
+\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!linear\_interpolation@{linear\_interpolation}}
+\index{linear\_interpolation@{linear\_interpolation}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}
+\doxysubsubsection{\texorpdfstring{linear\_interpolation()}{linear\_interpolation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Osl\+::\+Maths\+::\+Interpolator\+::linear\+\_\+interpolation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{y,  }\item[{const double \&}]{xeval }\end{DoxyParamCaption})}
+
+
+
+Linear interpolation function. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & a reference to the reference axis of the function. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & a reference to the value of the function in x. \\
+\hline
+\mbox{\texttt{ in}}  & {\em xeval} & the value for which the function is interpolated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interpolated value in xeval. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings nor extrapolation checking. 
+\end{DoxyNote}
+\mbox{\Hypertarget{namespaceOsl_1_1Maths_1_1Interpolator_a4ac8fb157c7b1b7980ff21bf27eb3839}\label{namespaceOsl_1_1Maths_1_1Interpolator_a4ac8fb157c7b1b7980ff21bf27eb3839}} 
+\index{Osl::Maths::Interpolator@{Osl::Maths::Interpolator}!linear\_interpolation@{linear\_interpolation}}
+\index{linear\_interpolation@{linear\_interpolation}!Osl::Maths::Interpolator@{Osl::Maths::Interpolator}}
+\doxysubsubsection{\texorpdfstring{linear\_interpolation()}{linear\_interpolation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Osl\+::\+Maths\+::\+Interpolator\+::linear\+\_\+interpolation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{x,  }\item[{\mbox{\hyperlink{namespaceOsl_ab5ff54b7adf62fc7cc61580929d0629d}{vector}} \&}]{y,  }\item[{const double \&}]{xeval,  }\item[{double \&}]{yinterp }\end{DoxyParamCaption})}
+
+
+
+Linear interpolation function. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & a reference to the reference axis of the function. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & a reference to the value of the function in x. \\
+\hline
+\mbox{\texttt{ in}}  & {\em xeval} & the value for which the function is interpolated. \\
+\hline
+\mbox{\texttt{ out}}  & {\em yinterp} & The interpolated value in xeval. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call doesn\textquotesingle{}t make bound checkings nor extrapolation checking. 
+\end{DoxyNote}
