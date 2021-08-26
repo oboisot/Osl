@@ -1,0 +1,66 @@
+/*================ this file is authalic.wxm =================*/
+load ("/home/oboisot/Documents/scilib/geodesy/_maxima/init.mac")$
+/*============================================================*/
+/* AUTHALIC latitude, xi.
+xi = asin(q(phi)/q_p)
+q(phi) = (1-e2)sin(phi) / 1-e2sin^2(phi)
++(1-e2)/e *atanh(e*sin(phi))
+q_p = q(pi/2)
+R_q = a sqrt(q_p/2)
+--------------------------------------------------------------*/
+print("====================================")$
+print("AUTHALIC (XI) and GEODETIC (phi)")$
+print("====================================")$
+print("=== define series for xi(phi) ======")$
+s:%phi$
+for i: 1 thru maxpow do block(s: b[2*i]*sin(2*i*phi)+s)$
+%xi=s;
+/* evaluate xi in terms of phi */
+xia:qq+((1-e*e)/e)*atanh(e*sin(phi))$
+xia:ratdisrep(taylor(xia,e,0,2*maxpow))$
+xia:subst(e=sqrt(e2),xia)$
+xia:subst(qq=(1-e2)*sin(phi)/(1-e2*(sin(phi))^2),xia)$
+xia:taylor(xia,e2,0,maxpow)$ if debug then display(xia)$
+q_p:subst(phi=%pi/2,xia)$
+ if debug then display(q_p)$
+sin_xi:ratdisrep(taylor(xia/q_p,e2,0,maxpow))$
+diff: sin_xi-sin(phi)$
+/* define modified asin function */
+asinexp(x,eps):=ratdisrep(taylor(asin(x+eps),eps,0,maxpow))$
+t:subst(x=sin(phi),asinexp(x,eps))$
+t:t-subst(eps=0,t)+phi$
+t:subst(eps=diff,t)$
+t:ratsimp(t-phi)$
+/* need minus %i in next line to get right answer. Better method?*/
+t:ratsimp(subst(sqrt(-1+(sin(phi))^2)=-%i*cos(phi),t))$
+t:trigreduce(ratdisrep(taylor(t,e2,0,maxpow)))$
+xi_phi(phi,e2):=t+phi$ if debug then display(xi_phi(phi,e2))$
+print("====== xi(phi,e) ======")$
+xi_e: subst(e2=e*e,xi_phi(phi,e2))$ if debug then display(xi_e)$
+xi_e:expand(ratdisrep(taylor(xi_e,e,0,2*maxpow)))$
+for i: 1 thru maxpow do print(b[2*i]=coeff(xi_e,sin(2*i*phi),1))$
+print("====== xi(phi,n) ======")$
+xi_n: subst(e2=4*n/(1+n)^2,xi_phi(phi,e2))$
+xi_n:expand(ratdisrep(taylor(xi_n,n,0,maxpow)))$ xi_n$
+for i: 1 thru maxpow do print(b[2*i]=coeff(xi_n,sin(2*i*phi),1))$
+print("")$
+print("==== series for phi(xi) ======")$
+kill(xi)$ s:%xi$
+for i: 1 thru maxpow do block(s: d[2*i]*sin(2*i*%xi)+s)$
+print(phi=s)$
+kill(xi)$
+/* revert series */
+print("====== phi(xi,e) ======")$
+phi_xi_e: subst(e2=e*e,reverta(xi_phi(phi,e2),phi,xi,e2,maxpow))$
+for i: 1 thru maxpow do print(d[2*i]=coeff(phi_xi_e,sin(2*i*xi),1))$
+print("====== phi(xi,n) ======")$
+phi_xi_n: subst(e2=4*n/(1+n)^2,reverta(xi_phi(phi,e2),phi,xi,e2,maxpow))$
+phi_xi_n:expand(ratdisrep(taylor(phi_xi_n,n,0,maxpow)))$
+for i: 1 thru maxpow do print(d[2*i]=coeff(phi_xi_n,sin(2*i*xi),1))$
+print("====== authalic radius ======")$
+R[q]:a*ratdisrep(subst(e2=e*e,taylor(sqrt(q_p/2),e2,0,maxpow)))$
+display(R[q]);
+R[q]:ratdisrep(subst(e2=4*n/(1+n)^2,taylor(sqrt(q_p/2),e2,0,maxpow)))$
+R[q]:a*expand(ratdisrep(taylor(R[q],n,0,maxpow)))$
+display(R[q]);
+

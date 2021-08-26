@@ -1,0 +1,78 @@
+/*================ this file is meridian.wxm =================*/
+/* This file provides merid, qquadrant, mu_phi, phi_mu
+for the Redfearn_examples file */
+/*============================================================*/
+load ("/home/oboisot/Documents/scilib/geodesy/_maxima/init.mac")$
+rho_fn(\phi):=a*(1-e2)*(1-e2*(sin(phi))^2)^(-3/2)$ /* e2=e*e*/
+e2_n(n):=taylor(4*n/(1+n)^2,n,0,maxpow)$
+
+/* Meridian integral expanded in e2=e*e then e */
+m_integral(phi,e2):=''(block([mm],
+mm:trigreduce(taylor(rho_fn(phi),e2,0,maxpow)),
+mm:expand(ratsimp(integrate(mm,phi)))))$
+merid(phi):=''(expand(subst(e2=e*e,m_integral(phi,e2))))$
+
+/* Meridian quadrant distance to pole */
+qquadrant(e2):=''(m_integral(%pi/2,e2))$
+
+/* Rectifying latitude mu in terms e2 of then e*/
+mu_phi_e2(phi,e2):=''([phi,e2], expand((%pi/2)*taylor((m_integral(phi,e2)/qquadrant(e2)),e2,0,maxpow)))$
+mu_phi(phi):=''(subst(e2=e^2,mu_phi_e2(phi,e2)))$
+
+/* Inverse of rectifying latitude in terms of e2 then e */
+phi_mu_e2(%mu,e2):=''([%mu,e2], (reverta(mu_phi_e2(phi,e2),phi,%mu,e2,maxpow)))$
+phi_mu(%mu):=''(subst(e2=e*e,phi_mu_e2(%mu,e2)))$
+
+/* Helmert's series in n */
+merid_H(phi):=''(a/(1+n)*expand(taylor(subst(e2=e2_n(n),
+m_integral(phi,e2)*(1+n)/a),n,0,maxpow)))$
+
+/* display(merid(phi),merid_H(phi),mu_phi(phi),phi_mu(%mu))$ */
+print("=== Series with coefficients in e ===")$
+a[0]:a*coeff(expand(merid(phi)/a),phi,1)$
+disp_m:'a[0]*%phi$
+ disp_mu:%phi$
+ disp_phi:%mu$
+for i:2 thru 2*maxpow step 2 do block(
+a[i]:a*coeff(expand(merid(phi)/a),sin(i*phi),1),
+disp_m:'a[i]*sin(i*%phi)+disp_m,
+b[i]:coeff(expand(mu_phi(phi)),sin(i*phi),1),
+disp_mu:'b[i]*sin(i*%phi)+disp_mu,
+d[i]:coeff(expand(phi_mu(%mu)),sin(i*%mu),1),
+disp_phi:'d[i]*sin(i*%mu)+disp_phi )$
+
+/* print them out */
+print("m = ",disp_m)$
+for i:0 thru 2*maxpow step 2 do display(a[i])$
+print("quadrant = ", (%pi/2)*'a[0])$
+print(%mu," = ",disp_mu)$
+for i:2 thru 2*maxpow step 2 do display(b[i])$
+print(%phi," = ",disp_phi)$
+for i:2 thru 2*maxpow step 2 do display(d[i])$
+print("=== Series with coefficients in n ===")$
+h[0]:coeff(expand((1+n)*merid_H(phi)/a),phi,1)$
+disp_mH_brkt:'h[0]*%phi$ disp_mu_n:%phi$ disp_phi_n:%mu$
+for i:2 thru 2*maxpow step 2 do block(
+pp:subst(e=sqrt(4*n/(1+n)^2),(1+n)*a[i]/a),
+h[i]:ratdisrep(taylor(pp,n,0,maxpow)),
+disp_mH_brkt:'h[i]*sin(i*%phi)+disp_mH_brkt,
+pp:subst(e=sqrt(4*n/(1+n)^2),b[i]),
+c[i]:ratdisrep(taylor(pp,n,0,maxpow)),
+disp_mu_n:'c[i]*sin(i*%phi)+disp_mu_n,
+pp:subst(e=sqrt(4*n/(1+n)^2),d[i]),
+e[i]:ratdisrep(taylor(pp,n,0,maxpow)),
+disp_phi_n:'e[i]*sin(i*%mu)+disp_phi_n
+)$
+
+/* print them out */
+disp_mH:(disp_mH_brkt/(1+n))*a$
+print("m_Helmert = ",disp_mH)$
+display(h[0])$
+for i:2 thru 2*maxpow step 2 do display(h[i])$
+print("quadrant = ", (%pi*a/2)*'h[0]/(1+n))$
+print(%mu," = ",disp_mu_n)$
+for i:2 thru 2*maxpow step 2 do display(c[i])$
+print(%phi," = ",disp_phi_n)$
+for i:2 thru 2*maxpow step 2 do display(e[i])$
+save("/home/oboisot/Documents/Travail/Traitement/Python/grille_passage/maxima/meridian.dat",all);
+print("END")$

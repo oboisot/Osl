@@ -1,0 +1,22 @@
+/*===== this file is init.mac ======== */
+/* INITIALISE*/
+maxpow:10$ /* Max power of e*e */
+taylordepth:10$
+triginverses:'all$
+powerdisp:true$
+algebraic:true$
+debug:false$
+/* LAGRANGE REVERSION
+var2 = expr(var1) = series in eps
+to
+var1 = revertexpr(var2) = series in eps
+Require that expr(var1) = var1 to order eps^0. This throws in a
+trigreduce to convert to multiple angle trig functions.
+ */
+reverta(expr,var1,var2,eps,pow):=block([tauacc:1,sigacc:0,dsig],
+dsig:ratdisrep(taylor(expr-var1,eps,0,pow)),
+dsig:subst([var1=var2],dsig),
+for n:1 thru pow do (tauacc:trigreduce(ratdisrep(taylor(
+-dsig*tauacc/n,eps,0,pow))),
+sigacc:sigacc+expand(diff(tauacc,var2,n-1))),
+var2+sigacc)$

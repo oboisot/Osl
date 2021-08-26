@@ -1,0 +1,57 @@
+/*================ this file is conformal.wxm =================*/
+load ("/home/oboisot/Documents/scilib/geodesy/_maxima/init.mac")$
+/*============================================================*/
+/* CONFORMAL latitude, chi. Calls LAGRANGE and ARCTAN
+chi = gd( gd^{-1}phi -e*atanh^{-1}(e*sinh(phi)))
+= asin(tanh( atanh(sin(phi)) - e*atanh(e*sin(phi)) ))
+Notation: tanh(qq) = sin(phi)
+ OR sinh(qq) = tan(phi)
+ */
+/*-------------------------------------------------------------*/
+print("====================================")$
+print("CONFORMAL (chi) and GEODETIC (phi) ")$
+print("====================================")$
+/* define modified atan function */
+atanexp(x,eps):=ratdisrep(taylor(atan(x+eps),eps,0,maxpow))$
+/* evaluate chi in terms of phi */
+psi:qq-e*atanh(e*tanh(qq))$
+ratdisrep(taylor(psi,e,0,2*maxpow))$
+psi:subst(e=sqrt(e2),psi)$
+psi:subst(qq=asinh(tan(phi)),psi)$
+tanchi:ratdisrep(taylor(sinh(psi),e2,0,maxpow))$
+diff:tanchi-tan(phi)$
+t:subst(x=tan(phi),atanexp(x,eps))$
+t:t-subst(eps=0,t)+phi$
+t:subst(eps=diff,t)$
+t:ratdisrep(taylor(t,e2,0,maxpow))$
+t:ratsimp(subst(tan(phi)=sin(phi)/cos(phi),t-phi))+phi$
+t:trigreduce(t)$
+chi_phi(phi,e2):=t$
+print("====== chi(phi) ======")$
+s:%phi$ for i: 1 thru maxpow do block(s: b[2*i]*sin(2*i*phi)+s)$
+print(chi=s)$
+print("====== chi(phi,e) ======")$
+chi_e:subst(e2=e*e,t)$
+for i: 1 thru maxpow do print(b[2*i]=coeff(chi_e,sin(2*i*phi),1))$
+print("====== chi(phi,n) ======")$
+chi_n: subst(e2=4*n/(1+n)^2,t)$
+chi_n:expand(ratdisrep(taylor(chi_n,n,0,maxpow)))$
+for i: 1 thru maxpow do print(b[2*i]=coeff(chi_n,sin(2*i*phi),1))$
+/* phi in terms of chi */
+print("")$
+print("====== phi(chi)) ======")$
+s:%chi$
+for i: 1 thru maxpow do block(s: d[2*i]*sin(2*i*chi)+s)$
+print(phi=s)$
+print("====== phi(chi,e) ======")$
+/*phi_chi(chi,e2):=''()$*/
+phi_chi_e: subst(e2=e*e,reverta(chi_phi(phi,e2),phi,chi,e2,maxpow))$
+for i: 1 thru maxpow do print(d[2*i]=coeff(phi_chi_e,sin(2*i*chi),1))$
+print("====== phi(chi,n) ======")$
+/* e2_n(n):=4*n/(1+n)^2$*/
+phi_chi_n: subst(e2=4*n/(1+n)^2,
+reverta(chi_phi(phi,e2),phi,chi,e2,maxpow))$
+/*phi_chi_n: phi_chi(chi,e2), e2=e2_n(n)$*/
+phi_chi_n:expand(ratdisrep(taylor(phi_chi_n,n,0,maxpow)))$
+for i: 1 thru maxpow do print(d[2*i]=coeff(phi_chi_n,sin(2*i*chi),1))$
+

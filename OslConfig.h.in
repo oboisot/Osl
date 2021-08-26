@@ -1,0 +1,3 @@
+// the configured options and settings for Osl
+#define Osl_VERSION_MAJOR @Osl_VERSION_MAJOR@
+#define Osl_VERSION_MINOR @Osl_VERSION_MINOR@
