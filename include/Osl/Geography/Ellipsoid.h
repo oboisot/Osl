@@ -494,7 +494,7 @@ public:
      * \param [in] degrees
      *********************************************************************/
     void geodeticToGeocentric(const double &lon, const double &lat, const double &alt,
-                             double &x, double &y, double &z, bool degrees=true);
+                              double &x, double &y, double &z, bool degrees=true);
 
 
     /*! ********************************************************************
@@ -558,8 +558,8 @@ public:
      * \param [in] maxiter
      *********************************************************************/
     void geocentricToGeodetic(const double &x, const double &y, const double &z,
-                             double &lon, double &lat, double &alt,
-                             bool degrees=true, std::size_t maxiter=10);
+                              double &lon, double &lat, double &alt,
+                              bool degrees=true, std::size_t maxiter=10);
 
 
 private:
@@ -591,23 +591,23 @@ private:
  *
  *
  *********************************************************************/
-inline static Ellipsoid Clk80IGN(Constants::CLK80IGN_a,
-                                 Constants::CLK80IGN_b,
-                                 EllipsoidInit::fromRadiusAndRadius);
+inline static Ellipsoid* Clk80IGN = new Ellipsoid(Constants::CLK80IGN_a,
+                                                   Constants::CLK80IGN_b,
+                                                   EllipsoidInit::fromRadiusAndRadius);
 
 /*! ********************************************************************
  * \brief The GRS80 Ellipsoid
  *********************************************************************/
-inline static Ellipsoid GRS80(Constants::GRS80_a,
-                              Constants::GRS80_f,
-                              EllipsoidInit::fromRadiusAndFlattening);
+inline static Ellipsoid* GRS80 = new Ellipsoid(Constants::GRS80_a,
+                                                Constants::GRS80_f,
+                                                EllipsoidInit::fromRadiusAndFlattening);
 
 /*! ********************************************************************
  * \brief The WGS84 Ellipsoid
  *********************************************************************/
-inline static Ellipsoid WGS84(Constants::WGS84_a,
-                              Constants::WGS84_f,
-                              EllipsoidInit::fromRadiusAndFlattening);
+inline static Ellipsoid* WGS84 = new Ellipsoid(Constants::WGS84_a,
+                                                Constants::WGS84_f,
+                                                EllipsoidInit::fromRadiusAndFlattening);
 
 } // namespace Osl::Geography
 

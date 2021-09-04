@@ -10,21 +10,10 @@ namespace Osl { // namespace Osl
 namespace Geography { // namespace Osl::Geography
 
 // ============== CONSTRUCTOR ==============
-GeoPoint::GeoPoint() : m_elps(WGS84) {} // L'initialisation de m_elps doit être explicite (référence)
+GeoPoint::GeoPoint(){} // L'initialisation de m_elps doit être explicite (référence)
 
 //!
-GeoPoint::GeoPoint(Ellipsoid &elps, const Geometry::Vector3D &vec)
-    : m_elps(elps), m_geocentric((vec)) // Note: reference member must be initialized in the initializer list
-{
-    // Compute the geodetic coordinates
-    double x, y, z;
-    m_geocentric.getCoordinates(x, y, z);
-    // Get the lon, lat (in radians) and alt
-    m_elps.geocentricToGeodetic(x, y, z, m_lon_rad, m_lat_rad, m_alt, false);
-}
-
-//!
-GeoPoint::GeoPoint(Ellipsoid &elps,
+GeoPoint::GeoPoint(Ellipsoid* elps,
                    const double &lon, const double &lat, const double &alt,
                    enum GeoPointInit init, bool degrees)
     : m_elps(elps)
@@ -43,24 +32,24 @@ GeoPoint::GeoPoint(Ellipsoid &elps,
         }
         m_alt = alt;
         // Compute the geocentric coordinates
-        double x, y, z;
-        m_elps.geodeticToGeocentric(m_lon_rad, m_lat_rad, m_alt, x, y, z, false);
-        m_geocentric.setCoordinates(x, y, z);
+        m_elps->geodeticToGeocentric(m_lon_rad, m_lat_rad, m_alt, m_x, m_y, m_z, false);
     }
     else if (init == GeoPointInit::fromGeocentric)
     {
         // lon -> x, lat -> y, alt -> z
-        m_geocentric.setCoordinates(lon, lat, alt);
+        m_x = lon;
+        m_y = lat;
+        m_z = alt;
         // Compute the geodetic coordinates
             // Get the lon, lat (in radians) and alt
-        m_elps.geocentricToGeodetic(lon, lat, alt, m_lon_rad, m_lat_rad, m_alt, false);
+        m_elps->geocentricToGeodetic(m_x, m_y, m_z, m_lon_rad, m_lat_rad, m_alt, false);
     }
 }
 
 // Copy constructor
 GeoPoint::GeoPoint(const GeoPoint &other)
     : m_elps(other.m_elps),
-      m_geocentric(other.m_geocentric),
+      m_x(other.m_x), m_y(other.m_y), m_z(other.m_z),
       m_lon_rad(other.m_lon_rad), m_lat_rad(other.m_lat_rad),
       m_alt(other.m_alt) {}
 
@@ -69,16 +58,6 @@ GeoPoint::~GeoPoint() {}
 
 // ============== CLASS METHODS ==============
 // ********** SETTER **********
-void GeoPoint::setCoords(const Geometry::Vector3D &vec)
-{
-    m_geocentric = vec;
-    // Compute the geodetic coordinates
-    double x, y, z;
-    m_geocentric.getCoordinates(x, y, z);
-    // Get the lon, lat (in radians) and alt
-    m_elps.geocentricToGeodetic(x, y, z, m_lon_rad, m_lat_rad, m_alt, false);
-}
-
 void GeoPoint::setCoords(const double &lon, const double &lat, const double &alt,
                          enum GeoPointInit init, bool degrees)
 {
@@ -96,24 +75,24 @@ void GeoPoint::setCoords(const double &lon, const double &lat, const double &alt
         }
         m_alt = alt;
         // Compute the geocentric coordinates
-        double x, y, z;
-        m_elps.geodeticToGeocentric(m_lon_rad, m_lat_rad, m_alt, x, y, z, false);
-        m_geocentric.setCoordinates(x, y, z);
+        m_elps->geodeticToGeocentric(m_lon_rad, m_lat_rad, m_alt, m_x, m_y, m_z, false);
     }
     else if (init == GeoPointInit::fromGeocentric)
     {
         // lon -> x, lat -> y, alt -> z
-        m_geocentric.setCoordinates(lon, lat, alt);
+        m_x = lon;
+        m_y = lat;
+        m_z = alt;
         // Compute the geodetic coordinates
             // Get the lon, lat (in radians) and alt
-        m_elps.geocentricToGeodetic(lon, lat, alt, m_lon_rad, m_lat_rad, m_alt, false);
+        m_elps->geocentricToGeodetic(m_x, m_y, m_z, m_lon_rad, m_lat_rad, m_alt, false);
     }
     else
         throw std::invalid_argument("");
 }
 
 // ********** GETTER **********
-void GeoPoint::getGeodeticCoords(double &lon, double & lat, double &alt, bool degrees)
+void GeoPoint::getGeodeticCoords(double &lon, double &lat, double &alt, bool degrees)
 {
     lon = m_lon_rad;
     lat = m_lat_rad;
@@ -129,19 +108,22 @@ double GeoPoint::getLat(bool degrees) const { return degrees ? m_lat_rad * Const
 double GeoPoint::getAlt() const { return m_alt; }
 void GeoPoint::getGeocentricCoords(double &x, double &y, double &z)
 {
-    m_geocentric.getCoordinates(x, y, z);
+    x = m_x;
+    y = m_y;
+    z = m_z;
 }
-Geometry::Vector3D GeoPoint::getGeocentricCoords() const { return m_geocentric; }
-double GeoPoint::getX() const { return m_geocentric.getX(); }
-double GeoPoint::getY() const { return m_geocentric.getY(); }
-double GeoPoint::getZ() const { return m_geocentric.getZ(); }
-Ellipsoid GeoPoint::getEllipsoid() const { return m_elps; }
+double GeoPoint::getX() const { return m_x; }
+double GeoPoint::getY() const { return m_y; }
+double GeoPoint::getZ() const { return m_z; }
+Ellipsoid* GeoPoint::getEllipsoidPtr() const { return m_elps; }
 
 // ============== OPERATORS ==============
 GeoPoint GeoPoint::operator=(const GeoPoint &other)
 {
     m_elps = other.m_elps;
-    m_geocentric = other.m_geocentric;
+    m_x = other.m_x;
+    m_y = other.m_y;
+    m_z = other.m_z;
     m_lon_rad = other.m_lon_rad;
     m_lat_rad = other.m_lat_rad;
     m_alt = other.m_alt;
@@ -152,7 +134,9 @@ GeoPoint GeoPoint::operator=(const GeoPoint &other)
 bool GeoPoint::operator==(const GeoPoint &other) const
 {
     return (m_elps == other.m_elps) &&
-           (m_geocentric == other.m_geocentric);
+           (Maths::Comparison::almost_equal(m_x, other.m_x)) &&
+           (Maths::Comparison::almost_equal(m_y, other.m_y)) &&
+           (Maths::Comparison::almost_equal(m_z, other.m_z));
 }
 
 bool GeoPoint::operator!=(const GeoPoint &other) const
@@ -161,12 +145,12 @@ bool GeoPoint::operator!=(const GeoPoint &other) const
 }
 
 // ============== GEOPOINT FUNCTIONS ==============
-GeoPoint GeoPoint::toEllipsoid(Ellipsoid &elps2,
+GeoPoint GeoPoint::toEllipsoid(Ellipsoid* elps2,
                                const double &T12x, const double &T12y, const double &T12z,
                                const double &R12x, const double &R12y, const double &R12z,
-                               const double &S12, bool degrees, bool R12exact)
+                               const double &S12, bool degrees)
 {
-    if (elps2 == m_elps)
+    if (*elps2 == *m_elps)
         return *this;
     double rx = R12x, ry = R12y, rz = R12z;
     if (degrees)
@@ -175,22 +159,15 @@ GeoPoint GeoPoint::toEllipsoid(Ellipsoid &elps2,
         ry *= Constants::m_degtorad;
         rz *= Constants::m_degtorad;
     }
-    // Translation
-    Geometry::Vector3D T12(T12x, T12y, T12z);
-    // Rotation
-    Geometry::Rotation3D rot;
-    if (R12exact)
-    {
-        rot.setRotation("xyz", rx, ry, rz, false); // rx * ry * rz
-    }
-    else
-    {
-        rot.setRotation(1.0, -rz, ry,
-                        rz,  1.0, -rx,
-                        -ry, rx,  1.0);
-    }
-    // 7 parameters similitude transform:
-    return GeoPoint(elps2, T12 + (1.0 + S12) * (rot * m_geocentric));
+    double scale = 1.0 + S12, x, y, z;
+    // Small angles rotation matrix :
+    // rot = |1.0, -rz, ry |
+    //       |rz,  1.0, -rx|
+    //       |-ry, rx,  1.0|
+    x = T12x + scale * (m_x - rz * m_y + ry * m_z);
+    y = T12y + scale * (rz * m_x + m_y - rx * m_z);
+    z = T12z + scale * (-ry * m_x + rx * m_y + m_z);
+    return GeoPoint(elps2, x, y, z, GeoPointInit::fromGeocentric);
 }
 
 } // namespace Osl::Geometry

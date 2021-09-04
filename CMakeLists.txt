@@ -46,6 +46,7 @@ set(OSL_HEADERS include/Osl/Osl.h
                 # OSl::Geometry
                 include/Osl/Geometry/Geometry.h
                 include/Osl/Geometry/vector3.h
+                include/Osl/Geometry/point3.h
                 include/Osl/Geometry/Vector3D.h
                 include/Osl/Geometry/rotmatrix3.h
                 include/Osl/Geometry/Rotation3D.h
@@ -106,6 +107,7 @@ set(OSL_SOURCES # Geography
                 include/Osl/Geography/GeoPoint.cpp
                 include/Osl/Geography/LocalCartesian.cpp
                 # Geometry
+                include/Osl/Geometry/point3.cpp
                 include/Osl/Geometry/vector3.cpp
                 include/Osl/Geometry/Vector3D.cpp
                 include/Osl/Geometry/rotmatrix3.cpp

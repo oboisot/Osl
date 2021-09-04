@@ -1,38 +1,38 @@
-#include "vector3.h"
+#include "point3.h"
 
 namespace Osl {
 
 namespace Geometry {
 
 // ============== CONSTRUCTOR ==============
-Vector3::Vector3(){}
+Point3::Point3(){}
 
-Vector3::Vector3(const double &x, const double &y, const double &z)
+Point3::Point3(const double &x, const double &y, const double &z)
     : m_x(x), m_y(y), m_z(z){}
 
 // Copy constructor
-Vector3::Vector3(const Vector3 &other)
+Point3::Point3(const Point3 &other)
     : m_x(other.m_x), m_y(other.m_y), m_z(other.m_z) {}
 
 // ============== DESTRUCTOR ==============
-Vector3::~Vector3(){}
+Point3::~Point3(){}
 
 // ============== CLASS METHODS ==============
 // ********** SETTER **********
-void Vector3::setX(const double &x){ m_x = x; }
-void Vector3::setY(const double &y){ m_y = y; }
-void Vector3::setZ(const double &z){ m_z = z; }
-void Vector3::setCoordinates(const double &x, const double &y, const double &z)
+void Point3::setX(const double &x){ m_x = x; }
+void Point3::setY(const double &y){ m_y = y; }
+void Point3::setZ(const double &z){ m_z = z; }
+void Point3::setCoordinates(const double &x, const double &y, const double &z)
 {
     m_x = x;
     m_y = y;
     m_z = z;
 }
 // ********** GETTER **********
-double Vector3::getX() const { return m_x; }
-double Vector3::getY() const { return m_y; }
-double Vector3::getZ() const { return m_z; }
-void Vector3::getCoordinates(double &x, double &y, double &z)
+double Point3::getX() const { return m_x; }
+double Point3::getY() const { return m_y; }
+double Point3::getZ() const { return m_z; }
+void Point3::getCoordinates(double &x, double &y, double &z)
 {
     x = m_x;
     y = m_y;
@@ -41,7 +41,7 @@ void Vector3::getCoordinates(double &x, double &y, double &z)
 
 // ============== OPERATORS ==============
 // Unary operators
-void Vector3::operator-()
+void Point3::operator-()
 {
     m_x = -m_x;
     m_y = -m_y;
@@ -50,7 +50,7 @@ void Vector3::operator-()
 
     // Operations between vectors
 // Assignement from another vector
-Vector3 Vector3::operator=(const Vector3 &other)
+Point3 Point3::operator=(const Point3 &other)
 {
     m_x = other.m_x;
     m_y = other.m_y;
@@ -59,14 +59,14 @@ Vector3 Vector3::operator=(const Vector3 &other)
 }
 
 // Summation between vectors
-Vector3 Vector3::operator+(const Vector3 &other)
+Point3 Point3::operator+(const Point3 &other)
 {
-    return Vector3(m_x + other.m_x,
-                   m_y + other.m_y,
-                   m_z + other.m_z);
+    return Point3(m_x + other.m_x,
+                  m_y + other.m_y,
+                  m_z + other.m_z);
 }
 
-void Vector3::operator+=(const Vector3 &other)
+void Point3::operator+=(const Point3 &other)
 {
     m_x += other.m_x;
     m_y += other.m_y;
@@ -74,14 +74,14 @@ void Vector3::operator+=(const Vector3 &other)
 }
 
 // Differenciation between vectors
-Vector3 Vector3::operator-(const Vector3 &other)
+Point3 Point3::operator-(const Point3 &other)
 {
-    return Vector3(m_x - other.m_x,
-                   m_y - other.m_y,
-                   m_z - other.m_z);
+    return Point3(m_x - other.m_x,
+                  m_y - other.m_y,
+                  m_z - other.m_z);
 }
 
-void Vector3::operator-=(const Vector3 &other)
+void Point3::operator-=(const Point3 &other)
 {
     m_x -= other.m_x;
     m_y -= other.m_y;
@@ -90,14 +90,14 @@ void Vector3::operator-=(const Vector3 &other)
 
     // Scalar operations
 // Multiplication
-Vector3 Vector3::operator*(const double &rhs)
+Point3 Point3::operator*(const double &rhs)
 {
-    return Vector3(m_x * rhs,
+    return Point3(m_x * rhs,
                    m_y * rhs,
                    m_z * rhs);
 }
 
-void Vector3::operator*=(const double &rhs)
+void Point3::operator*=(const double &rhs)
 {
     m_x *= rhs;
     m_y *= rhs;
@@ -105,14 +105,14 @@ void Vector3::operator*=(const double &rhs)
 }
 
 // Division
-Vector3 Vector3::operator/(const double &rhs)
+Point3 Point3::operator/(const double &rhs)
 {
-    return Vector3(m_x / rhs,
+    return Point3(m_x / rhs,
                    m_y / rhs,
                    m_z / rhs);
 }
 
-void Vector3::operator/=(const double &rhs)
+void Point3::operator/=(const double &rhs)
 {
     m_x /= rhs;
     m_y /= rhs;
@@ -120,46 +120,46 @@ void Vector3::operator/=(const double &rhs)
 }
 
     // Comparison operators
-bool Vector3::operator==(const Vector3 &other) const
+bool Point3::operator==(const Point3 &other) const
 {
     return Maths::Comparison::almost_equal(m_x, other.m_x) &&
            Maths::Comparison::almost_equal(m_y, other.m_y) &&
            Maths::Comparison::almost_equal(m_z, other.m_z);
 }
 
-bool Vector3::operator!=(const Vector3 &other) const
+bool Point3::operator!=(const Point3 &other) const
 {
     return !(*this == other);
 }
 
 // ============== VECTOR COPY ==============
-Vector3 Vector3::clone()
+Point3 Point3::clone()
 {
-    return Vector3(m_x, m_y, m_z);
+    return Point3(m_x, m_y, m_z);
 }
 
 // ============== VECTOR OPERATIONS ==============
-double Vector3::norm2() const
+double Point3::norm2() const
 {
     return m_x * m_x + m_y * m_y + m_z * m_z;
 }
 
-double Vector3::norm() const
+double Point3::norm() const
 {
     return std::hypot(m_x, m_y, m_z);
 }
 
-double Vector3::sum() const
+double Point3::sum() const
 {
     return m_x + m_y + m_z;
 }
 
-bool Vector3::isNull() const
+bool Point3::isNull() const
 {
     return *this == NULL_VEC;
 }
 
-void Vector3::normalize()
+void Point3::normalize()
 {
     double norm = this->norm();
     if (norm > 0.0)
@@ -171,12 +171,12 @@ void Vector3::normalize()
 }
 
 // Vector / Vector operations
-double Vector3::dotProduct(const Vector3 &other)
+double Point3::dotProduct(const Point3 &other)
 {
     return m_x * other.m_x + m_y * other.m_y + m_z * other.m_z;
 }
 
-void Vector3::crossProduct(const Vector3 &other)
+void Point3::crossProduct(const Point3 &other)
 {
     double x, y, z;
     x = m_y * other.m_z - m_z * other.m_y;
@@ -187,7 +187,7 @@ void Vector3::crossProduct(const Vector3 &other)
     m_z = z;
 }
 
-void Vector3::projectOn(const Vector3 &other)
+void Point3::projectOn(const Point3 &other)
 {
     double norm2 = other.norm2();
     if (norm2 > 0.0)
@@ -199,7 +199,7 @@ void Vector3::projectOn(const Vector3 &other)
     }
 }
 
-void Vector3::rejectFrom(const Vector3 &other)
+void Point3::rejectFrom(const Point3 &other)
 {
     double x = m_x, y = m_y, z = m_z; // We keep old coordinates
     this->projectOn(other);
@@ -208,14 +208,14 @@ void Vector3::rejectFrom(const Vector3 &other)
     m_z = z - m_z;
 }
 
-bool Vector3::isColinear(const Vector3 &other)
+bool Point3::isColinear(const Point3 &other)
 {
-    Vector3 tmp = this->clone();
+    Point3 tmp = this->clone();
     tmp.crossProduct(other);
     return  tmp == NULL_VEC;
 }
 
-bool Vector3::isPerpendicular(const Vector3 &other)
+bool Point3::isPerpendicular(const Point3 &other)
 {
     return Maths::Comparison::almost_zero(this->dotProduct(other));
 }

@@ -16,19 +16,6 @@ namespace Geography { // namespace Osl::Geography
 
 namespace LocalCartesian { // namespace Osl::Geography::LocalCartesian
 
-/*! ********************************************************************
- * \enum LocalCartesianInit
- * \brief Enumeration for the initialization of the LocalCartesian classes.
- *********************************************************************/
-enum class LocalCartesianInit
-{
-    /*! Ellipsoid initialization from equatorial radius and flattening.*/
-    fromGeocentric,
-    /*! Ellipsoid initialization from equatorial and polar radius.*/
-    fromGeodetic
-};
-
-
 class LocalENU
 {
 public:
@@ -38,6 +25,12 @@ public:
     //! Copy constructor
     LocalENU(const LocalENU &other);
 
+    // ============== DESTRUCTOR ==============
+    //! Default destructor
+    ~LocalENU();
+
+    // ============== CLASS METHODS ==============
+    // ********** SETTER **********
     /*! ********************************************************************
      * \brief LocalENU
      * \param [in] elps
@@ -46,12 +39,18 @@ public:
      * \param [in] Z0 (alt0)
      * \param [in] init
      *********************************************************************/
-    LocalENU(Ellipsoid &elps, const double &X0, const double &Y0, const double &Z0,
-             enum LocalCartesianInit init=LocalCartesianInit::fromGeocentric);
+    void setFromGeocentric(Ellipsoid* elps, const double &x, const double &y, const double &z);
 
-    // ============== DESTRUCTOR ==============
-    //! Default destructor
-    ~LocalENU();
+    /*! ********************************************************************
+     * \brief LocalENU
+     * \param [in] elps
+     * \param [in] X0 (lon0)
+     * \param [in] Y0 (lat0)
+     * \param [in] Z0 (alt0)
+     * \param [in] init
+     *********************************************************************/
+    void setFromGeodetic(Ellipsoid* elps, double lon, double lat, double alt=0);
+
 };
 
 

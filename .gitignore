@@ -35,36 +35,6 @@ Thumbs.db
 /.qmake.cache
 /.qmake.stash
 
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
 # qtcreator generated files
 *.pro.user*
 
@@ -96,8 +66,8 @@ Thumbs.db
 # Python byte code
 *.pyc
 
-# Executables
+# Binaries
+# --------
 *.dll
 *.exe
-*.out
-*.app
+

@@ -7,8 +7,7 @@
 #define OSL_GEOGRAPHY_GEOPOINT_H
 
 #include "Ellipsoid.h"
-#include "Osl/Geometry/Vector3D.h"
-#include "Osl/Geometry/Rotation3D.h"
+#include "Osl/Maths/Comparison/almost_equal.h"
 
 namespace Osl { // namespace Osl
 
@@ -38,9 +37,6 @@ public:
     GeoPoint();
 
     //!
-    GeoPoint(Ellipsoid &elps, const Geometry::Vector3D &vec);
-
-    //!
     /*!
      * \brief GeoPoint
      * \param elps
@@ -49,7 +45,7 @@ public:
      * \param init
      * \param degrees (It has no effect if init==GeoPointInit::fromGeocentric)
      */
-    GeoPoint(Ellipsoid &elps,
+    GeoPoint(Ellipsoid* elps,
              const double &lon, const double &lat, const double &alt,
              enum GeoPointInit init=GeoPointInit::fromGeodetic,
              bool degrees=true);
@@ -62,7 +58,6 @@ public:
 
     // ============== CLASS METHODS ==============
     // ********** SETTER **********
-    void setCoords(const Geometry::Vector3D &vec);
     void setCoords(const double &lon, const double &lat, const double &alt,
                    enum GeoPointInit init=GeoPointInit::fromGeodetic,
                    bool degrees=true);
@@ -74,11 +69,10 @@ public:
     double getLat(bool degrees=true) const;
     double getAlt() const;
     void getGeocentricCoords(double &x, double &y, double &z);
-    Geometry::Vector3D getGeocentricCoords() const;
     double getX() const;
     double getY() const;
     double getZ() const;
-    Ellipsoid getEllipsoid() const;
+    Ellipsoid* getEllipsoidPtr() const;
 
     // ============== OPERATORS ==============
     GeoPoint operator=(const GeoPoint &other); // Assignement from another GeoPoint
@@ -147,22 +141,22 @@ public:
      * \param T12x, T12y, T12z
      * \param R12x, R12y, R12z
      * \param degrees
-     * \param R12exact
      * \return
      *
      * \note This method is numerically more acurate than the historical
      * analytical Molodensky method \cite Deakin_04.
      */
-    GeoPoint toEllipsoid(Ellipsoid &elps2,
+    GeoPoint toEllipsoid(Ellipsoid* elps2,
                          const double &T12x, const double &T12y, const double &T12z,
                          const double &R12x=0.0, const double &R12y=0.0, const double &R12z=0.0,
-                         const double &S12=0.0, bool degrees=false, bool R12exact=false);
+                         const double &S12=0.0, bool degrees=false);
 
 private:
-    Ellipsoid &m_elps;               // The referential Ellipsoid (taking reference avoid copying it for different GeoPoints)
-    Geometry::Vector3D m_geocentric; // Contains the geocentric coordinates
-    double m_lon_rad, m_lat_rad,     // longitude and latitude in radians
-           m_alt;                    // altitude in meters
+    Ellipsoid *m_elps = WGS84;        // The referential Ellipsoid (default to WGS84 Ellipsoid)
+//    Geometry::Vector3D m_geocentric;  // Contains the geocentric coordinates
+    double m_x, m_y, m_z,
+           m_lon_rad, m_lat_rad,      // longitude and latitude in radians
+           m_alt;                     // altitude in meters
 };
 
 } // namespace Osl::Geometry
