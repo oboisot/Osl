@@ -146,7 +146,7 @@ std::size_t LinearSpline::search_index_for_interpolation(const double &xeval)
 }
 
 
-double linear_interpolation(vector &x, vector&y, const double &xeval)
+double linear_interpolation(const vector &x, const vector &y, const double &xeval)
 {
     // Search index
     std::size_t size = x.size() - 1,
@@ -176,7 +176,7 @@ double linear_interpolation(vector &x, vector&y, const double &xeval)
     return y0 + (y[index+1] - y0) / (x[index+1] - x0) * (xeval - x0);
 }
 
-void linear_interpolation(vector &x, vector&y, const double &xeval,
+void linear_interpolation(const vector &x, const vector&y, const double &xeval,
                           double &yinterp)
 {
     // Search index
@@ -207,7 +207,7 @@ void linear_interpolation(vector &x, vector&y, const double &xeval,
     yinterp = y0 + (y[index+1] - y0) / (x[index+1] - x0) * (xeval - x0);
 }
 
-double linear_interpolation_reg(vector &x, vector&y, const double &xeval)
+double linear_interpolation_reg(const vector &x, const vector&y, const double &xeval)
 {
     double xmin = x.front(),
            xmax = x.back(),
@@ -230,7 +230,7 @@ double linear_interpolation_reg(vector &x, vector&y, const double &xeval)
     return y0 + (y[index+1] - y0) * inv_dx * (xeval - x[index]);
 }
 
-void linear_interpolation_reg(vector &x, vector&y, const double &xeval,
+void linear_interpolation_reg(const vector &x, const vector&y, const double &xeval,
                               double &yinterp)
 {
     double xmin = x.front(),
@@ -250,6 +250,16 @@ void linear_interpolation_reg(vector &x, vector&y, const double &xeval,
     {
         index = static_cast<std::size_t>((xeval - xmin) * inv_dx);
     }
+    yinterp = y[index];
+    yinterp += (y[index+1] - yinterp) * inv_dx * (xeval - x[index]);
+}
+
+void linear_interpolation_reg_nochecks(const double *x, const double *y,
+                                       const double &xeval, const double &dx,
+                                       double &yinterp)
+{
+    double inv_dx = 1.0 / dx;
+    std::size_t index = static_cast<std::size_t>((xeval - x[0]) * inv_dx);
     yinterp = y[index];
     yinterp += (y[index+1] - yinterp) * inv_dx * (xeval - x[index]);
 }

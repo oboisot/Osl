@@ -39,7 +39,7 @@ public:
      * \param [in] Z0 (alt0)
      * \param [in] init
      *********************************************************************/
-    void setFromGeocentric(Ellipsoid* elps, const double &x, const double &y, const double &z);
+//    void setFromGeocentric(Ellipsoid* elps, const double &x, const double &y, const double &z);
 
     /*! ********************************************************************
      * \brief LocalENU
@@ -49,7 +49,7 @@ public:
      * \param [in] Z0 (alt0)
      * \param [in] init
      *********************************************************************/
-    void setFromGeodetic(Ellipsoid* elps, double lon, double lat, double alt=0);
+//    void setFromGeodetic(Ellipsoid* elps, double lon, double lat, double alt=0);
 
 };
 
@@ -71,8 +71,8 @@ public:
      * \param [in] alt0
      * \param [in] init
      *********************************************************************/
-    LocalNED(const double &lon0, const double &lat0, const double &alt0,
-             Ellipsoid &elps=WGS84, bool degrees=true);
+//    LocalNED(const double &lon0, const double &lat0, const double &alt0,
+//             Ellipsoid &elps=WGS84, bool degrees=true);
 
     /*! ********************************************************************
      * \brief LocalNED
@@ -81,8 +81,8 @@ public:
      * \param [in] Z0 (alt0)
      * \param [in] elps
      *********************************************************************/
-    LocalNED(const double &x0, const double &y0, const double &z0,
-             Ellipsoid &elps=WGS84);
+//    LocalNED(const double &x0, const double &y0, const double &z0,
+//             Ellipsoid &elps=WGS84);
 
     // ============== DESTRUCTOR ==============
     //! Default destructor

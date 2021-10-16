@@ -203,7 +203,7 @@ private:
  * \note This function call doesn't make bound checkings nor extrapolation
  *       checking.
  *********************************************************************/
-double linear_interpolation(vector &x, vector&y, const double &xeval);
+double linear_interpolation(const vector &x, const vector &y, const double &xeval);
 
 /*! ********************************************************************
  * \brief Linear interpolation function.
@@ -215,7 +215,7 @@ double linear_interpolation(vector &x, vector&y, const double &xeval);
  * \note This function call doesn't make bound checkings nor extrapolation
  *       checking.
  *********************************************************************/
-void linear_interpolation(vector &x, vector &y, const double &xeval,
+void linear_interpolation(const vector &x, const vector &y, const double &xeval,
                           double &yinterp);
 
 /*! ********************************************************************
@@ -237,7 +237,7 @@ void linear_interpolation(vector &x, vector &y, const double &xeval,
  * \note This function call doesn't make bound checkings nor extrapolation
  *       checking.
  *********************************************************************/
-double linear_interpolation_reg(vector &x, vector&y, const double &xeval);
+double linear_interpolation_reg(const vector &x, const vector &y, const double &xeval);
 
 /*! ********************************************************************
  * \brief Linear interpolation function for evenly spaced x axis.
@@ -258,8 +258,12 @@ double linear_interpolation_reg(vector &x, vector&y, const double &xeval);
  * \note This function call doesn't make bound checkings nor extrapolation
  *       checking.
  *********************************************************************/
-void linear_interpolation_reg(vector &x, vector&y, const double &xeval,
+void linear_interpolation_reg(const vector &x, const vector&y, const double &xeval,
                               double &yinterp);
+
+void linear_interpolation_reg_nochecks(const double *x, const double *y,
+                                       const double &xeval, const double &dx,
+                                       double &yinterp);
 
 } // namespace Osl::Maths::Interpolator
 

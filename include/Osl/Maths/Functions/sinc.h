@@ -32,9 +32,9 @@ namespace  Functions { // Osl::Maths::Functions namespace
  *********************************************************************/
 inline double sinc(const double &x)
 {
-    if (std::abs(x) < 1e-6)
-        return 1.0 - Constants::m_pi_square * Constants::m_1_6 * x * x;
     double arg = Constants::m_pi * x;
+    if (std::abs(x) < 1e-6)
+        return 1.0 - Constants::m_1_6 * arg * arg;
     return std::sin(arg) / arg;
 }
 
@@ -50,16 +50,16 @@ inline double sinc(const double &x)
  * \param [in] x, the argument of the sinc function.
  * \param [out] y, the value of sinc in x.
  *********************************************************************/
-inline double sinc(const double &x, double &y)
+inline void sinc(const double &x, double &y)
 {
+    double arg = Constants::m_pi * x;
     if (std::abs(x) < 1e-6)
     {
-        y = 1.0 - Constants::m_pi_square * Constants::m_1_6 * x * x;
+        y = 1.0 - Constants::m_1_6 * arg * arg;
     }
     else
     {
-        double arg = Constants::m_pi * x;
-        return std::sin(arg) / arg;
+        y = std::sin(arg) / arg;
     }
 }
 
