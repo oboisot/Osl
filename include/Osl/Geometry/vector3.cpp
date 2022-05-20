@@ -210,9 +210,10 @@ void Vector3::rejectFrom(const Vector3 &other)
 
 bool Vector3::isColinear(const Vector3 &other)
 {
-    Vector3 tmp = this->clone();
-    tmp.crossProduct(other);
-    return  tmp == NULL_VEC;
+    // Vector3 tmp = this->clone();
+    // tmp.crossProduct(other);
+    // return  tmp == NULL_VEC;
+    return this->clone().crossProduct(other) == NULL_VEC;
 }
 
 bool Vector3::isPerpendicular(const Vector3 &other)
