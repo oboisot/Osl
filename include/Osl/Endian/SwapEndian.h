@@ -4,7 +4,7 @@
 #include <cstdint>     // For std::uint16_t, etc...
 #include <cstring>     // For std::memcpy
 #include <memory>      // For std::allocator
-#include <type_traits> // For std::enable_if
+#include <type_traits> // For std::enable_if, std::is_same
 #include <complex>
 
 #if defined(bswap16) || defined(bswap32) || defined(bswap64)

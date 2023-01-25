@@ -91,6 +91,23 @@ void GeoPoint::setCoords(const double &lon, const double &lat, const double &alt
         throw std::invalid_argument("");
 }
 
+void GeoPoint::setGeocentricCoords(const double &x, const double &y, const double &z)
+{
+    m_x = x;
+    m_y = y;
+    m_z = z;
+    m_elps->geocentricToGeodetic(m_x, m_y, m_z, m_lon_rad, m_lat_rad, m_alt, false);
+}
+
+void GeoPoint::setGeodeticCoords(const double &lon_rad, const double &lat_rad, const double &alt)
+{
+    m_lon_rad = lon_rad;
+    m_lat_rad = lat_rad;
+    m_alt     = alt;
+    m_elps->geodeticToGeocentric(m_lon_rad, m_lat_rad, m_alt, m_x, m_y, m_z, false);
+}
+
+
 // ********** GETTER **********
 void GeoPoint::getGeodeticCoords(double &lon, double &lat, double &alt, bool degrees)
 {
@@ -168,6 +185,21 @@ GeoPoint GeoPoint::toEllipsoid(Ellipsoid* elps2,
     y = T12y + scale * (rz * m_x + m_y - rx * m_z);
     z = T12z + scale * (-ry * m_x + rx * m_y + m_z);
     return GeoPoint(elps2, x, y, z, GeoPointInit::fromGeocentric);
+}
+
+void GeoPoint::toEllipsoidInplace(Ellipsoid* elps2,
+                                  const double &Tx, const double &Ty, const double &Tz,
+                                  const double &Rx=0.0, const double &Ry=0.0, const double &Rz=0.0,
+                                  const double &scale=0.0)
+    m_elps = elps2;
+    double sscale = 1.0 + scale;
+    // Small angles rotation matrix :
+    // rot = |1.0, -rz, ry |
+    //       |rz,  1.0, -rx|
+    //       |-ry, rx,  1.0|
+    this->setGeocentricCoords(Tx + sscale * (m_x - Rz * m_y + Ry * m_z),
+                              Ty + sscale * (Rz * m_x + m_y - Rx * m_z),
+                              Tz + sscale * (-Ry * m_x + Rx * m_y + m_z));
 }
 
 } // namespace Osl::Geometry

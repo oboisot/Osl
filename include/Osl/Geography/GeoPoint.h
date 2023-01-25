@@ -61,6 +61,8 @@ public:
     void setCoords(const double &lon, const double &lat, const double &alt,
                    enum GeoPointInit init=GeoPointInit::fromGeodetic,
                    bool degrees=true);
+    void setGeocentricCoords(const double &x, const double &y, const double &z);
+    void setGeodeticCoords(const double &lon_rad, const double &lat_rad, const double &alt);
 
     // ********** GETTER **********
     void getGeodeticCoords(double &lon, double & lat, double &alt,
@@ -146,10 +148,15 @@ public:
      * \note This method is numerically more acurate than the historical
      * analytical Molodensky method \cite Deakin_04.
      */
-    GeoPoint toEllipsoid(Ellipsoid* elps2,
+    GeoPoint toEllipsoid(Ellipsoid *elps2,
                          const double &T12x, const double &T12y, const double &T12z,
                          const double &R12x=0.0, const double &R12y=0.0, const double &R12z=0.0,
                          const double &S12=0.0, bool degrees=false);
+
+    void toEllipsoidInplace(Ellipsoid *elps2,
+                            const double &Tx, const double &Ty, const double &Tz,
+                            const double &Rx=0.0, const double &Ry=0.0, const double &Rz=0.0,
+                            const double &scale=0.0);
 
 private:
     Ellipsoid *m_elps = WGS84;        // The referential Ellipsoid (default to WGS84 Ellipsoid)
